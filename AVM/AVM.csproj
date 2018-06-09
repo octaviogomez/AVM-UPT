@@ -106,6 +106,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Archivos\Carnet\" />
+    <Folder Include="Archivos\Examen\" />
     <Folder Include="Archivos\Manuales\" />
     <Folder Include="Multimedia\" />
   </ItemGroup>
@@ -115,6 +116,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Controles\Especialista\Agenda.ascx" />
+    <Content Include="Controles\Especialista\contCarnet.ascx" />
+    <Content Include="Controles\Especialista\contExamenPsico.ascx" />
+    <Content Include="Controles\Especialista\contInfroUsuario.ascx" />
     <Content Include="Controles\Especialista\controlCitaRapida.ascx" />
     <Content Include="Controles\Usuario\Agenda.ascx" />
     <Content Include="Controles\Usuario\CuesDental.ascx" />
@@ -3168,6 +3172,27 @@
     </Compile>
     <Compile Include="Controles\Especialista\Agenda.ascx.designer.cs">
       <DependentUpon>Agenda.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\contCarnet.ascx.cs">
+      <DependentUpon>contCarnet.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contCarnet.ascx.designer.cs">
+      <DependentUpon>contCarnet.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\contExamenPsico.ascx.cs">
+      <DependentUpon>contExamenPsico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contExamenPsico.ascx.designer.cs">
+      <DependentUpon>contExamenPsico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\contInfroUsuario.ascx.cs">
+      <DependentUpon>contInfroUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contInfroUsuario.ascx.designer.cs">
+      <DependentUpon>contInfroUsuario.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Especialista\controlCitaRapida.ascx.cs">
       <DependentUpon>controlCitaRapida.ascx</DependentUpon>

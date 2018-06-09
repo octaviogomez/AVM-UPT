@@ -24,24 +24,28 @@
                         <strong>
                             <asp:Label ID="LabelNumeroControl" runat="server" Text=""></asp:Label></strong>
                     </li>
-                     <li class="list-group-item">
+                    <li class="list-group-item">
                         <asp:LinkButton ID="LinkButtonClave" runat="server" CssClass="alert-warning" ToolTip="Cambiar contraseña" data-toggle="modal" data-target="#Contrasena"> <span class="oi oi-transfer"></span></asp:LinkButton>
                         Contraseña: 
                         <asp:Label ID="LabelClave" runat="server" Text=""></asp:Label>
 
                     </li>
                     <li class="list-group-item">Nombre: 
-                        <strong><asp:Label ID="LabelNombre" runat="server" Text=""></asp:Label></strong> 
+                        <strong>
+                            <asp:Label ID="LabelNombre" runat="server" Text=""></asp:Label></strong>
 
                     </li>
                     <li class="list-group-item">Sexo:
-                        <strong><asp:Label ID="LabelSexo" runat="server" Text=""></asp:Label></strong> 
+                        <strong>
+                            <asp:Label ID="LabelSexo" runat="server" Text=""></asp:Label></strong>
                     </li>
                     <li class="list-group-item">Fecha nacimiento:  
-                         <strong><asp:Label ID="LabelFechaNacimiento" runat="server" Text=""></asp:Label></strong>
+                         <strong>
+                             <asp:Label ID="LabelFechaNacimiento" runat="server" Text=""></asp:Label></strong>
                     </li>
                     <li class="list-group-item">Carrera:                  
-                         <strong> <asp:Label ID="LabelCarrera" runat="server" Text=""></asp:Label></strong>
+                         <strong>
+                             <asp:Label ID="LabelCarrera" runat="server" Text=""></asp:Label></strong>
                     </li>
                     <li class="list-group-item">
                         <asp:LinkButton ID="LinkButtonNoSocial" runat="server" CssClass="alert-warning" ToolTip="Actilizar Número de seguro social" data-toggle="modal" data-target="#NumeroSocial"> <span class="oi oi-reload"></span></asp:LinkButton>
@@ -52,7 +56,8 @@
                     <li class="list-group-item">
                         <asp:LinkButton ID="LinkButtonCrup" runat="server" CssClass="alert-warning" ToolTip="Actilizar CURP" data-toggle="modal" data-target="#Curp"> <span class="oi oi-reload"></span></asp:LinkButton>
                         Curp: 
-                      <strong> <asp:Label ID="LabelCurp" runat="server" Text=""></asp:Label></strong> 
+                      <strong>
+                          <asp:Label ID="LabelCurp" runat="server" Text=""></asp:Label></strong>
 
                     </li>
 
@@ -109,7 +114,7 @@
                 <div class="row">
                     <div class="col">CURP:</div>
                     <div class="col">
-                        <asp:TextBox ID="textboxCurp" runat="server"  pattern="^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$" title="No es correcto el formato"></asp:TextBox>
+                        <asp:TextBox ID="textboxCurp" runat="server" pattern="^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$" title="No es correcto el formato"></asp:TextBox>
                     </div>
                     <div class="col">
                         <a href="https://consultas.curp.gob.mx/CurpSP/inicio2_2.jsp" target="_blank">Consultar CURP</a>
@@ -120,7 +125,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <asp:Button ID="ButtonActulizarCurp" runat="server" Text="Actulizar" CssClass="btn btn-warning" OnClick="ButtonActulizarCurp_Click"/>
+                <asp:Button ID="ButtonActulizarCurp" runat="server" Text="Actulizar" CssClass="btn btn-warning" OnClick="ButtonActulizarCurp_Click" />
 
             </div>
         </div>
@@ -148,7 +153,7 @@
                 <div class="row">
                     <div class="col">Repetir</div>
                     <div class="col">
-                        <asp:TextBox ID="textboxClave2" runat="server"  pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,40})$" title="8 a 10 caractéres, al menos un dígito y un carácter alfabético"></asp:TextBox>
+                        <asp:TextBox ID="textboxClave2" runat="server" pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,40})$" title="8 a 10 caractéres, al menos un dígito y un carácter alfabético"></asp:TextBox>
                     </div>
                     <div class="col">
                     </div>
@@ -157,7 +162,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <asp:Button ID="ButtonContrasena" runat="server" Text="Actulizar" CssClass="btn btn-warning"  OnClick="ButtonContrasena_Click"/>
+                <asp:Button ID="ButtonContrasena" runat="server" Text="Actulizar" CssClass="btn btn-warning" OnClick="ButtonContrasena_Click" />
 
             </div>
         </div>

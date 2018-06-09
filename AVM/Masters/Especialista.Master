@@ -65,7 +65,7 @@
                         <a class="nav-link" href="../../../Paginas/Especialista/HistorialCitas.aspx">Historial de Citas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../../Paginas/Especialista/InfoUsuario.aspx">Información General</a>
+                        <a class="nav-link" href="../../../Paginas/Especialista/InfoUsuario.aspx">Información Usuario</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../../../Paginas/Especialista/AdminAlumnos.aspx">Configirar Usuario</a>

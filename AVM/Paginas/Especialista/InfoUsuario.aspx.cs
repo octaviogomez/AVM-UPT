@@ -13,5 +13,22 @@ namespace AVM.Paginas.Especialista
         {
 
         }
+
+        protected void ButtonBuscar_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                int id = Convert.ToInt32(TextBoxidUsuario.Text);
+
+                string pagina = "InfoUsuario.aspx?id=" +id ;
+                Response.Redirect(pagina, true);//
+
+            }
+            catch (Exception)
+            {
+                PanelAviso.Visible = true;
+            }
+        }
     }
 }

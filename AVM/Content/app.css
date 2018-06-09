@@ -1,0 +1,29 @@
+﻿body {
+    background-color: #e2e2e2;
+}
+.colorBlanco {
+    background-color: white;
+}
+.fondoColor {
+    background-color:#00618d;
+    color:white;
+}
+
+.colorBase {
+     background-color:#E9E6E6;
+}
+
+.letraBlanca{
+    color:white;
+}
+
+.footer {
+  
+}
+
+.ocultar {
+    visibility:hidden;
+}
+.mostrar {
+    visibility:visible;
+}

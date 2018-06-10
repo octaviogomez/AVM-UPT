@@ -7,72 +7,81 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AVM.Masters {
+namespace AVM.Controles.Especialista {
     
     
-    public partial class Especialista {
+    public partial class ContAltaAlumno {
         
         /// <summary>
-        /// head control.
+        /// Nombre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.TextBox Nombre;
         
         /// <summary>
-        /// ImageLogoMenu control.
+        /// ApellidoP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoMenu;
+        protected global::System.Web.UI.WebControls.TextBox ApellidoP;
         
         /// <summary>
-        /// LabelNombreEspecialista control.
+        /// ApellidoM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelNombreEspecialista;
+        protected global::System.Web.UI.WebControls.TextBox ApellidoM;
         
         /// <summary>
-        /// form1 control.
+        /// GeneroList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.DropDownList GeneroList;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// NumeroControl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.TextBox NumeroControl;
         
         /// <summary>
-        /// ImageLogoFooter control.
+        /// FechaNacimiento control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoFooter;
+        protected global::System.Web.UI.WebControls.TextBox FechaNacimiento;
         
         /// <summary>
-        /// Image1 control.
+        /// droplistCarrera control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.DropDownList droplistCarrera;
+        
+        /// <summary>
+        /// Guardar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Guardar;
     }
 }

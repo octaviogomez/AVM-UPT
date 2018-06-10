@@ -20,12 +20,12 @@ namespace AVM.Masters
 
             if (objLoggerdUserEspecialista != null && objLoggerdUserEspecialista.Rol == 2)
             {
-              
-                
+
+                LabelNombreEspecialista.Text = objLoggerdUserEspecialista.Nombre;
             }
             else
             {
-                Response.Redirect("/Sesion.aspx", true);
+                Response.Redirect("../../Default.aspx", true);
             }
         }
     }

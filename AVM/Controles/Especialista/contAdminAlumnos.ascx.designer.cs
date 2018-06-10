@@ -7,72 +7,63 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AVM.Masters {
+namespace AVM.Controles.Especialista {
     
     
-    public partial class Especialista {
+    public partial class contAdminAlumnos {
         
         /// <summary>
-        /// head control.
+        /// TextBoxidBuscar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxidBuscar;
         
         /// <summary>
-        /// ImageLogoMenu control.
+        /// ButtonBuscar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoMenu;
+        protected global::System.Web.UI.WebControls.Button ButtonBuscar;
         
         /// <summary>
-        /// LabelNombreEspecialista control.
+        /// PanelListado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelNombreEspecialista;
+        protected global::System.Web.UI.WebControls.Panel PanelListado;
         
         /// <summary>
-        /// form1 control.
+        /// GridViewListado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.GridView GridViewListado;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// TextBoxIdUsuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxIdUsuario;
         
         /// <summary>
-        /// ImageLogoFooter control.
+        /// ButtonEliminarCita control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoFooter;
-        
-        /// <summary>
-        /// Image1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Button ButtonEliminarCita;
     }
 }

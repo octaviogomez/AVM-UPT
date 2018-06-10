@@ -116,6 +116,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Controles\Especialista\Agenda.ascx" />
+    <Content Include="Controles\Especialista\contAdminAlumnos.ascx" />
+    <Content Include="Controles\Especialista\ContAltaAlumno.ascx" />
     <Content Include="Controles\Especialista\contCarnet.ascx" />
     <Content Include="Controles\Especialista\contExamenPsico.ascx" />
     <Content Include="Controles\Especialista\contInfroUsuario.ascx" />
@@ -3172,6 +3174,20 @@
     </Compile>
     <Compile Include="Controles\Especialista\Agenda.ascx.designer.cs">
       <DependentUpon>Agenda.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\contAdminAlumnos.ascx.cs">
+      <DependentUpon>contAdminAlumnos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contAdminAlumnos.ascx.designer.cs">
+      <DependentUpon>contAdminAlumnos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\ContAltaAlumno.ascx.cs">
+      <DependentUpon>ContAltaAlumno.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\ContAltaAlumno.ascx.designer.cs">
+      <DependentUpon>ContAltaAlumno.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Especialista\contCarnet.ascx.cs">
       <DependentUpon>contCarnet.ascx</DependentUpon>

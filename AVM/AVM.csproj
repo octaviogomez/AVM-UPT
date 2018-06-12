@@ -54,6 +54,30 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -120,6 +144,9 @@
     <Content Include="Controles\Especialista\ContAltaAlumno.ascx" />
     <Content Include="Controles\Especialista\contCarnet.ascx" />
     <Content Include="Controles\Especialista\contExamenPsico.ascx" />
+    <Content Include="Controles\Especialista\contHistoDental.ascx" />
+    <Content Include="Controles\Especialista\contHistoMedico.ascx" />
+    <Content Include="Controles\Especialista\contHistoPsico.ascx" />
     <Content Include="Controles\Especialista\contInfroUsuario.ascx" />
     <Content Include="Controles\Especialista\controlCitaRapida.ascx" />
     <Content Include="Controles\Usuario\Agenda.ascx" />
@@ -3122,6 +3149,11 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\respond.js" />
@@ -3167,7 +3199,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\BundleConfig2.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\RouteConfig2.cs" />
     <Compile Include="Controles\Especialista\Agenda.ascx.cs">
       <DependentUpon>Agenda.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3202,6 +3237,27 @@
     </Compile>
     <Compile Include="Controles\Especialista\contExamenPsico.ascx.designer.cs">
       <DependentUpon>contExamenPsico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\contHistoDental.ascx.cs">
+      <DependentUpon>contHistoDental.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contHistoDental.ascx.designer.cs">
+      <DependentUpon>contHistoDental.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\contHistoMedico.ascx.cs">
+      <DependentUpon>contHistoMedico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contHistoMedico.ascx.designer.cs">
+      <DependentUpon>contHistoMedico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\contHistoPsico.ascx.cs">
+      <DependentUpon>contHistoPsico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contHistoPsico.ascx.designer.cs">
+      <DependentUpon>contHistoPsico.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Especialista\contInfroUsuario.ascx.cs">
       <DependentUpon>contInfroUsuario.ascx</DependentUpon>

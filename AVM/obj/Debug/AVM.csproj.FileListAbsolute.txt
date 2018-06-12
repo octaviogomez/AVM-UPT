@@ -107,3 +107,15 @@ C:\Users\Aurelio\Desktop\AVM\AVM\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Aurelio\Desktop\AVM\AVM\obj\Debug\AVM.csprojResolveAssemblyReference.cache
 C:\Users\Aurelio\Desktop\AVM\AVM\obj\Debug\AVM.dll
 C:\Users\Aurelio\Desktop\AVM\AVM\obj\Debug\AVM.pdb
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.Helpers.dll
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.Mvc.dll
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.Razor.dll
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.WebPages.Deployment.dll
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.WebPages.dll
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.WebPages.Razor.dll
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.Helpers.xml
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.Mvc.xml
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.Razor.xml
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.WebPages.xml
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.WebPages.Deployment.xml
+C:\Users\octav\Desktop\AVM\AVM\bin\System.Web.WebPages.Razor.xml

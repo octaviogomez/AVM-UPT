@@ -3130,6 +3130,7 @@
     <Content Include="Iconos\icon\webp\zoom-out.webp" />
     <Content Include="Masters\Administrador.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Paginas\Admin\Default.aspx" />
     <Content Include="Paginas\Default.aspx" />
     <Content Include="Paginas\Especialista\AdminAlumnos.aspx" />
     <Content Include="Paginas\Especialista\AgendaCitas.aspx" />
@@ -3377,6 +3378,13 @@
     </Compile>
     <Compile Include="Masters\Usuario.Master.designer.cs">
       <DependentUpon>Usuario.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

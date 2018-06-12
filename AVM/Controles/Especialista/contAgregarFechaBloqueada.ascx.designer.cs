@@ -7,27 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AVM.Paginas.Especialista {
+namespace AVM.Controles.Especialista {
     
     
-    public partial class BloquearFechas {
+    public partial class contAgregarFechaBloqueada {
         
         /// <summary>
-        /// contFechasBloqueadas control.
+        /// TextBoxFecha control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AVM.Controles.Especialista.contFechasBloqueadas contFechasBloqueadas;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxFecha;
         
         /// <summary>
-        /// contAgregarFechaBloqueada control.
+        /// ButtonAgregar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AVM.Controles.Especialista.contAgregarFechaBloqueada contAgregarFechaBloqueada;
+        protected global::System.Web.UI.WebControls.Button ButtonAgregar;
     }
 }

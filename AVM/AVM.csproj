@@ -141,14 +141,17 @@
     <Content Include="Content\Site.css" />
     <Content Include="Controles\Especialista\Agenda.ascx" />
     <Content Include="Controles\Especialista\contAdminAlumnos.ascx" />
+    <Content Include="Controles\Especialista\contAgregarFechaBloqueada.ascx" />
     <Content Include="Controles\Especialista\ContAltaAlumno.ascx" />
     <Content Include="Controles\Especialista\contCarnet.ascx" />
     <Content Include="Controles\Especialista\contExamenPsico.ascx" />
+    <Content Include="Controles\Especialista\contFechasBloqueadas.ascx" />
     <Content Include="Controles\Especialista\contHistoDental.ascx" />
     <Content Include="Controles\Especialista\contHistoMedico.ascx" />
     <Content Include="Controles\Especialista\contHistoPsico.ascx" />
     <Content Include="Controles\Especialista\contInfroUsuario.ascx" />
     <Content Include="Controles\Especialista\controlCitaRapida.ascx" />
+    <Content Include="Controles\Especialista\contSubirArchivo.ascx" />
     <Content Include="Controles\Usuario\Agenda.ascx" />
     <Content Include="Controles\Usuario\CuesDental.ascx" />
     <Content Include="Controles\Usuario\CuesMedico.ascx" />
@@ -3217,6 +3220,13 @@
     <Compile Include="Controles\Especialista\contAdminAlumnos.ascx.designer.cs">
       <DependentUpon>contAdminAlumnos.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controles\Especialista\contAgregarFechaBloqueada.ascx.cs">
+      <DependentUpon>contAgregarFechaBloqueada.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contAgregarFechaBloqueada.ascx.designer.cs">
+      <DependentUpon>contAgregarFechaBloqueada.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controles\Especialista\ContAltaAlumno.ascx.cs">
       <DependentUpon>ContAltaAlumno.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3237,6 +3247,13 @@
     </Compile>
     <Compile Include="Controles\Especialista\contExamenPsico.ascx.designer.cs">
       <DependentUpon>contExamenPsico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\contFechasBloqueadas.ascx.cs">
+      <DependentUpon>contFechasBloqueadas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contFechasBloqueadas.ascx.designer.cs">
+      <DependentUpon>contFechasBloqueadas.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Especialista\contHistoDental.ascx.cs">
       <DependentUpon>contHistoDental.ascx</DependentUpon>
@@ -3272,6 +3289,13 @@
     </Compile>
     <Compile Include="Controles\Especialista\controlCitaRapida.ascx.designer.cs">
       <DependentUpon>controlCitaRapida.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\contSubirArchivo.ascx.cs">
+      <DependentUpon>contSubirArchivo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contSubirArchivo.ascx.designer.cs">
+      <DependentUpon>contSubirArchivo.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Usuario\Agenda.ascx.cs">
       <DependentUpon>Agenda.ascx</DependentUpon>

@@ -36,7 +36,7 @@ namespace AVM.Masters
             }
             catch (Exception)
             {
-                Response.Redirect("../Default.aspx", true);//
+                Response.Redirect("../../Default.aspx", true);//
 
             }
 

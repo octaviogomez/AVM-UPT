@@ -18,8 +18,12 @@ namespace Core.Model
             objManagerBD = new ManagerBD();
         }
 
-
-        //Validar Alumno
+/// <summary>
+/// </summary>
+/// <param name="opcion"></param>
+/// <param name="objDatos"></param>
+/// <param name="objAlumno"></param>
+/// <returns></returns>
         public bool ValidarAlumno(int opcion, ref DataSet objDatos, CAlumno objAlumno)
         {
             bool ExisteDatos = false;

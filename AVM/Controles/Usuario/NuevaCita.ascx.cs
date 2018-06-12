@@ -39,7 +39,7 @@ namespace AVM.Controles.Usuario
             }
             else
             {
-                Response.Redirect("Default.aspx", true);//
+                Response.Redirect("../../Default.aspx", true);//
             }
         }
 
@@ -89,7 +89,7 @@ namespace AVM.Controles.Usuario
             get
             {
                 CConsulta NuevaConsulta = new CConsulta();
-                NuevaConsulta.ConsultaActiva = 2;
+                NuevaConsulta.ConsultaActiva = 2; //que significa
                 NuevaConsulta.fk_Alumno = objLoggerinf.alu_NumControl;
                 NuevaConsulta.fk_Especialista = DropDownListEspecialista.SelectedValue;
                 NuevaConsulta.fk_Fecha = TextBoxFecha.Text;

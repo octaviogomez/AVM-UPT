@@ -2,10 +2,33 @@
 <div class="container colorBlanco">
 
     <div class="card">
-        <h5 class="card-header">Consulta de citas</h5>
+        <h5 class="card-header">Consulta y cancelacion de citas</h5>
         <div class="card-body">
-            <h5 class="card-title">Instrucciones</h5>
-            <p class="card-text">Para eliminar una cita solo de clic en cancelar.</p>
+            
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span class="oi oi-info"></span>Instrucciones:
+                    </a>
+                </h5>
+            </div>
+            <div class="Row">
+                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <ol>
+                            <li>Para eliminar identifique la consulta, y despues de click en<span class="oi oi-trash"></span></li> 
+                        </ol>
+                        <br />
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+   
             <br />
             <asp:Panel ID="PanelListadoCitas" runat="server" Height="450px" ScrollBars="Vertical" CssClass="border border-primary">
                 <div class="table-responsive">
@@ -17,13 +40,13 @@
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:BoundField Visible="false" DataField="Id" HeaderText="Id" />
-                            <asp:BoundField Visible="true" DataField="Nombre" HeaderText="Nombre" ItemStyle-Font-Bold="true" />
-                            <asp:BoundField Visible="true" DataField="Apellido" HeaderText="Apellido" />
+                            <asp:BoundField Visible="true" DataField="NombreCompleto"  HeaderText="Especialista" ItemStyle-Font-Bold="true" />
+               
                             <asp:BoundField Visible="true" DataField="Categoría" HeaderText="Categoría" />
                             <asp:BoundField Visible="true" DataField="Fecha" HeaderText="Fecha" />
                             <asp:BoundField Visible="true" DataField="Horario" HeaderText="Horario" />
                             <asp:BoundField Visible="true" DataField="Estado" HeaderText="Estado" />
-                            <asp:TemplateField ShowHeader="False" HeaderText="Cancelación">
+                            <asp:TemplateField ShowHeader="False" HeaderText="Cancelar">
                                 <ItemTemplate>
                                     <asp:LinkButton ID="LinkButtonCancelar" runat="server" CommandName="Cancelar" CssClass="form-control btn btn-outline-danger">
                                       <span class="oi oi-trash"></span>
@@ -45,14 +68,13 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Eliminar cita</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Cancelar Consulta</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                Esta seguro de eliminar la reservación para <strong>
-                    <asp:Label ID="LabelNombreAlumno" runat="server" Text=" "></asp:Label></strong>
+                Esta seguro de eliminar la consulta?
 
             </div>
             <div class="modal-footer">

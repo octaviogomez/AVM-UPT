@@ -131,7 +131,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Archivos\Carnet\" />
     <Folder Include="Archivos\Examen\" />
-    <Folder Include="Archivos\Manuales\" />
     <Folder Include="Multimedia\" />
   </ItemGroup>
   <ItemGroup>
@@ -3129,6 +3128,7 @@
     <Content Include="Iconos\icon\webp\zoom-out-8x.webp" />
     <Content Include="Iconos\icon\webp\zoom-out.webp" />
     <Content Include="Masters\Administrador.Master" />
+    <Content Include="Archivos\Manuales\alumno.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Paginas\Admin\Default.aspx" />
     <Content Include="Paginas\Admin\Reportes.aspx" />

@@ -1,20 +1,37 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NuevaCita.ascx.cs" Inherits="AVM.Controles.Usuario.NuevaCita" %>
 <div class="container colorBlanco">
     <div class="card">
-        <h5 class="card-header">Nueva cita</h5>
+        <h5 class="card-header">Nueva Consulta </h5>
         <div class="card-body">
-            <h5 class="card-title">Instrucciones</h5>
-            <p class="card-text">
-                <ol>
-                    <li>Seleccionar una área, puede ser medica, dental o psicologica</li>
-                    <li>Seleccionar algún especialista.</li>
-                    <li>Selecionar fecha de la cita.</li>
-                    <li>Verificar horarios.</li>
-                     <li>En caso que la cita sea para algun familiar, activar la casilla de cita familiar.</li>
-                </ol>
 
 
-            </p>
+
+
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span class="oi oi-info"></span>Instrucciones:
+                    </a>
+                </h5>
+            </div>
+            <div class="Row">
+                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <ol>
+                            <li>Seleccionar una área, puede ser medica, dental o psicologica</li>
+                            <li>Seleccionar algún especialista.</li>
+                            <li>Selecionar fecha de la cita.</li>
+                            <li>Verificar horarios.</li>
+                            <li>En caso que la cita sea para algun familiar, activar la casilla de cita familiar.</li>
+                        </ol>
+                        <br />
+                         <div class="alert alert-warning" role="alert">
+                             <strong>Nota:</strong> En caso de que no se muestre algún horario, significa que esa fecha no esta disponible.
+                            </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="form-row">
                 <div class="col-md-5 mb-5">
                     <strong>
@@ -42,7 +59,7 @@
                 <div class="col-md-5 mb-5">
                     <strong>
                         <label for="DropDownListHorario">4. Horarios</label></strong>
-                    <asp:DropDownList ID="DropDownListHorario" runat="server" CssClass="form-control" placeholder="Fecha" required="Se necesita una fecha"></asp:DropDownList>
+                    <asp:DropDownList ID="DropDownListHorario" runat="server" CssClass="form-control" placeholder="Fecha" required="Puede que la fecha no este disponible, verifique otra"></asp:DropDownList>
                 </div>
             </div>
             <div class="form-row">
@@ -85,3 +102,8 @@
         </div>
     </div>
 </div>
+<script>
+    (function () {
+
+    })();
+</script>

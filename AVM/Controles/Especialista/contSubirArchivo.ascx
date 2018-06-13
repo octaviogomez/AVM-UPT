@@ -11,7 +11,7 @@
                 </h5>
             </div>
             <div class="Row">
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     <p style="font-size: medium">1.-Seleccione un archivo con extencion pdf. </p>
                     <p style="font-size: medium">2.-Debe de ser menos 1mb </p>
@@ -61,9 +61,4 @@
 
 
 </div>
-<script type = "text/javascript" >
-    $('.collapse').collapse()
-    $('#myCollapsible').collapse({
-        toggle: false
-    })
-    </script>
+

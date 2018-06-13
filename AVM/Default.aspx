@@ -20,18 +20,17 @@
     <header id="header-container" class="fondoColor posicionFoter">
         <div class="container">
             <div class="row">
-                <div class="col align-content-md-center">
 
-                    <asp:Image ID="ImagenLogo" runat="server" ImageUrl="~/Imagenes/Universidad/corazon.png" Height="65px" Width="76px" />
-
+                <div class="col-1">
+                    <asp:Image ID="ImagenLogo" runat="server" ImageUrl="~/Imagenes/Universidad/corazon.png" Height="65px" Width="76px" CssClass="img-fluid"  alt="Responsive image"/>
                 </div>
-                <div class="col align-self-center">
+                <div class="col-10 text-center">
                     <h2>Universidad Politécnica de Tulancingo</h2>
                 </div>
-                <div class="col"></div>
+                <div class="col-1">
+                </div>
             </div>
         </div>
-
     </header>
     <br />
     <br />

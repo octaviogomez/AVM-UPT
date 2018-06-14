@@ -8,7 +8,7 @@
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>Instrucciones:
+                        <span class="oi oi-info"></span>   Información
                     </a>
                 </h5>
             </div>
@@ -16,18 +16,12 @@
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <ol>
-                            <li>Para eliminar identifique la consulta, y despues de click en<span class="oi oi-trash"></span></li> 
+                            <li>Para eliminar identifique la consulta, y despues de click en    <span class="oi oi-trash"> </span></li> 
                         </ol>
                         <br />
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
    
             <br />
             <asp:Panel ID="PanelListadoCitas" runat="server" Height="450px" ScrollBars="Vertical" CssClass="border border-primary">
@@ -61,7 +55,6 @@
         </div>
     </div>
 </div>
-<br />
 
 <!-- Modal -->
 <div class="modal fade" id="ModalEliminar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

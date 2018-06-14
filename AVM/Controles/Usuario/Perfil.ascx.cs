@@ -88,7 +88,15 @@ namespace AVM.Controles.Usuario
                 }
             }
         }
-        public CAlumno UsuarioActulizar { get { return this.objLoggerinf; } set { } }
+        public CAlumno UsuarioActulizar {
+            get { return this.objLoggerinf; }
+            set {
+                if (value!=null)
+                {
+                    this.objLoggerinf = value;
+                }
+            }
+        }
 
         public DataSet UsuariosDt { get { return null; } set { } }
 
@@ -107,8 +115,10 @@ namespace AVM.Controles.Usuario
                 this.opcionGetUsuarioLogeado = 2;
                 vistaAlumno.crudAlumno(UsuarioLogeado, 7);
 
-                Session.Clear();// limpiamos la sesion
-                Session.Add("UsuarioLogeado", UsuarioLogeado);
+                vistaAlumno.ActualizarDatosDeAlumno(UsuarioLogeado); //actualizamos los datos de la variable se sesion   
+                Session.Clear();// limpiamos la sesion  
+
+                Session.Add("UsuarioLogeado", UsuarioActulizar);
 
                 textboxNoSocial.Text = "";
                
@@ -124,7 +134,10 @@ namespace AVM.Controles.Usuario
                 vistaAlumno.crudAlumno(UsuarioLogeado, 15);
 
                 Session.Clear();// limpiamos la sesion
-                Session.Add("UsuarioLogeado", UsuarioLogeado);
+
+                vistaAlumno.ActualizarDatosDeAlumno(UsuarioLogeado); //actualizamos los datos de la variable se sesion   
+
+                Session.Add("UsuarioLogeado", UsuarioActulizar);
 
                 textboxNoSocial.Text = "";
 

@@ -40,7 +40,7 @@
                         <div class="card-header card text-white bg-danger">Avisos</div>
                         <div class="card-body text-danger">
                             <h5 class="card-title">Datos faltantes: No. seguro y/o de CURP</h5>
-                            <p class="card-text">Ingresar al apartado de perfil para agregarlo. <a class="nav-link " href="../../../Paginas/Usuario/CancelarCita.aspx">Ir</a></p>
+                            <p class="card-text">Ingresar al apartado de perfil para agregarlo. <a class="nav-link " href="InfoUsuario.aspx">Ir</a></p>
                                     
                         </div>
                     </div>

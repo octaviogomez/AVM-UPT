@@ -55,3 +55,10 @@ C:\Users\Administrador\Desktop\AVM-final\AVM-PRO\AVM-PRO\AVM-master\Core\bin\Rel
 C:\Users\Administrador\Desktop\AVM-final\AVM-PRO\AVM-PRO\AVM-master\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
 C:\Users\Administrador\Desktop\AVM-final\AVM-PRO\AVM-PRO\AVM-master\Core\obj\Release\Core.dll
 C:\Users\Administrador\Desktop\AVM-final\AVM-PRO\AVM-PRO\AVM-master\Core\obj\Release\Core.pdb
+C:\Users\octav\Desktop\AVM\Core\bin\Release\Core.dll
+C:\Users\octav\Desktop\AVM\Core\bin\Release\Core.pdb
+C:\Users\octav\Desktop\AVM\Core\bin\Release\itextsharp.dll
+C:\Users\octav\Desktop\AVM\Core\bin\Release\itextsharp.xml
+C:\Users\octav\Desktop\AVM\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
+C:\Users\octav\Desktop\AVM\Core\obj\Release\Core.dll
+C:\Users\octav\Desktop\AVM\Core\obj\Release\Core.pdb

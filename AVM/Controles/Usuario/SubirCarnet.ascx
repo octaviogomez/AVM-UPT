@@ -4,19 +4,40 @@
 
     <div class="card">
         <div class="card-header">
-            Sección de archivos
+             <h5 class="card-title">Carnet</h5>
         </div>
         <div class="card-body">
-            <h5 class="card-title">Carnet</h5>
-            <p class="card-text">Para subir el documento tome en cuenta las siguientes recomendaciones.</p>
-            <ul>
-                <li>Debe de ser un documento .pdf</li>
-                <li>No debe de pesar más de 1 Mb</li>
-                <li>Por nombre llevara su número de credencial</li>
-            </ul>
+       <br />
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span class="oi oi-info"></span>Instrucciones:
+                    </a>
+                </h5>
+            </div>
+            <div class="Row">
+                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Para subir el documento tome en cuenta las siguientes recomendaciones.
+                       <ul>
+                           <li>Debe de ser un documento .pdf</li>
+                           <li>No debe de pesar más de 1 Mb</li>
+                           <li>Por nombre llevara su número de credencial</li>
+                       </ul>
+                    </div>
+                </div>
+            </div
+            <br />
+
+
+
+
+
+
             <div class="custom-file">
                 <asp:FileUpload ID="FileUpload1" runat="server" CssClass="custom-file-input" />
-                <label class="custom-file-label" for="customFile">Seleccionar Archivo</label>
+                <asp:Label ID="LabelArchivoNombre" runat="server" Text="Label"></asp:Label>
+                <label class="custom-file-label" for="FileUpload1">Seleccionar Archivo</label>
             </div>
             <br />
             <br />
@@ -45,7 +66,7 @@
 
             <div id="PanelNotificacion" class="ocultar">
                 <div class="alert alert-success" role="alert">
-                   Carga exitosa
+                    Carga exitosa
                 </div>
             </div>
         </div>

@@ -25,6 +25,8 @@ namespace AVM.Controles.Usuario
             if (objLoggerinf != null && objLoggerinf.alu_Rol == 1)
             {
                 carpetaCarnet = Server.MapPath("~/Archivos/Carnet/");//carpeta de archivos   
+
+            
             }
             else
             {
@@ -76,6 +78,10 @@ namespace AVM.Controles.Usuario
 
             }
 
+        }
+
+        protected void FileUpload1_Unload(object sender, EventArgs e)
+        {
         }
     }
 }

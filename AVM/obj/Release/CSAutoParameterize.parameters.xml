@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Excel03ConString-Web.config Connection String" description="Excel03ConString Connection String used in web.config by the application to access the database." defaultValue="Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0};Extended Properties='Excel 8.0;HDR={1}'" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\octav\\Desktop\\AVM\\AVM\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Excel03ConString']/@connectionString" />
+  </parameter>
+  <parameter name="Excel07ConString-Web.config Connection String" description="Excel07ConString Connection String used in web.config by the application to access the database." defaultValue="Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties='Excel 8.0;HDR={1}'" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\octav\\Desktop\\AVM\\AVM\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Excel07ConString']/@connectionString" />
+  </parameter>
+  <parameter name="Hospi-Web.config Connection String" description="Hospi Connection String used in web.config by the application to access the database." defaultValue="Data Source=WIN-PDRLEL0KGFF\SQLAVM2; Initial Catalog=A_Hospital;User ID=SA;Password=hola12345#; Connection Lifetime=15; Connection Timeout=30; Max Pool Size= 50; Min Pool Size=0; Pooling=true;  " tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\octav\\Desktop\\AVM\\AVM\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Hospi']/@connectionString" />
+  </parameter>
+  <parameter name="Hospital-Web.config Connection String" description="Hospital Connection String used in web.config by the application to access the database." defaultValue="Data Source=DESKTOP-1D89IG9; Initial Catalog=A_Hospital;User ID=SA;Password=4563;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\octav\\Desktop\\AVM\\AVM\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Hospital']/@connectionString" />
+  </parameter>
+</parameters>

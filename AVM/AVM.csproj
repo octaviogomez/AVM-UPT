@@ -3129,6 +3129,8 @@
     <Content Include="Iconos\icon\webp\zoom-out.webp" />
     <Content Include="Masters\Administrador.Master" />
     <Content Include="Archivos\Manuales\alumno.pdf" />
+    <None Include="Properties\PublishProfiles\avmupt - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\avmupt - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Paginas\Admin\Default.aspx" />
     <Content Include="Paginas\Admin\Reportes.aspx" />

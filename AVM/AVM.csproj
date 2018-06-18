@@ -131,6 +131,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Archivos\Carnet\" />
     <Folder Include="Archivos\Examen\" />
+    <Folder Include="Controles\Admin\" />
     <Folder Include="Multimedia\" />
   </ItemGroup>
   <ItemGroup>

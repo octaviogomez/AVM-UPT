@@ -12,7 +12,7 @@
         <div class="table-responsive">
             <table class="table table-bordered  table-striped table-hover">
                 <tr>
-                    <th style="white-space:pre-line">Pregunta</th>
+                    <th class="w50">Pregunta</th>
                     <th>Respuesta</th>
                 </tr>
                 <%-- P1 P --%>

@@ -1,7 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SubirCarnet.ascx.cs" Inherits="AVM.Controles.Usuario.SubirCarnet" %>
 <div class="container colorBlanco">
-
-
     <div class="card">
         <div class="card-header">
              <h5 class="card-title">Carnet</h5>
@@ -26,19 +24,10 @@
                        </ul>
                     </div>
                 </div>
-            </div
-            <br />
-
-
-
-
-
-
-            <div class="custom-file">
-                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="custom-file-input" />
-                <asp:Label ID="LabelArchivoNombre" runat="server" Text="Label"></asp:Label>
-                <label class="custom-file-label" for="FileUpload1">Seleccionar Archivo</label>
             </div>
+            <br />
+            <br />
+                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="" />
             <br />
             <br />
             <br />
@@ -47,12 +36,11 @@
             <div class="row">
                 <div class="col"></div>
                 <div class="col">
-                    <asp:Button ID="btnUpload" runat="server" Text="Subir" CssClass="btn btn-success btn-lg btn-block" OnClick="btnUpload_Click" />
+                    <asp:Button ID="btnUpload" runat="server" Text="Subir" CssClass="btn btn-success btn-lg btn-block" OnClick="btnUpload_Click" disabled="disabled" />
                 </div>
                 <div class="col"></div>
             </div>
-            <br />
-            <br />
+         
             <div id="PanelAviso" class="ocultar">
 
                 <div class="alert alert-warning" role="alert">
@@ -71,5 +59,27 @@
             </div>
         </div>
     </div>
-
 </div>
+<script>
+    (function () {
+
+
+
+        $("#ContentPlaceHolder1_SubirCarnet_FileUpload1").change(function () {
+            var fileExtension = ['pdf'];//  var fileExtension = ['jpeg', 'jpg', 'png', 'gif', 'bmp'];
+
+            if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+                $('#PanelAviso').removeClass('ocultar').addClass('mostrar');
+                $('#ContentPlaceHolder1_SubirCarnet_btnUpload').prop("disabled", true); 
+            } else {
+                $('#PanelAviso').removeClass('mostrar').addClass('ocultar');
+                $('#ContentPlaceHolder1_SubirCarnet_btnUpload').prop("disabled", false); 
+            }
+       
+           
+        });
+
+
+     
+    })();
+</script>

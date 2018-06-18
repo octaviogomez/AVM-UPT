@@ -50,38 +50,32 @@ namespace AVM.Controles.Usuario
         }
         public void cargarArchivo()
         {
-
-           
+    
             try
             {
                 string extencion = Path.GetExtension(FileUpload1.PostedFile.FileName);
                 switch (extencion.ToLower())
                 {
                     case ".pdf": break;
-
                     default:
                         Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelAviso').removeClass('ocultar').addClass('mostrar'); </script>");
                         return;
                 }
                 string archivo = Path.GetFileName(FileUpload1.PostedFile.FileName);
                 FileUpload1.PostedFile.SaveAs(carpetaCarnet + this.objLoggerinf.alu_NumControl + extencion);
+                 
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script >   $('#PanelNotificacion').removeClass('ocultar').addClass('mostrar'); </script>");
+
             }
             catch (Exception e)
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelAviso').removeClass('ocultar').addClass('mostrar'); </script>");
 
             }
-            finally
-            {
-                Response.Redirect(Request.RawUrl);
-               // Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelNotificacion').removeClass('ocultar').addClass('mostrar'); </script>");
-
-            }
+        
 
         }
 
-        protected void FileUpload1_Unload(object sender, EventArgs e)
-        {
-        }
+      
     }
 }

@@ -50,7 +50,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../../../Paginas/Especialista/Default.aspx">Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../../../Paginas/Especialista/Default.aspx"><span class="oi oi-home"></span>  Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="../../../Paginas/Especialista/AgendaCitas.aspx">Agenda</a>
@@ -58,18 +58,27 @@
                     <li class="nav-item">
                         <a class="nav-link " href="../../../Paginas/Especialista/CitaRapida.aspx">Cita Rápida</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="../../../Paginas/Especialista/HistorialClinico.aspx">Historial Clínico</a>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Historiales
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../../../Paginas/Especialista/HistorialClinico.aspx">Clínico</a>
+                            <a class="dropdown-item" href="../../../Paginas/Especialista/HistorialCitas.aspx">Citas</a>               
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../../Paginas/Especialista/HistorialCitas.aspx">Historial de Citas</a>
+
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownnUsuario" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuarios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            
+                            <a class="dropdown-item" href="../../../Paginas/Especialista/InfoUsuario.aspx">Información </a>
+                            <a class="dropdown-item" href="../../../Paginas/Especialista/AdminAlumnos.aspx">Administración </a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../../Paginas/Especialista/InfoUsuario.aspx">Información Usuario</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../../Paginas/Especialista/AdminAlumnos.aspx">Configirar Usuario</a>
-                    </li>
+                  
+                   
                     <li class="nav-item">
                         <a class="nav-link" href="../../../Paginas/Especialista/Archivos.aspx">Archivos</a>
                     </li>

@@ -17,6 +17,10 @@
                             <br />
                             <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" OnClick="ButtonBuscar_Click" />
                         </div>
+                        <div class="col-4">
+                            <label for="buscar">Filtrado:</label>
+                             <input id="buscar" type="text" class="form-control" placeholder="Escriba algo para filtrar" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -37,9 +41,7 @@
 
                             <asp:BoundField Visible="false" DataField="alu_ID" HeaderText="alu_ID" />
                             <asp:BoundField Visible="true" DataField="alu_NumControl" HeaderText="Crednecial" ItemStyle-Font-Bold="true" />
-                            <asp:BoundField Visible="true" DataField="alu_Nombre" HeaderText="Nombre" />
-                            <asp:BoundField Visible="true" DataField="alu_ApePaterno" HeaderText="Paterno" />
-                            <asp:BoundField Visible="true" DataField="alu_ApeMaterno" HeaderText="Materno" />
+                            <asp:BoundField Visible="true" DataField="Nombre" HeaderText="Nombre" />
                             <asp:BoundField Visible="true" DataField="alu_Sexo" HeaderText="Sexo" />
                             <asp:BoundField Visible="true" DataField="alu_Password" HeaderText="Clave" />
                             <asp:BoundField Visible="true" DataField="FechaNacimiento" HeaderText="FechaNacimiento" />
@@ -57,7 +59,7 @@
                             </asp:TemplateField>
 
 
-                            <asp:TemplateField ShowHeader="False" HeaderText="Modifcar">
+                            <asp:TemplateField ShowHeader="False" HeaderText="Modifcar" Visible="false">
                                 <ItemTemplate>
                                     <asp:LinkButton ID="LinkButtonModificacion" runat="server" CommandName="Modifcar" CssClass="form-control btn btn-outline-warning" ToolTip="Modificación del usuario">
                                      <span class="oi oi-pencil"></span>
@@ -103,3 +105,36 @@
         </div>
     </div>
 </div>
+
+<script>
+    (function () {
+        document.querySelector("#buscar").onkeyup = function () {
+            $TableFilter("#ContentPlaceHolder1_contAdminAlumnos_GridViewListado", this.value);
+           //this.vale es igual al valor ingresado
+        }
+
+        $TableFilter = function (id, value) {
+          
+            var rows = document.querySelectorAll(id + ' tbody tr');
+         
+            for (var i = 0; i < rows.length; i++) {
+                var showRow = false;
+
+                var row = rows[i];
+               
+                row.style.display = 'none';
+
+                for (var x = 0; x < row.childElementCount; x++) {
+                    if (row.children[x].textContent.toLowerCase().indexOf(value.toLowerCase().trim()) > -1) {
+                        showRow = true;
+                        break;
+                    }
+                }
+
+                if (showRow) {
+                    row.style.display = null;
+                }
+            }
+        }
+    })();
+</script>

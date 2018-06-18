@@ -41,6 +41,7 @@
 
      <div class="form-group col-md-3">
      <br />
-         <asp:Button ID="Guardar" runat="server" Text="Guardar" CssClass="btn btn-success" OnClick="Guardar_Click" />
+         
+         <asp:Button ID="Guardar" runat="server" Text="Guardar" CssClass="btn btn-success btn-lg btn-block " OnClick="Guardar_Click" />
     </div>
 </div>

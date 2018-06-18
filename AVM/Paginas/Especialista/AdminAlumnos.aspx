@@ -13,8 +13,31 @@
         <div class="card">
             <h5 class="card-header">Administrar usuarios</h5>
             <div class="card-body">
-                <h5 class="card-title">Instrucciones</h5>
-                <p class="card-text">Para eliminar una cita solo de clic en baja.</p>
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span class="oi oi-info"></span>Información
+                        </a>
+                    </h5>
+                </div>
+                <div class="Row">
+                    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+
+                                <li>Para visualizar un <strong>usuario</strong> identifiquelo, y despues de click en       <span class="oi oi-person"></span></li>
+                                <li>Para eliminar un <strong>usuario</strong> identifiquel, y despues de click en    <span class="oi oi-trash"></span></li>
+                            </ul>
+                            <br />
+                            <ol>
+
+                                <li>Para agregar usuarios es importante llenar correctamente los datos.</li>
+                                <li>Al finalizar debera dar en guardar y verificar el registro.</li>
+                            </ol>
+                            <br />
+                        </div>
+                    </div>
+                </div>
                 <br />
                 <div class="card">
                     <div class="card-body">
@@ -27,13 +50,13 @@
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                    <uc1:contAdminAlumnos runat="server" ID="contAdminAlumnos" />
+                                <uc1:contAdminAlumnos runat="server" ID="contAdminAlumnos" />
                             </div>
                             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                <uc1:ContAltaAlumno runat="server" id="ContAltaAlumno" />
+                                <uc1:ContAltaAlumno runat="server" ID="ContAltaAlumno" />
 
                             </div>
-                        
+
                         </div>
 
                     </div>
@@ -43,19 +66,6 @@
             </div>
         </div>
     </div>
-    <br />
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 </asp:Content>

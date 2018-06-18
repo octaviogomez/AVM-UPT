@@ -48,7 +48,10 @@
                                     <div class="card-body">
                                         <h4 class="card-title">Inicio de Sesión</h4>
                                         <div class="form-group">
-                                            <label for="TextBoxNumeroDeControl"><span class="oi oi-person" />Matrícula</label>
+                                            <label for="TextBoxNumDeControl"
+                                                ><span class="oi oi-person" />Matrícula
+
+                                            </label>
                                             <asp:TextBox PlaceHolder="Escriba su matrícula" ID="TextBoxNumeroDeControl" runat="server" required="Ingrese su matrícula" CssClass="form-control input-lg" value="" pattern="[0-9]{1,7}" title="Solo números. Tamaño :7 digitos" autofocus=""></asp:TextBox>
                                         </div>
                                         <div class="form-group">

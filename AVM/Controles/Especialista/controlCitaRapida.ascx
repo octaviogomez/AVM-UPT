@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-md-2 mb-2">
                     <br />
-                    <asp:Button ID="ButtonBUscarID" runat="server" Text="Buscar" CssClass="btn btn-info" OnClick="ButtonBUscarID_Click" />
+                    <asp:Button ID="ButtonBUscarID" runat="server" Text="Buscar" CssClass="btn btn-info btn-lg  " OnClick="ButtonBUscarID_Click" />
                 </div>
                 <div class="col-md-5 mb-5">
                     <label for="TipoUsuario">5. Es para un familiar la cita</label>

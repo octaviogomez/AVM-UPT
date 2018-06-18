@@ -12,7 +12,7 @@
         <div class="table-responsive">
             <table class="table table-bordered  table-striped table-hover">
                 <tr>
-                    <th>Pregunta</th>
+                    <th class="w60">Pregunta</th>
                     <th>Respuesta(S)</th>
                 </tr>
                 <%-- P1 D --%>
@@ -21,7 +21,7 @@
                         <h4>1.-Última vez que acudió al dentista</h4>
                     </td>
                     <td>
-                        <asp:TextBox ID="d1" runat="server" ReadOnly="True" Font-Size="Medium"></asp:TextBox></td>
+                        <asp:TextBox ID="d1" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <%-- P2 D --%>
                 <tr>
@@ -30,7 +30,7 @@
 
                     </td>
                     <td>
-                        <asp:TextBox ID="d2" TextMode="MultiLine" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="materialize-textarea"></asp:TextBox>
+                        <asp:TextBox ID="d2" TextMode="MultiLine" runat="server" ReadOnly="True" Font-Size="Medium"  CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <%-- P3 D --%>
@@ -39,7 +39,7 @@
                         <h4>3.-¿Cómo calificó su boca?</h4>
                     </td>
                     <td>
-                        <asp:TextBox ID="d3" runat="server" ReadOnly="True" Font-Size="Medium"></asp:TextBox>
+                        <asp:TextBox ID="d3" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <%-- P4 D --%>
@@ -48,7 +48,7 @@
                         <h4>4.-¿Cuantas veces al día cepilla sus dientes?</h4>
                     </td>
                     <td>
-                        <asp:TextBox ID="d4" runat="server" ReadOnly="True" Font-Size="Medium"></asp:TextBox>
+                        <asp:TextBox ID="d4" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
 
                     </td>
 
@@ -59,7 +59,7 @@
                         <h4>5.-¿Le truena la mandíbula cuando abre mucho la boca?</h4>
                     </td>
                     <td>
-                        <asp:TextBox ID="d5" runat="server" ReadOnly="True" Font-Size="Medium"></asp:TextBox>
+                        <asp:TextBox ID="d5" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
                     </td>
 
                 </tr>
@@ -69,7 +69,7 @@
                         <h4>6.-¿Le sangran las encias cuando se cepilla los dientes?</h4>
                     </td>
                     <td>
-                        <asp:TextBox ID="d6" runat="server" ReadOnly="True" Font-Size="Medium"></asp:TextBox>
+                        <asp:TextBox ID="d6" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <%-- P7 D --%>
@@ -78,7 +78,7 @@
                         <h4>7.-¿Tiene dificultad para abrir la boca en algunas ocasiones?</h4>
                     </td>
                     <td>
-                        <asp:TextBox ID="d7" runat="server" ReadOnly="True" Font-Size="Medium"></asp:TextBox>
+                        <asp:TextBox ID="d7" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
                     </td>
 
                 </tr>
@@ -88,7 +88,7 @@
                         <h4>8.-¿Se ha quedado alguna vez con la boca abierta y ha tenido incapacidad para cerrarla?</h4>
                     </td>
                     <td>
-                        <asp:TextBox ID="d8" runat="server" ReadOnly="True" Font-Size="Medium"></asp:TextBox>
+                        <asp:TextBox ID="d8" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
                     </td>
 
                 </tr>
@@ -98,7 +98,7 @@
                         <h4>9.-¿Has tenido perforaciones en la boca (piercings)?</h4>
                     </td>
                     <td>
-                        <asp:TextBox ID="d9" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="materialize-textarea"></asp:TextBox>
+                        <asp:TextBox ID="d9" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
                     </td>
 
                 </tr>
@@ -109,7 +109,7 @@
 
                     </td>
                     <td>
-                        <asp:TextBox ID="d10" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="materialize-textarea"></asp:TextBox>
+                        <asp:TextBox ID="d10" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
                     </td>
 
                 </tr>
@@ -120,7 +120,7 @@
 
                     </td>
                     <td>
-                        <asp:TextBox ID="d11" runat="server" ReadOnly="True" Font-Size="Medium"></asp:TextBox>
+                        <asp:TextBox ID="d11" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
 
                     </td>
 

@@ -9,9 +9,9 @@
             <div class="col-12 col-md-4"></div>
             <div class="col-12 col-md-4"></div>
             <div class="col-12 col-md-4">
-                <asp:HyperLink ID="HyperLinkMedico" runat="server" CssClass="btn btn-outline-info btn-lg btn-lock"> 
+                <asp:LinkButton ID="HyperLinkMedico" runat="server" CssClass="btn btn-outline-info btn-lg btn-lock" OnClick="HyperLinkMedico_Click"> 
                 <span class="oi oi-print"></span> Imprimir
-                </asp:HyperLink>
+                </asp:LinkButton>
             </div>
         </div>
 

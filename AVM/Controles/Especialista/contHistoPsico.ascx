@@ -2,17 +2,23 @@
 <div class="container">
     <div class="card">
         <br />
-        <div class="center-align">
-            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-info"> 
-                <span class="oi oi-print"></span> Imprimir Historial-Psicológico
-            </asp:HyperLink>
+
+        <div class="row">
+            <div class="col-12 col-md-4"></div>
+            <div class="col-12 col-md-4"></div>
+            <div class="col-12 col-md-4">
+                <asp:HyperLink ID="HyperLinkPsico" runat="server" CssClass="btn btn-outline-info btn-lg btn-lock"> 
+                <span class="oi oi-print"></span> Imprimir
+                </asp:HyperLink>
+            </div>
         </div>
+
         <br />
         <!-- Table -->
         <div class="table-responsive">
             <table class="table table-bordered  table-striped table-hover">
                 <tr>
-                    <th class="w50">Pregunta</th>
+                    <th style="width:60%">Pregunta</th>
                     <th>Respuesta</th>
                 </tr>
                 <%-- P1 P --%>

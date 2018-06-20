@@ -12,7 +12,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container colorBlanco">
         <div class="card">
-            <h5 class="card-header">Historial del usuario</h5>
+            <h5 class="card-header">Historial Clínico</h5>
             <br />
 
             <div class="card-header" id="headingOne">
@@ -22,7 +22,7 @@
                     </a>
                 </h5>
             </div>
-            <div class="Row">
+            <div class="row">
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <ol>
@@ -38,28 +38,21 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-8 col-md-4">
                             <label for="TextBoxidUsuario">Usuario:</label>
                             <asp:TextBox ID="TextBoxidUsuario" runat="server" CssClass="form-control" TextMode="Number" required=""></asp:TextBox>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-4  col-md-4">
                             <br />
                             <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" OnClick="ButtonBuscar_Click" />
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
             <div class="card-body">
-                <h5 class="card-title">Instrucciones</h5>
-                <p class="card-text"></p>
-
-
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-md-3">
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Médico</a>
                             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Dental</a>
@@ -67,9 +60,10 @@
 
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-12 col-md-9">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                
                                 <uc1:contHistoMedico runat="server" ID="contHistoMedico" />
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -82,8 +76,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>

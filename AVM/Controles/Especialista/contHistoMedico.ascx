@@ -1,23 +1,29 @@
-﻿w<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="contHistoMedico.ascx.cs" Inherits="AVM.Controles.Especialista.contHistoMedico" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="contHistoMedico.ascx.cs" Inherits="AVM.Controles.Especialista.contHistoMedico" %>
 
 <div class="container">
     <div class="card">
         <br />
-        
-        <div class="align-items-center">
-            <asp:HyperLink ID="HyperLink1" runat="server"  CssClass="btn btn-info"> 
-                <span class="oi oi-print"></span> Imprimir Historial-Médico
-            </asp:HyperLink>
+
+
+        <div class="row">
+            <div class="col-12 col-md-4"></div>
+            <div class="col-12 col-md-4"></div>
+            <div class="col-12 col-md-4">
+                <asp:HyperLink ID="HyperLinkMedico" runat="server" CssClass="btn btn-outline-info btn-lg btn-lock"> 
+                <span class="oi oi-print"></span> Imprimir
+                </asp:HyperLink>
+            </div>
         </div>
-     
+
+
         <br />
         <div class="table-responsive">
             <table class="table table-bordered  table-striped table-hover">
                 <tr>
-                    <th class="w60">Pregunta</th>
-                    <th>Respuesta(S)</th>
+                    <th  style="width:60%">Pregunta</th>
+                    <th  >Respuesta(S)</th>
                 </tr>
-                <%-- P1 D --%>
+           
                 <tr>
                     <td>
                         <h4>1.-Alimentación diaria </h4>
@@ -177,7 +183,7 @@
                         <h4>23.-Enfermedades que padecieron los abuelos</h4>
                     </td>
                     <td>
-                        <asp:TextBox ID="m23" TextMode="MultiLine" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control" ></asp:TextBox></td>
+                        <asp:TextBox ID="m23" TextMode="MultiLine" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>

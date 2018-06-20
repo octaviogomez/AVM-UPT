@@ -5,13 +5,133 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using Core.Model;
+using Core.Presenter;
+using Core.View;
+using System.Data;
+
 namespace AVM.Controles.Especialista
 {
-    public partial class contHistoPsico : System.Web.UI.UserControl
+    public partial class contHistoPsico : System.Web.UI.UserControl,ICuestionario
     {
+        CEspecialista usuariologeado;//Objeto donde se guarda los datos de sesion del especialista
+        CAlumno objAlumno;
+
+
+        WCuestionario WmiCuestionario;
+
         protected void Page_Load(object sender, EventArgs e)
+        {
+            usuariologeado = new CEspecialista();
+            usuariologeado = (CEspecialista)Session["UsuarioLogeadoEspecialista"];  //Objeto donde esta los datos de sesion del especialista
+
+            if (usuariologeado != null)
+            {
+                WmiCuestionario = new WCuestionario(this);
+
+
+                try
+                {
+                    string valor = (Request.QueryString["id"].ToString() != null) ? Request.QueryString["id"].ToString() : "";
+                    objAlumno = new CAlumno();
+                    objAlumno.alu_NumControl = valor;
+                    WmiCuestionario.ListarUsuarioHistorialClinico(6, objAlumno);
+                }
+                catch (Exception)
+                {
+
+
+                }
+
+
+            }
+            else
+            {
+                Response.Redirect("/Sesion.aspx", true);
+            }
+        }
+
+        #region ICuestionario
+
+        public DataSet ListadoCuestionario
+        {
+            set
+            {
+                if (value != null)
+                {
+                    try
+                    {
+
+                        p1.Text = value.Tables[0].Rows[0][0].ToString();
+                        p2.Text = value.Tables[0].Rows[0][1].ToString();
+                        p3.Text = value.Tables[0].Rows[0][2].ToString();
+                        p4.Text = value.Tables[0].Rows[0][3].ToString();
+                        p5.Text = value.Tables[0].Rows[0][4].ToString();
+                        p6.Text = value.Tables[0].Rows[0][5].ToString();
+                        p7.Text = value.Tables[0].Rows[0][6].ToString();
+                        p8.Text = value.Tables[0].Rows[0][7].ToString();
+                        p9.Text = value.Tables[0].Rows[0][8].ToString();
+                        p10.Text = value.Tables[0].Rows[0][9].ToString();
+                        p11.Text = value.Tables[0].Rows[0][10].ToString();
+                        p12.Text = value.Tables[0].Rows[0][11].ToString();
+                        p13.Text = value.Tables[0].Rows[0][12].ToString();
+                        p14.Text = value.Tables[0].Rows[0][13].ToString();
+                        p15.Text = value.Tables[0].Rows[0][14].ToString();
+                        p16.Text = value.Tables[0].Rows[0][15].ToString();
+                        p17.Text = value.Tables[0].Rows[0][16].ToString();
+                        p18.Text = value.Tables[0].Rows[0][17].ToString();
+                        p19.Text = value.Tables[0].Rows[0][18].ToString();
+
+                    }
+                    catch (Exception e)
+                    {
+                    }
+                }
+            }
+        }
+
+        public List<CCuestionario> LlenarComboSangre
+        {
+            get
+            {
+                return null;
+            }
+
+            set
+            {
+
+            }
+        }
+
+        public CCuestionario NewCuestionarioDental
+        {
+            get
+            {
+                return null;
+            }
+        }
+
+        public CCuestionario NewCuestionarioMedico
+        {
+            get
+            {
+                return null;
+            }
+        }
+
+        public CCuestionario NewCuestionarioPsicologico
+        {
+            get
+            {
+                return null;
+            }
+        }
+
+        public void Mensaje(string Mensaje, int tipo)
         {
 
         }
+        #endregion 
+
     }
 }

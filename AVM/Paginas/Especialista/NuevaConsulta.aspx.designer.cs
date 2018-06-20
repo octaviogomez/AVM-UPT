@@ -11,5 +11,23 @@ namespace AVM.Paginas.Especialista {
     
     
     public partial class NuevaConsulta {
+        
+        /// <summary>
+        /// PanelConsultaMedica control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelConsultaMedica;
+        
+        /// <summary>
+        /// contCitaMedica control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AVM.Controles.Especialista.contCitaMedica contCitaMedica;
     }
 }

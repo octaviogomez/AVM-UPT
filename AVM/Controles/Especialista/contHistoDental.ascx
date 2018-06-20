@@ -12,7 +12,7 @@
                 </asp:HyperLink>
             </div>
         </div>
-        </br>
+        <br/>
         <!-- Table -->
         <div class="table-responsive">
             <table class="table table-bordered  table-striped table-hover">

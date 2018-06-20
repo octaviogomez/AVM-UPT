@@ -14,9 +14,26 @@
         <div class="card">
             <h5 class="card-header">Historial del usuario</h5>
             <br />
-            <ul>
-                <li>notas</li>
-            </ul>
+
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span class="oi oi-info"></span>Información
+                    </a>
+                </h5>
+            </div>
+            <div class="Row">
+                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <ol>
+                            <li>Para eliminar una <strong>Cita</strong> identifiquela, y despues de click en    <span class="oi oi-trash"></span></li>
+                            <li>Para realizar una <strong>Cita</strong> identifiquela, y despues de click en      <span class="oi oi-circle-check"></span></li>
+                        </ol>
+                        <br />
+                    </div>
+                </div>
+            </div>
+
 
             <div class="card">
                 <div class="card-body">
@@ -56,10 +73,10 @@
                                 <uc1:contHistoMedico runat="server" ID="contHistoMedico" />
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                <uc1:contHistoDental runat="server" id="contHistoDental" />
+                                <uc1:contHistoDental runat="server" ID="contHistoDental" />
                             </div>
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                <uc1:contHistoPsico runat="server" id="contHistoPsico" />
+                                <uc1:contHistoPsico runat="server" ID="contHistoPsico" />
                             </div>
 
                         </div>

@@ -204,12 +204,12 @@ namespace Core.Model
         #endregion
 
         //Metodo de evalua por opcion(opcion) que tipo de consulta hacia el cuestionario se desea seleccionar
-        public bool listarAlumnoCuestionario(ref DataSet objDatos, string id,int opcion)
+        public bool listarAlumnoCuestionario(ref DataSet objDatos, CAlumno obj,int opcion)
         {
             bool ExisteDatos = false;
             List<SqlParameter> lsParametros = new List<SqlParameter>();
             lsParametros.Add(new SqlParameter("@Op", SqlDbType.Int) { Value = opcion});
-            lsParametros.Add(new SqlParameter("@fk_alumno", SqlDbType.NVarChar,40) { Value = id });
+            lsParametros.Add(new SqlParameter("@fk_alumno", SqlDbType.NVarChar,40) { Value = obj.alu_NumControl });
             objDatos = objManagerBD.GetData("MiCuestionario", lsParametros.ToArray());
             if (objDatos.Tables.Count > 0)
                 ExisteDatos = true;

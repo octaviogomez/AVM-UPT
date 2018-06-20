@@ -34,16 +34,17 @@ namespace Core.Presenter
         }
         public void ReguistrarCuestionario(CCuestionario objCuestionario,int OpcionCuestionario)//Objeto con datos de cuestionario , opcion que indica que metodo de cuestionario se seleccionara 
         {
+            CCuestionario objAux = new CCuestionario();
             bool BolRegistro = false;
             if (ExisteConexion())
             {
                 switch (OpcionCuestionario)
                 {
-                    case 1: BolRegistro = objCuestionario.ReguistroDental(objCuestionario);  break;
-                    case 2: BolRegistro = objCuestionario.ReguistroMedico(objCuestionario); break;
-                    case 3: BolRegistro = objCuestionario.ReguistroPsicologico(objCuestionario); break;
-                    case 4: BolRegistro = objCuestionario.AceptarTerminos(objCuestionario); break;
-                    case 5: BolRegistro = objCuestionario.AceptarArchivo(objCuestionario); break;
+                    case 1: BolRegistro = objAux.ReguistroDental(objCuestionario);  break;
+                    case 2: BolRegistro = objAux.ReguistroMedico(objCuestionario); break;
+                    case 3: BolRegistro = objAux.ReguistroPsicologico(objCuestionario); break;
+                    case 4: BolRegistro = objAux.AceptarTerminos(objCuestionario); break;
+                    case 5: BolRegistro = objAux.AceptarArchivo(objCuestionario); break;
                     default: BolRegistro = false; break;
                 }
                 if (BolRegistro == true) {
@@ -51,39 +52,11 @@ namespace Core.Presenter
                 }
                 else {
                     ViewCuestionario.Mensaje(" no reguistrado", 1);
-                } 
-            }
-        }
-        public void ListarCuestionarioUsuario(int opcion, string id)
-        {
-            //opciones=tipo de cuestionario
-            //id del alumno
-            bool ExistenDatos = false;
-            DataSet dtsDatos = new DataSet();
-            CCuestionario miCuestionario = new CCuestionario();
-            if (ExisteConexion())
-            {
-                ExistenDatos =objCuestionario.listarAlumnoCuestionario(ref dtsDatos,id,opcion); 
-                
-                if (ExistenDatos == true)
-                {
-                    switch (opcion)
-                    {
-                        case 4: ViewCuestionario.ListadoCuestionarioDental = dtsDatos;  break;
-                        case 5: ViewCuestionario.ListadoCuestionarioMedico = dtsDatos; break;
-                        case 6: ViewCuestionario.ListadoCuestionarioPsicologico = dtsDatos; break;
-                        default: ViewCuestionario.Mensaje("No hay reguistros", 2);  break;
-                    }
                 }
-                else
-                    ViewCuestionario.Mensaje("No hay reguistros", 2);
-            }
-            else
-            {
-                ViewCuestionario.Mensaje("No hay conexion en red", 2);
-            }
 
-        }// Este metodo permite obtener el resultado por seccion seleccionada
+                objAux = null;
+            }
+        }    
         public void ListarSangre(int intOpcion)
         {
             bool bolExistenDatos = false;
@@ -114,7 +87,7 @@ namespace Core.Presenter
             // vieGraficas.Mensaje("No hay conexión de Red con el Servidor.", 4);
         }
         //metodos especialista
-        public void ListarUsuarioHistorialClinico(int opcion, string id)//Este metodo nos returna todo el historial clinico
+        public void ListarUsuarioHistorialClinico(int opcion, CAlumno objAalumno)//Este metodo nos returna todo el historial clinico
         {
 
             bool ExistenDatos = false;
@@ -122,7 +95,7 @@ namespace Core.Presenter
             CCuestionario miCuestionario = new CCuestionario();
             if (ExisteConexion())
             {
-                ExistenDatos = objCuestionario.listarAlumnoCuestionario( ref dtsDatos,id,opcion);
+                ExistenDatos = objCuestionario.listarAlumnoCuestionario( ref dtsDatos, objAalumno, opcion);
                 if (ExistenDatos == true)
                 {
                     ViewCuestionario.ListadoCuestionario = dtsDatos;
@@ -149,7 +122,7 @@ namespace Core.Presenter
                 ExistenDatos = objCuestionario.folio(ref dtsDatos, id, opcion);
                 if (ExistenDatos == true)
                 {
-                    ViewCuestionario.ListadoCuestionarioMedico = dtsDatos;
+                    ViewCuestionario.ListadoCuestionario = dtsDatos;
                 }
 
                 else

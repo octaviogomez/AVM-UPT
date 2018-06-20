@@ -30,7 +30,7 @@ namespace AVM.Controles.Especialista
             }
             else
             {
-                Response.Redirect("/Sesion.aspx", true);//
+                Response.Redirect("../../Default.aspx", true);//
             }
 
         }

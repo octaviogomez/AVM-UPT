@@ -13,11 +13,7 @@ namespace Core.View
         void Mensaje(string Mensaje, int tipo);
         CCuestionario NewCuestionarioDental { get;  }
         CCuestionario NewCuestionarioMedico { get; }
-        CCuestionario NewCuestionarioPsicologico{ get; }
-
-        DataSet ListadoCuestionarioDental { set; }
-        DataSet ListadoCuestionarioMedico { set; }
-        DataSet ListadoCuestionarioPsicologico { set; }
+        CCuestionario NewCuestionarioPsicologico{ get; }   
         List<CCuestionario> LlenarComboSangre { get; set; }
         DataSet ListadoCuestionario { set; }
 

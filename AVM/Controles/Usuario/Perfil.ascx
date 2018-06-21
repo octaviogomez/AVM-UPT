@@ -42,7 +42,7 @@
                             <asp:Label ID="LabelNumeroControl" runat="server" Text=""></asp:Label></strong>
                     </li>
                     <li class="list-group-item">
-                        <asp:LinkButton ID="LinkButtonClave" runat="server" CssClass="alert-warning" ToolTip="Cambiar contraseña" data-toggle="modal" data-target="#Contrasena"> <span class="oi oi-transfer"></span></asp:LinkButton>
+                        <asp:LinkButton ID="LinkButtonClave" runat="server"  ToolTip="Cambiar contraseña" data-toggle="modal" data-target="#Contrasena"> <span class="oi oi-transfer"></span></asp:LinkButton>
                         Contraseña: 
                         <asp:Label ID="LabelClave" runat="server" Text=""></asp:Label>
 
@@ -65,13 +65,13 @@
                              <asp:Label ID="LabelCarrera" runat="server" Text=""></asp:Label></strong>
                     </li>
                     <li class="list-group-item">
-                        <asp:LinkButton ID="LinkButtonNoSocial" runat="server" CssClass="alert-warning" ToolTip="Actilizar Número de seguro social" data-toggle="modal" data-target="#NumeroSocial"> <span class="oi oi-reload"></span></asp:LinkButton>
+                        <asp:LinkButton ID="LinkButtonNoSocial" runat="server" ToolTip="Actilizar Número de seguro social" data-toggle="modal" data-target="#NumeroSocial"> <span class="oi oi-reload"></span></asp:LinkButton>
                         Número de seguro social:        
                          <strong>
                              <asp:Label ID="LabelNoSeguro" runat="server" Text=""></asp:Label></strong>
                     </li>
                     <li class="list-group-item">
-                        <asp:LinkButton ID="LinkButtonCrup" runat="server" CssClass="alert-warning" ToolTip="Actilizar CURP" data-toggle="modal" data-target="#Curp"> <span class="oi oi-reload"></span></asp:LinkButton>
+                        <asp:LinkButton ID="LinkButtonCrup" runat="server"  ToolTip="Actilizar CURP" data-toggle="modal" data-target="#Curp"> <span class="oi oi-reload"></span></asp:LinkButton>
                         Curp: 
                       <strong>
                           <asp:Label ID="LabelCurp" runat="server" Text=""></asp:Label></strong>
@@ -91,7 +91,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Nuevo Número de Seguridad Social</h5>
+
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -122,7 +122,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitlecURP">Nuevo número de seguridad social</h5>
+
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

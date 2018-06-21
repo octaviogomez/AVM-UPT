@@ -74,19 +74,13 @@
     <form id="form1" runat="server">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
-
-
-
-
-
-
     </form>
 
 
     <div class=" fondoColor footer">
-        <div class="container">
+        <div class="container ">
             <div class="row align-items-center">
-                <div class="col-sm-8 col-md-2">
+                <div class="col-sm-8 col-md-2 align-self-center">
                     <asp:Image ID="ImageLogoFooter" runat="server" ImageUrl="~/Imagenes/universidad/logoUpt.png" Height="80px" Width="70px" />
                 </div>
                 <div class="col-sm-8 col-md-5">

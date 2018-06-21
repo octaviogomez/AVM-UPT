@@ -268,3 +268,5 @@ C:\Users\Aurelio\Desktop\Man\AVM-UPT\AVM\obj\Debug\AVM.dll
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\AVM\obj\Debug\AVM.pdb
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\AVM\bin\itextsharp.dll
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\AVM\bin\itextsharp.xml
+C:\Users\octav\Desktop\AVM\AVM\bin\itextsharp.dll
+C:\Users\octav\Desktop\AVM\AVM\bin\itextsharp.xml

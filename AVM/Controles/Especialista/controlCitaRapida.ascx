@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-
+            <br />
 
 
             <h3>Datos del especialista</h3>

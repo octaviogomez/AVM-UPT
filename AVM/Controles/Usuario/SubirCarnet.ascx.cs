@@ -26,7 +26,26 @@ namespace AVM.Controles.Usuario
             {
                 carpetaCarnet = Server.MapPath("~/Archivos/Carnet/");//carpeta de archivos   
 
-            
+                //Carga de carnet
+
+                //Para optimzar esto, se puede crear una interfaz llamada archivo la cual se implementaria en las paginas a usar
+                // y al momento de hacer llamando de esta, en la parte de set se establce cual objeto Embedido seria
+
+                try
+                {
+                    string valor = (objLoggerinf.alu_NumControl!=null) ? objLoggerinf.alu_NumControl: "";
+                    string embed = "<object data=\"{0}\" type=\"application/pdf\" width=\"600px\" height=\"500px\">";
+                    embed += "If you are unable to view file, you can download from <a href = \"{0}\">here</a>";
+                    embed += " or download <a target = \"_blank\" href = \"http://get.adobe.com/reader/\">Adobe PDF Reader</a> to view the file.";
+                    embed += "</object>";
+                    PDFCarnet.Text = string.Format(embed, ResolveUrl("~/Archivos/Carnet/" + valor + ".pdf"));
+
+                }
+                catch (Exception)
+                {
+
+
+                }
             }
             else
             {
@@ -62,7 +81,15 @@ namespace AVM.Controles.Usuario
                         return;
                 }
                 string archivo = Path.GetFileName(FileUpload1.PostedFile.FileName);
-                FileUpload1.PostedFile.SaveAs(carpetaCarnet + this.objLoggerinf.alu_NumControl + extencion);
+                try
+                {
+                    FileUpload1.PostedFile.SaveAs(carpetaCarnet + this.objLoggerinf.alu_NumControl + extencion);
+                }
+                catch (Exception)
+                {
+
+                    string A = "";
+                }
                  
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script >   $('#PanelNotificacion').removeClass('ocultar').addClass('mostrar'); </script>");
 

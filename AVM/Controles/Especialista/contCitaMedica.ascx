@@ -37,18 +37,18 @@
                         <label for="Temperatura">Temperatura</label>
                         <asp:TextBox ID="Temperatura" runat="server" CssClass="form-control" placeholder="" pattern="^\d+(?:[\.\,]\d+)?$"></asp:TextBox>
                     </div>
-                     <div class="form-group col-md-3">
+                    <div class="form-group col-md-3">
                         <label for="Peso">Peso (kg)</label>
-                        <asp:TextBox ID="Peso" runat="server" CssClass="form-control"  pattern="\d*\.?\d*" ></asp:TextBox>
+                        <asp:TextBox ID="Peso" runat="server" CssClass="form-control" pattern="\d*\.?\d*"></asp:TextBox>
                     </div>
-                     <div class="form-group col-md-3">
+                    <div class="form-group col-md-3">
                         <label for="RtimoCardiaco">Ritmo Cardiaco</label>
-                        <asp:TextBox ID="RtimoCardiaco" runat="server" CssClass="form-control"  TextMode="Number" ></asp:TextBox>
+                        <asp:TextBox ID="RtimoCardiaco" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
                     </div>
                 </div>
-              
+
                 <div class="form-row">
-                   <div class="form-group col-md-3">
+                    <div class="form-group col-md-3">
                         <label for="Presion">Presión Arterial(mm)</label>
                         <asp:TextBox ID="Presion" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
                     </div>
@@ -58,19 +58,43 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card-body">
                 <h5 class="card-title">Resumen Exploración Física</h5>
-     
+
                 <div class="form-group">
                     <asp:TextBox ID="ResumenExploracion" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
                 </div>
             </div>
-             <div class="card-body">
+            <div class="card-body">
                 <h5 class="card-title">Diagnóstico</h5>
-     
+
                 <div class="form-group">
                     <asp:TextBox ID="autocompleteDiagnostico" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">PlanTratamiento</h5>
+
+                <div class="form-group">
+                    <asp:TextBox ID="PlanTratamiento" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Dias de Reposo</h5>
+                <div class="form-row">
+                    <div class="col-md-3">
+                        <asp:TextBox ID="DiasReposo" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <asp:Button ID="Button1" runat="server" Text="Guardar" CssClass="btn btn-success btn-lg btn-block" />
+                </div>
+                <div class="col-4">
+                    <asp:ImageButton ID="ImageButtonImpresora" runat="server" ImageUrl="~/Imagenes/impresora.jpg" Height="100" Width="100"  CssClass=""/>
                 </div>
             </div>
         </div>
@@ -88,7 +112,7 @@
                     var renglones = {};
 
                     console.log(myArray);
-                  
+
                 }
             });
         });

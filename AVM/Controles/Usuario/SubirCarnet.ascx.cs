@@ -56,7 +56,7 @@ namespace AVM.Controles.Usuario
         protected void btnUpload_Click(object sender, EventArgs e)
         {
 
-            if (FileUpload1.PostedFile.FileName == "")
+            if (FileUpload1.PostedFile.FileName == ""  && FileUpload1.FileBytes.Length<2000000)
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelAviso').removeClass('ocultar').addClass('mostrar'); </script>");
 
@@ -75,7 +75,8 @@ namespace AVM.Controles.Usuario
                 string extencion = Path.GetExtension(FileUpload1.PostedFile.FileName);
                 switch (extencion.ToLower())
                 {
-                    case ".pdf": break;
+                    case ".pdf":
+                        break;
                     default:
                         Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelAviso').removeClass('ocultar').addClass('mostrar'); </script>");
                         return;
@@ -83,6 +84,7 @@ namespace AVM.Controles.Usuario
                 string archivo = Path.GetFileName(FileUpload1.PostedFile.FileName);
                 try
                 {
+                   
                     FileUpload1.PostedFile.SaveAs(carpetaCarnet + this.objLoggerinf.alu_NumControl + extencion);
                 }
                 catch (Exception)

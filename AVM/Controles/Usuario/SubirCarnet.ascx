@@ -63,18 +63,27 @@
 
 
         $("#ContentPlaceHolder1_SubirCarnet_FileUpload1").change(function () {
-            var fileExtension = ['pdf'];//  var fileExtension = ['jpeg', 'jpg', 'png', 'gif', 'bmp'];
+            //limpiamos todo
 
+
+
+            var fileExtension = ['pdf'];//  var fileExtension = ['jpeg', 'jpg', 'png', 'gif', 'bmp'];
             if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
                 $('#PanelAviso').removeClass('ocultar').addClass('mostrar');
                 $('#ContentPlaceHolder1_SubirCarnet_btnUpload').prop("disabled", true);
-            } else {
-                $('#PanelAviso').removeClass('mostrar').addClass('ocultar');
-                $('#ContentPlaceHolder1_SubirCarnet_btnUpload').prop("disabled", false);
+            } else {       
+                var fileSize = this.files[0].size;//obtenemos el valor menos un archivo
+                if (fileSize<2000000) {
+                    $('#PanelAviso').removeClass('mostrar').addClass('ocultar');
+                    $('#ContentPlaceHolder1_SubirCarnet_btnUpload').prop("disabled", false);
+                } else {
+                    $('#PanelAviso').removeClass('ocultar').addClass('mostrar');
+                    $('#ContentPlaceHolder1_SubirCarnet_btnUpload').prop("disabled", true);
+                } 
             }
-
-
         });
+
+
 
 
 

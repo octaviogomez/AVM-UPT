@@ -3160,6 +3160,7 @@
     <Content Include="Paginas\Usuario\Default.aspx" />
     <Content Include="Paginas\Usuario\InfoUsuario.aspx" />
     <Content Include="Paginas\Usuario\SubirArchivo.aspx" />
+    <Content Include="Paginas\WebsMasters.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -3550,6 +3551,13 @@
     </Compile>
     <Compile Include="Paginas\Usuario\SubirArchivo.aspx.designer.cs">
       <DependentUpon>SubirArchivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\WebsMasters.aspx.cs">
+      <DependentUpon>WebsMasters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\WebsMasters.aspx.designer.cs">
+      <DependentUpon>WebsMasters.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

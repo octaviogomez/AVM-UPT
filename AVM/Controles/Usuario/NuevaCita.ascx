@@ -52,7 +52,7 @@
                 <div class="col-md-5 mb-5">
                     <strong>
                         <label for="DropDownListHorarios">3. Fecha</label></strong>
-                    <asp:TextBox ID="TextBoxFecha" runat="server" TextMode="Date" CssClass="form-control" AutoPostBack="true" OnTextChanged="TextBoxFecha_TextChanged1"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxFecha" runat="server" TextMode="Date" CssClass="form-control" AutoPostBack="true" OnTextChanged="TextBoxFecha_TextChanged1" ></asp:TextBox>
                 </div>
                 <div class="col-md-2 mb-2">
                 </div>

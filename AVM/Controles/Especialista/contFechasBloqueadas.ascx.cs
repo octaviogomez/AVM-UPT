@@ -18,8 +18,13 @@ namespace AVM.Controles.Especialista
 
         CFechasBloqueadas ObjFechasBloqueadas;
         WFechasBloqueadas vistaFechasBloqueadas;
+        public GridViewRow FilaSeleccionada
+        {
+            get;
+            private set;
+        }
 
-        GridViewRow FilaSeleccionada;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             objLoggerinf = (CEspecialista)Session["UsuarioLogeadoEspecialista"];
@@ -87,8 +92,8 @@ namespace AVM.Controles.Especialista
         protected void GridView1_OnRowCommand(object sender, GridViewCommandEventArgs e)
         {
             string codigo = "";
-           // FilaSeleccionada = (GridViewRow)(((LinkButton)e.CommandSource).NamingContainer);
-
+            
+            FilaSeleccionada = (GridViewRow)(((LinkButton)e.CommandSource).NamingContainer);
             if (e.CommandName == "Cancelar")
             {
                 codigo = (((Label)FilaSeleccionada.FindControl("LabelId")).Text);
@@ -97,14 +102,9 @@ namespace AVM.Controles.Especialista
             }
             
 
-            //FilaSeleccionada.Dispose();
+            FilaSeleccionada.Dispose();
         }
 
-        protected void ButtonAgregar_Click(object sender, EventArgs e)
-        {
-            vistaFechasBloqueadas.CrearFecha(ObjFechas, 2);
-            Response.Redirect("/BloquearFechas.aspx", true);// no direcciona a la pagina default de la master
-        }
         protected void ButtonEliminarFechaBloqueada_Click(object sender, GridViewCommandEventArgs e,EventArgs ea)
         {
             FilaSeleccionada = (GridViewRow)(((LinkButton)e.CommandSource).NamingContainer);
@@ -120,6 +120,14 @@ namespace AVM.Controles.Especialista
         {
             GridViewFechasBloqueadas.PageIndex = e.NewPageIndex;
             GridViewFechasBloqueadas.DataBind();
+        }
+
+        protected void ButtonEliminarCita_Click(object sender, EventArgs e)
+        {
+            CFechasBloqueadas objAux = new CFechasBloqueadas();
+            objAux.pk_FechaBloqueada = Convert.ToInt32(TextBoxPkReservacion.Text);
+            vistaFechasBloqueadas.CrearFecha(objAux, 3);
+            Response.Redirect(Request.RawUrl);
         }
     }
 }

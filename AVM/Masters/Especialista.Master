@@ -83,7 +83,7 @@
                         <a class="nav-link" href="../../../Paginas/Especialista/Archivos.aspx">Archivos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../../Paginas/Especialista/BloquearFechas.aspx">Bloquear Fecha</a>
+                        <a class="nav-link" href="../../../Paginas/Especialista/BloquearFechas.aspx">Fechas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../../../">Salir</a>

@@ -9,7 +9,7 @@
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>Instrucciones:
+                        <span class="oi oi-info"></span>   Instrucciones:
                     </a>
                 </h5>
             </div>
@@ -19,8 +19,8 @@
                         Para subir el documento tome en cuenta las siguientes recomendaciones.
                        <ul>
                            <li>Debe de ser un documento .pdf</li>
-                           <li>No debe de pesar más de 1 Mb</li>
-                           <li>Por nombre llevara su número de credencial</li>
+                           <li>No debe de pesar más de 1 Mb.</li>
+                           <li>Por nombre llevara su matrícula.</li>
                        </ul>
                     </div>
                 </div>

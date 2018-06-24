@@ -5,12 +5,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container colorBlanco">
-        <div class="card">
-            <h5 class="card-header">Subir archivo</h5>
-            <div class="card-body">
-                <uc1:contSubirArchivo runat="server" ID="contSubirArchivo" />
-            </div>
-        </div>
-    </div>
+
+
+    <uc1:contSubirArchivo runat="server" ID="contSubirArchivo" />
+
+
 </asp:Content>

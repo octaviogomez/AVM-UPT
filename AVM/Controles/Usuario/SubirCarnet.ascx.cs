@@ -33,12 +33,7 @@ namespace AVM.Controles.Usuario
 
                 try
                 {
-                    string valor = (objLoggerinf.alu_NumControl!=null) ? objLoggerinf.alu_NumControl: "";
-                    string embed = "<object data=\"{0}\" type=\"application/pdf\" width=\"600px\" height=\"500px\">";
-                    embed += "If you are unable to view file, you can download from <a href = \"{0}\">here</a>";
-                    embed += " or download <a target = \"_blank\" href = \"http://get.adobe.com/reader/\">Adobe PDF Reader</a> to view the file.";
-                    embed += "</object>";
-                    PDFCarnet.Text = string.Format(embed, ResolveUrl("~/Archivos/Carnet/" + valor + ".pdf"));
+                 
 
                 }
                 catch (Exception)

@@ -23,7 +23,7 @@
                 <%-- P1 D --%>
                 <tr>
                     <td>
-                        <h4>1.-Última vez que acudió al dentista</h4>
+                        <p>1.-Última vez que acudió al dentista</p>
                     </td>
                     <td>
                         <asp:TextBox ID="d1" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
@@ -31,7 +31,7 @@
                 <%-- P2 D --%>
                 <tr>
                     <td>
-                        <h4>2.-Motivo de su última consulta dental</h4>
+                        <p>2.-Motivo de su última consulta dental</p>
 
                     </td>
                     <td>
@@ -41,7 +41,7 @@
                 <%-- P3 D --%>
                 <tr>
                     <td>
-                        <h4>3.-¿Cómo calificó su boca?</h4>
+                        <p>3.-¿Cómo calificó su boca?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="d3" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
@@ -50,7 +50,7 @@
                 <%-- P4 D --%>
                 <tr>
                     <td>
-                        <h4>4.-¿Cuantas veces al día cepilla sus dientes?</h4>
+                        <p>4.-¿Cuantas veces al día cepilla sus dientes?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="d4" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
@@ -61,7 +61,7 @@
                 <%-- P5 D --%>
                 <tr>
                     <td>
-                        <h4>5.-¿Le truena la mandíbula cuando abre mucho la boca?</h4>
+                        <p>5.-¿Le truena la mandíbula cuando abre mucho la boca?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="d5" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
@@ -71,7 +71,7 @@
                 <%-- P6 D --%>
                 <tr>
                     <td>
-                        <h4>6.-¿Le sangran las encias cuando se cepilla los dientes?</h4>
+                        <p>6.-¿Le sangran las encias cuando se cepilla los dientes?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="d6" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
@@ -80,7 +80,7 @@
                 <%-- P7 D --%>
                 <tr>
                     <td>
-                        <h4>7.-¿Tiene dificultad para abrir la boca en algunas ocasiones?</h4>
+                        <p>7.-¿Tiene dificultad para abrir la boca en algunas ocasiones?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="d7" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
@@ -90,7 +90,7 @@
                 <%-- P8 D --%>
                 <tr>
                     <td>
-                        <h4>8.-¿Se ha quedado alguna vez con la boca abierta y ha tenido incapacidad para cerrarla?</h4>
+                        <p>8.-¿Se ha quedado alguna vez con la boca abierta y ha tenido incapacidad para cerrarla?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="d8" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
@@ -100,7 +100,7 @@
                 <%-- P09 D --%>
                 <tr>
                     <td>
-                        <h4>9.-¿Has tenido perforaciones en la boca (piercings)?</h4>
+                        <p>9.-¿Has tenido perforaciones en la boca (piercings)?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="d9" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox>
@@ -110,7 +110,7 @@
                 <%-- P10 D --%>
                 <tr>
                     <td>
-                        <h4>10.-¿Ha presentado mal aliento?</h4>
+                        <p>10.-¿Ha presentado mal aliento?</p>
 
                     </td>
                     <td>
@@ -121,7 +121,7 @@
                 <%-- P11 D --%>
                 <tr>
                     <td>
-                        <h4>11.-¿Tienes el hábito de morderte las uñas, tallarte  o morder objetos?</h4>
+                        <p>11.-¿Tienes el hábito de morderte las uñas, tallarte  o morder objetos?</p>
 
                     </td>
                     <td>

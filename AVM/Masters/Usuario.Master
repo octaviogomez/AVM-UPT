@@ -88,7 +88,7 @@
                 </div>
                 <div class=" col-sm-8 col-md-3">
                     <h4>Manuales</h4>
-                    <a href="../Archivos/Manuales/alumno.pdf"  class="letraBlanca">Alumno</a><br />
+                    <a href="../../Archivos/Manuales/alumno.pdf"  class="letraBlanca">Alumno</a><br />
                 </div>
                 <div class=" col-sm-8 col-md-2">
                     <asp:Image ID="Image1" runat="server" Width="80px" Height="70px" ImageUrl="~/Imagenes/universidad/corazon.png" />

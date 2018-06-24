@@ -1,23 +1,18 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="contAdminAlumnos.ascx.cs" Inherits="AVM.Controles.Especialista.contAdminAlumnos" %>
 
-
-
-     
-            <p class="card-text">Para eliminar una cita solo de clic en baja.</p>
-            <br />
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-4">
-                            <label for="TextBoxidUsuario">Usuario:</label>
+                        <div class="col-12 col-md-4" >
+                            <label for="TextBoxidUsuario">Matrícula:</label>
                             <asp:TextBox ID="TextBoxidBuscar" runat="server" CssClass="form-control" TextMode="Number" ></asp:TextBox>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-12 col-md-4">
                             <br />
                             <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" OnClick="ButtonBuscar_Click" />
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-md-4">
                             <label for="buscar">Filtrado:</label>
                              <input id="buscar" type="text" class="form-control" placeholder="Escriba algo para filtrar" />
                         </div>
@@ -40,10 +35,10 @@
 
 
                             <asp:BoundField Visible="false" DataField="alu_ID" HeaderText="alu_ID" />
-                            <asp:BoundField Visible="true" DataField="alu_NumControl" HeaderText="Crednecial" ItemStyle-Font-Bold="true" />
+                            <asp:BoundField Visible="true" DataField="alu_NumControl" HeaderText="Matrícula" ItemStyle-Font-Bold="true" />
                             <asp:BoundField Visible="true" DataField="Nombre" HeaderText="Nombre" />
                             <asp:BoundField Visible="true" DataField="alu_Sexo" HeaderText="Sexo" />
-                            <asp:BoundField Visible="true" DataField="alu_Password" HeaderText="Clave" />
+                            <asp:BoundField Visible="true" DataField="alu_Password" HeaderText="Contraseña" />
                             <asp:BoundField Visible="true" DataField="FechaNacimiento" HeaderText="FechaNacimiento" />
                             <asp:BoundField Visible="true" DataField="Descripcion" HeaderText="Carrera" />
                             <asp:BoundField Visible="true" DataField="NoSeguro" HeaderText="NoSeguro" />

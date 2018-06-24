@@ -35,7 +35,7 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="Temperatura">Temperatura</label>
-                        <asp:TextBox ID="Temperatura" runat="server" CssClass="form-control" placeholder="" pattern="^\d+(?:[\.\,]\d+)?$"></asp:TextBox>
+                        <asp:TextBox ID="Temperatura" runat="server" CssClass="form-control" placeholder="" pattern="^\d+(?:[\.\,]\d+)?$" ></asp:TextBox>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="Peso">Peso (kg)</label>

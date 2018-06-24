@@ -14,8 +14,7 @@
                 </asp:LinkButton>
             </div>
         </div>
-
-
+    
         <br />
         <div class="table-responsive">
             <table class="table table-bordered  table-striped table-hover">
@@ -26,175 +25,175 @@
            
                 <tr>
                     <td>
-                        <h4>1.-Alimentación diaria </h4>
+                        <p>1.-Alimentación diaria </p>
                     </td>
                     <td>
                         <asp:TextBox ID="m1" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>2.-Veces que realiza ejercicio por semana</h4>
+                        <p>2.-Veces que realiza ejercicio por semana</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m2" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>3.-Tipo de sangre</h4>
+                        <p>3.-Tipo de sangre</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m3" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>4.-Frecuencia de consumo de bebidas alcóholicas</h4>
+                        <p>4.-Frecuencia de consumo de bebidas alcóholicas</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m4" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>5.-Frecuencia de consumo de tabaco</h4>
+                        <p>5.-Frecuencia de consumo de tabaco</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m5" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>6.-Consumo de drogas ilegales</h4>
+                        <p>6.-Consumo de drogas ilegales</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m6" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>7.-Padecimiento de alergias</h4>
+                        <p>7.-Padecimiento de alergias</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m7" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>8.-Enfermedades que padece</h4>
+                        <p>8.-Enfermedades que padece</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m8" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>9.-Frecuencia con que se baña</h4>
+                        <p>9.-Frecuencia con que se baña</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m9" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>10.-Tipo de baño que hay donde vive</h4>
+                        <p>10.-Tipo de baño que hay donde vive</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m10" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>11.-Vive en lugares con enfermedades como el Dengue,Paludismo,etc</h4>
+                        <p>11.-Vive en lugares con enfermedades como el Dengue,Paludismo,etc</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m11" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>12.-Está en tratamientos hormonales</h4>
+                        <p>12.-Está en tratamientos hormonales</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m12" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>13.-Toma anticonceptivos</h4>
+                        <p>13.-Toma anticonceptivos</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m13" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>14.-¿Alguna vez le practicaron cirugía?</h4>
+                        <p>14.-¿Alguna vez le practicaron cirugía?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m14" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>15.-¿Le han practicado una transfusión sanguínea?</h4>
+                        <p>15.-¿Le han practicado una transfusión sanguínea?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m15" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>16.-¿Está en contacto directo con pacientes diagnosticados con VIH o Tuberculosis?</h4>
+                        <p>16.-¿Está en contacto directo con pacientes diagnosticados con VIH o Tuberculosis?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m16" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>17.-Estatura(cm)</h4>
+                        <p>17.-Estatura(cm)</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m17" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>18.-Peso(kg)</h4>
+                        <p>18.-Peso(kg)</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m18" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>19.-Cálculo IMC</h4>
+                        <p>19.-Cálculo IMC</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m19" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>20.-¿Su regla es regular?</h4>
+                        <p>20.-¿Su regla es regular?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m20" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>21.-¿Está embarazada?</h4>
+                        <p>21.-¿Está embarazada?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m21" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>22.-¿Está lactando?</h4>
+                        <p>22.-¿Está lactando?</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m22" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>23.-Enfermedades que padecieron los abuelos</h4>
+                        <p>23.-Enfermedades que padecieron los abuelos</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m23" TextMode="MultiLine" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>24.-Enfermedades que padecieron los padres</h4>
+                        <p>24.-Enfermedades que padecieron los padres</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m24" TextMode="MultiLine" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4>25.-Enfermedades que padecieron los hermanos primos y tíos</h4>
+                        <p>25.-Enfermedades que padecieron los hermanos primos y tíos</p>
                     </td>
                     <td>
                         <asp:TextBox ID="m25" TextMode="MultiLine" runat="server" ReadOnly="True" Font-Size="Medium" CssClass="form-control"></asp:TextBox></td>

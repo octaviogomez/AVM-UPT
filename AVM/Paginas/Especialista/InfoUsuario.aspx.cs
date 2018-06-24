@@ -27,7 +27,7 @@ namespace AVM.Paginas.Especialista
             }
             catch (Exception)
             {
-                PanelAviso.Visible = true;
+               
             }
         }
     }

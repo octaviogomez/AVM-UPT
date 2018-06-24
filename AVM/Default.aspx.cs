@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 
 using Core.Model;
 using Core.Presenter;
 using Core.View;
+using System.Web.UI;
 
 namespace AVM
 {
@@ -38,17 +35,25 @@ namespace AVM
 
         }
 
-         protected void Button1_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
-            if (DropDownListRoles.SelectedValue== "1")
+            if (DropDownListRoles.SelectedValue == "1")
             {
                 WAlumnoVista.ObtenerDatosDeAlumno(1, UsuarioLogeado); //En este metodo hace que el UsuarioLogeado objeto los valores del loggeo   
-                if (objLoggerinf!=null)//Comparamos si el objeto que nos regreso y agregamos(declarado como objLoggerinf ) es nulo si es nulo no entra y si si nos manda a la pagina de inicio de la pagina
+                if (objLoggerinf != null)//Comparamos si el objeto que nos regreso y agregamos(declarado como objLoggerinf ) es nulo si es nulo no entra y si si nos manda a la pagina de inicio de la pagina
                 {
-                   Session.Clear();// limpiamos la sesion
-                   Session.Add("UsuarioLogeado", objLoggerinf);//Creamos la variable de sesion en donde la podremos utlizar cuando nos mande a la master
-                   Response.Redirect("/Paginas/Usuario/Default.aspx", true);// no direcciona a la pagina default de la master
+                    Session.Clear();// limpiamos la sesion
+                    Session.Add("UsuarioLogeado", objLoggerinf);//Creamos la variable de sesion en donde la podremos utlizar cuando nos mande a la master
+                    Response.Redirect("/Paginas/Usuario/Default.aspx", true);// no direcciona a la pagina default de la master
                 }
+                else
+                {
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script>  $('#PanelAviso').removeClass('ocultar').addClass('mostrar');</script>", false);
+
+                }
+
+
+
             }
             if (DropDownListRoles.SelectedValue == "2")
             {
@@ -64,10 +69,14 @@ namespace AVM
                         Response.Redirect("/Paginas/Especialistas/Default.aspx", true);// no direcciona a la pagina default de la master
                     }
 
-                    if (objLoggerinfEs.Rol==2)
+                    if (objLoggerinfEs.Rol == 2)
                     {
                         Session.Add("UsuarioLogeadoEspecialista", objLoggerinfEs);//Creamos la variable de sesion en donde la podremos utlizar cuando nos mande a la master
                         Response.Redirect("/Paginas/Especialista/Default.aspx", true);// no direcciona a la pagina default de la master
+                    }
+                    else {
+
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script>  $('#PanelAviso').removeClass('ocultar').addClass('mostrar');</script>", false);
                     }
                 }
 
@@ -110,12 +119,12 @@ namespace AVM
         {
             get
             {
-                throw new NotImplementedException();
+                return null;
             }
 
             set
             {
-                throw new NotImplementedException();
+              
             }
         }
         public DataSet UsuariosDt { get { return null; } set { } }
@@ -164,7 +173,7 @@ namespace AVM
         public DataSet Empleados {
 
             set
-            { throw new NotImplementedException();
+            { 
             }
         }
 

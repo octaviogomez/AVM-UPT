@@ -100,6 +100,9 @@ namespace AVM.Controles.Especialista
                     {
                     }
                 }
+                else {
+                   
+                }
             }
         }
 

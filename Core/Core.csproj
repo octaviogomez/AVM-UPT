@@ -52,6 +52,7 @@
     <Compile Include="Model\CEspecialista.cs" />
     <Compile Include="Model\CFechasBloqueadas.cs" />
     <Compile Include="Model\CLibro.cs" />
+    <Compile Include="Model\COdontograma.cs" />
     <Compile Include="Model\CReporte.cs" />
     <Compile Include="Model\ManagerBD.cs" />
     <Compile Include="Presenter\WAlumno.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Presenter\WEspecialista.cs" />
     <Compile Include="Presenter\WFechasBloqueadas.cs" />
     <Compile Include="Presenter\WLibro.cs" />
+    <Compile Include="Presenter\WOdontograma.cs" />
     <Compile Include="Presenter\WReporte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\IAlumno.cs" />
@@ -73,6 +75,7 @@
     <Compile Include="View\IFechasBloqueadas.cs" />
     <Compile Include="View\ILibro.cs" />
     <Compile Include="View\IChat.cs" />
+    <Compile Include="View\IOdontograma.cs" />
     <Compile Include="View\IReporte.cs" />
   </ItemGroup>
   <ItemGroup>

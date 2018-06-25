@@ -13,6 +13,51 @@ namespace AVM.Paginas.Especialista {
     public partial class NuevaConsulta {
         
         /// <summary>
+        /// PanelInforMedico control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelInforMedico;
+        
+        /// <summary>
+        /// PanelInfoDental control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelInfoDental;
+        
+        /// <summary>
+        /// PanelInfoPsico control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelInfoPsico;
+        
+        /// <summary>
+        /// HyperLinkConsulta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkConsulta;
+        
+        /// <summary>
+        /// HyperLinkOdontograma control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkOdontograma;
+        
+        /// <summary>
         /// PanelConsultaMedica control.
         /// </summary>
         /// <remarks>
@@ -29,5 +74,59 @@ namespace AVM.Paginas.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AVM.Controles.Especialista.contCitaMedica contCitaMedica;
+        
+        /// <summary>
+        /// PanelConsultaDental control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelConsultaDental;
+        
+        /// <summary>
+        /// ContCitaDental control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AVM.Controles.Especialista.ContCitaDental ContCitaDental;
+        
+        /// <summary>
+        /// PanelConsultaPsico control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelConsultaPsico;
+        
+        /// <summary>
+        /// ContCitaPsicolo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AVM.Controles.Especialista.ContCitaPsicolo ContCitaPsicolo;
+        
+        /// <summary>
+        /// PanelOdontograma control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelOdontograma;
+        
+        /// <summary>
+        /// contOdontograma control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AVM.Controles.Especialista.contOdontograma contOdontograma;
     }
 }

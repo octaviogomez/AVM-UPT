@@ -4,12 +4,18 @@
     <div class="card">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Datos de usuario</h5>
-                <h6 class="card-subtitle mb-2 text-muted">infromación</h6>
+                <h5 class="card-title">Datos del usuario</h5>
+          
                 <div class="row">
-                    <div class="col">Nombre</div>
-                    <div class="col">Matricula</div>
-                    <div class="col">Yipo</div>
+                    <div class="col">
+                        <asp:Label ID="LabelNombre" runat="server" Text="Nombre:"></asp:Label>
+                    </div>
+                    <div class="col">
+                        <asp:Label ID="LabelMatricula" runat="server" Text="Matricula:"></asp:Label>
+                    </div>
+                    <div class="col">
+                        <asp:Label ID="LabelTipo" runat="server" Text="Tipo:"></asp:Label>
+                    </div>
 
                 </div>
             </div>
@@ -18,9 +24,8 @@
 
             <div class="card-body">
                 <h5 class="card-title">Interrogatorio al paciente</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Generar un historial sobre padecimientos</h6>
                 <div class="form-group">
-                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
+                    <asp:TextBox ID="ResumenAntecedente" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
                 </div>
             </div>
 
@@ -35,7 +40,7 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="Temperatura">Temperatura</label>
-                        <asp:TextBox ID="Temperatura" runat="server" CssClass="form-control" placeholder="" pattern="^\d+(?:[\.\,]\d+)?$" ></asp:TextBox>
+                        <asp:TextBox ID="Temperatura" runat="server" CssClass="form-control" placeholder="" pattern="^\d+(?:[\.\,]\d+)?$"></asp:TextBox>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="Peso">Peso (kg)</label>
@@ -91,10 +96,10 @@
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <asp:Button ID="Button1" runat="server" Text="Guardar" CssClass="btn btn-success btn-lg btn-block" />
+                    <asp:Button ID="ButtonGuardar" runat="server" Text="Guardar" CssClass="btn btn-success btn-lg btn-block" OnClick="ButtonGuardar_Click" />
                 </div>
                 <div class="col-4">
-                    <asp:ImageButton ID="ImageButtonImpresora" runat="server" ImageUrl="~/Imagenes/impresora.jpg" Height="100" Width="100"  CssClass=""/>
+                    <asp:ImageButton ID="ImageButtonImpresora" runat="server" ImageUrl="~/Imagenes/impresora.jpg" Height="100" Width="100" CssClass="" />
                 </div>
             </div>
         </div>

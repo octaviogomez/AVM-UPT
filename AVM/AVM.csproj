@@ -157,6 +157,7 @@
     <Content Include="Controles\Especialista\contHistoMedico.ascx" />
     <Content Include="Controles\Especialista\contHistoPsico.ascx" />
     <Content Include="Controles\Especialista\contInfroUsuario.ascx" />
+    <Content Include="Controles\Especialista\contOdontograma.ascx" />
     <Content Include="Controles\Especialista\controlCitaRapida.ascx" />
     <Content Include="Controles\Especialista\contSubirArchivo.ascx" />
     <Content Include="Controles\Usuario\Agenda.ascx" />
@@ -3316,6 +3317,13 @@
     </Compile>
     <Compile Include="Controles\Especialista\contInfroUsuario.ascx.designer.cs">
       <DependentUpon>contInfroUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Especialista\contOdontograma.ascx.cs">
+      <DependentUpon>contOdontograma.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Especialista\contOdontograma.ascx.designer.cs">
+      <DependentUpon>contOdontograma.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Especialista\controlCitaRapida.ascx.cs">
       <DependentUpon>controlCitaRapida.ascx</DependentUpon>

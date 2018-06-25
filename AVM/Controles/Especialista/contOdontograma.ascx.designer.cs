@@ -10,78 +10,60 @@
 namespace AVM.Controles.Especialista {
     
     
-    public partial class ContCitaPsicolo {
+    public partial class contOdontograma {
         
         /// <summary>
-        /// LabelNombre control.
+        /// NumeroDiente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelNombre;
+        protected global::System.Web.UI.WebControls.TextBox NumeroDiente;
         
         /// <summary>
-        /// LabelMatricula control.
+        /// DiagnosticoDiente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelMatricula;
+        protected global::System.Web.UI.WebControls.TextBox DiagnosticoDiente;
         
         /// <summary>
-        /// LabelTipo control.
+        /// TratamientoDiente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelTipo;
+        protected global::System.Web.UI.WebControls.TextBox TratamientoDiente;
         
         /// <summary>
-        /// ResumenExploracion control.
+        /// ComentarioDiente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ResumenExploracion;
+        protected global::System.Web.UI.WebControls.TextBox ComentarioDiente;
         
         /// <summary>
-        /// autocompleteDiagnostico control.
+        /// AgregarOdontograma control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox autocompleteDiagnostico;
+        protected global::System.Web.UI.WebControls.Button AgregarOdontograma;
         
         /// <summary>
-        /// PlanTratamiento control.
+        /// GridViewOdontogtrama control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PlanTratamiento;
-        
-        /// <summary>
-        /// ButtonGuardar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonGuardar;
-        
-        /// <summary>
-        /// ImageButtonImpresora control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButtonImpresora;
+        protected global::System.Web.UI.WebControls.GridView GridViewOdontogtrama;
     }
 }

@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Configuration;
+
 using System.Data;
-using System.Data.OleDb;
 using System.Data.SqlClient;
 
 using System.Net.Mail;
@@ -17,15 +16,19 @@ using System.Globalization;
 using System.Net.Mime;
 using System.Net;
 
-using System.Threading;
-
 namespace Core.Model
 {
     public class CConsulta
     {
+        MailMessage mail = new MailMessage();
+
+        public CConsulta()
+        {
+            objManagerBD = new ManagerBD();
+        }
         #region Variables
         //varibles de la consulta
-        
+
         public string pk_HistorialCitas { get; set; }
         public int ConsultaActiva { get; set; }
         public string fk_Alumno { get; set; }
@@ -55,11 +58,7 @@ namespace Core.Model
         public string Descripcion { get; set; }
 
         //Variables para el odontograma
-        public int Diente { get; set; }
-        public string FechaOdontograma { get; set; }
-        public string DiagnositcoOdontograma { get; set; }
-        public string TratatmientoOdontograma { get; set; }
-        public string ObservacionesOdontograma { get; set; }
+
 
         //Correo
         public string CorreoEspecialista { get; set; }
@@ -71,12 +70,11 @@ namespace Core.Model
 
         ManagerBD objManagerBD;
         #endregion
-        MailMessage mail = new MailMessage();
+
+       
          
        
-        public CConsulta() {
-            objManagerBD = new ManagerBD();
-        }
+     
         #region Metodos Del Alumno
         //Reguistrar una cita
         public bool reguistro(int opcion, CConsulta obj)
@@ -190,20 +188,7 @@ namespace Core.Model
             }
             return ExisteDatos;
         }
-        //ver odontograma
-        public bool listarOdontograma(int opcion, ref DataSet objDatos,  string fk_Alumno)
-        {
-            bool ExisteDatos = false;
-            List<SqlParameter> lstParametros = new List<SqlParameter>();
-            lstParametros.Add(new SqlParameter("@Op", SqlDbType.Int) { Value = opcion });
-            lstParametros.Add(new SqlParameter("@fk_Alumno", SqlDbType.NVarChar, 50) { Value = fk_Alumno });
-            objDatos = objManagerBD.GetData("PConsulta", lstParametros.ToArray());
-            if (objDatos.Tables.Count > 0)
-            {
-                ExisteDatos = true;
-            }
-            return ExisteDatos;
-        }
+     
         #endregion
 
         #region Metodos del especialista
@@ -214,7 +199,7 @@ namespace Core.Model
             List<SqlParameter> lstParametros = new List<SqlParameter>();
             lstParametros.Add(new SqlParameter("@Op", SqlDbType.Int) { Value = opcion });
             lstParametros.Add(new SqlParameter("@fk_Alumno", SqlDbType.NVarChar, 50) { Value = obj.fk_Alumno });
-            lstParametros.Add(new SqlParameter("@fk_Especialista", SqlDbType.VarChar, 50) { Value = obj.fk_EspecialistaControl});
+            lstParametros.Add(new SqlParameter("@fk_Especialista", SqlDbType.VarChar, 50) { Value = obj.fk_Especialista });
             lstParametros.Add(new SqlParameter("@ResumenAntecedente", SqlDbType.VarChar, 1024) { Value = obj.ResumenAntecedente });
             lstParametros.Add(new SqlParameter("@ExploracionFisica", SqlDbType.VarChar, 1024) { Value = obj.ExploracionFisica });
             lstParametros.Add(new SqlParameter("@Diagnostico", SqlDbType.VarChar, 2048) { Value = obj.Diagnostico });
@@ -317,21 +302,7 @@ namespace Core.Model
             return ExisteDatos;
         }
         //insertar un odontograma
-        public bool InsertarOdontograma(int opcion, CConsulta NewOdontograma)
-        {
-            List<SqlParameter> lstParametros = new List<SqlParameter>();
-            lstParametros.Add(new SqlParameter("@Op", SqlDbType.Int) { Value = opcion });
-            lstParametros.Add(new SqlParameter("@fk_Especialista", SqlDbType.VarChar) { Value = NewOdontograma.fk_EspecialistaControl });
-            lstParametros.Add(new SqlParameter("@fk_Alumno", SqlDbType.VarChar) { Value = NewOdontograma.fk_Alumno });
-            lstParametros.Add(new SqlParameter("@Diente", SqlDbType.Int) { Value = NewOdontograma.Diente });
-            lstParametros.Add(new SqlParameter("@DiagnositcoOdontograma", SqlDbType.VarChar) { Value = NewOdontograma.DiagnositcoOdontograma });
-            lstParametros.Add(new SqlParameter("@TratatmientoOdontograma", SqlDbType.VarChar) { Value = NewOdontograma.TratatmientoOdontograma });
-            lstParametros.Add(new SqlParameter("@ObservacionesOdontograma", SqlDbType.VarChar) { Value = NewOdontograma.ObservacionesOdontograma });
-            objManagerBD = new ManagerBD();
-            if (objManagerBD.UpdateData("PConsulta", lstParametros.ToArray()))
-                return true;
-            return false;
-        }
+
 
         #endregion
 
@@ -387,7 +358,7 @@ namespace Core.Model
 
             //Aquí es donde se hace lo especial
             SmtpClient client = new SmtpClient();
-            client.Credentials = new System.Net.NetworkCredential("1530096@upt.edu.mx", "octavioO1230..");
+            client.Credentials = new System.Net.NetworkCredential("1530096@upt.edu.mx", "123456789");
             client.Port = 587;
             client.Host = "smtp.gmail.com";
             client.EnableSsl = true; //Esto es para que vaya a través de SSL que es obligatorio con GMail

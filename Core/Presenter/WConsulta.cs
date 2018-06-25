@@ -102,26 +102,7 @@ namespace Core.Presenter
             }
 
         }
-        //Listado de odontograma
-        public void ListarOdontograma(int opcion, string fk_Alumno)
-        {
-            bool ExistenDatos = false;
-            DataSet dtsDatos = new DataSet();
-
-            if (ExisteConexion())
-            {
-                ExistenDatos = objConsulta.listarOdontograma(opcion, ref dtsDatos, fk_Alumno);
-                if (ExistenDatos == true)
-                    ViewConsulta.Odontograma = dtsDatos;
-                else
-                    ViewConsulta.Mensaje("No hay reguistros", 2);
-            }
-            else
-            {
-                ViewConsulta.Mensaje("No hay conexion en red", 2);
-            }
-
-        }
+   
 
         //Para los combos 
         public void ListarEspecilidad(int intOpcion)
@@ -375,18 +356,7 @@ namespace Core.Presenter
             }
         }
         //insertar odontograma
-        public void InsertarOdontograma(int op, CConsulta ObjOdontograma)
-        {
-            bool BolRegistro = false;
-            if (ExisteConexion())
-            {
-                BolRegistro = objConsulta.InsertarOdontograma(op, ObjOdontograma);
-                if (BolRegistro == true)
-                    ViewConsulta.Mensaje("Libro registrado", 1);
-                else
-                    ViewConsulta.Mensaje("Libro no reguistrado", 1);
-            }
-        }
+
         #endregion
 
         #region Cita Rapida

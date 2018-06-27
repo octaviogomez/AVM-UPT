@@ -64,9 +64,9 @@ namespace AVM
                     
                     if (objLoggerinfEs.Rol==3)
                     {
-                        Session.Add("UsuarioLogeadoEspecialista", objLoggerinfEs);//Creamos la variable de sesion en donde la podremos utlizar cuando nos mande a la master
+                        Session.Add("UsuarioLogeadoAdministrador", objLoggerinfEs);//Creamos la variable de sesion en donde la podremos utlizar cuando nos mande a la master
 
-                        Response.Redirect("/Paginas/Especialistas/Default.aspx", true);// no direcciona a la pagina default de la master
+                        Response.Redirect("/Paginas/Admin/Default.aspx", true);// no direcciona a la pagina default de la master
                     }
 
                     if (objLoggerinfEs.Rol == 2)

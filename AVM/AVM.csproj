@@ -135,7 +135,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Archivos\Carnet\" />
     <Folder Include="Archivos\Examen\" />
-    <Folder Include="Controles\Admin\" />
     <Folder Include="Multimedia\" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +142,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Controles\Admin\contCargarDatosAlumnos.ascx" />
     <Content Include="Controles\Especialista\Agenda.ascx" />
     <Content Include="Controles\Especialista\contAdminAlumnos.ascx" />
     <Content Include="Controles\Especialista\contAgregarFechaBloqueada.ascx" />
@@ -3141,8 +3141,10 @@
     <None Include="Properties\PublishProfiles\avmupt - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\avmupt - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Paginas\Admin\CargarExcel.aspx" />
     <Content Include="Paginas\Admin\Default.aspx" />
     <Content Include="Paginas\Admin\Reportes.aspx" />
+    <Content Include="Paginas\Admin\ReportesCuestionario.aspx" />
     <Content Include="Paginas\Default.aspx" />
     <Content Include="Paginas\Especialista\AdminAlumnos.aspx" />
     <Content Include="Paginas\Especialista\AgendaCitas.aspx" />
@@ -3220,6 +3222,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\RouteConfig2.cs" />
+    <Compile Include="Controles\Admin\contCargarDatosAlumnos.ascx.cs">
+      <DependentUpon>contCargarDatosAlumnos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contCargarDatosAlumnos.ascx.designer.cs">
+      <DependentUpon>contCargarDatosAlumnos.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controles\Especialista\Agenda.ascx.cs">
       <DependentUpon>Agenda.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3419,6 +3428,13 @@
     <Compile Include="Masters\Usuario.Master.designer.cs">
       <DependentUpon>Usuario.Master</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\Admin\CargarExcel.aspx.cs">
+      <DependentUpon>CargarExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Admin\CargarExcel.aspx.designer.cs">
+      <DependentUpon>CargarExcel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Admin\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3432,6 +3448,13 @@
     </Compile>
     <Compile Include="Paginas\Admin\Reportes.aspx.designer.cs">
       <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Admin\ReportesCuestionario.aspx.cs">
+      <DependentUpon>ReportesCuestionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Admin\ReportesCuestionario.aspx.designer.cs">
+      <DependentUpon>ReportesCuestionario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

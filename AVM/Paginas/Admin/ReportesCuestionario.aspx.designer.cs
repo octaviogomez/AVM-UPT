@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AVM.Paginas.Admin {
-    
-    
-    public partial class Default1 {
+namespace AVM.Paginas.Admin
+{
+
+
+    public partial class ReportesCuestionario
+    {
     }
 }

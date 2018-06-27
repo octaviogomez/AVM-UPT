@@ -99,7 +99,7 @@
                     <asp:Button ID="ButtonGuardar" runat="server" Text="Guardar" CssClass="btn btn-success btn-lg btn-block" OnClick="ButtonGuardar_Click" />
                 </div>
                 <div class="col-4">
-                    <asp:ImageButton ID="ImageButtonImpresora" runat="server" ImageUrl="~/Imagenes/impresora.jpg" Height="100" Width="100" CssClass="" OnClick="ImageButtonImpresora_Click" />
+                    <asp:ImageButton ID="ImageButtonImpresora" runat="server" ImageUrl="~/Imagenes/impresora.jpg" Height="100" Width="100" OnClick="ImageButtonImpresora_Click" />
                 </div>
             </div>
         </div>

@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -13,10 +12,10 @@ using System.Data;
 
 namespace AVM.Controles.Especialista
 {
-    public partial class contSubirArchivo : System.Web.UI.UserControl,IEspecialista
+    public partial class contSubirArchivo : System.Web.UI.UserControl
     {
         CEspecialista objLoggerinf;
-        WEspecialista vistaEspecialista;
+  
 
         public string carpeta;
         public string nombreReal;
@@ -29,12 +28,12 @@ namespace AVM.Controles.Especialista
             objLoggerinf = (CEspecialista)Session["UsuarioLogeadoEspecialista"];
             if (objLoggerinf != null && objLoggerinf.Rol == 2)
             {
-                vistaEspecialista = new WEspecialista(this);
-                carpeta = Server.MapPath("~/Files/examen/");//carpeta de archivos    
+            
+                carpeta = Server.MapPath("~/Archivos/Examen/");
             }
             else
             {
-                Response.Redirect("/Sesion.aspx", true);//
+                Response.Redirect("Default.aspx", true);//
             }
         }
 
@@ -42,7 +41,7 @@ namespace AVM.Controles.Especialista
         public void UploadFile(object sender, EventArgs e)
         {
             nombreReal = TextBoxNombre.Text != "" ? TextBoxNombre.Text : FileUpload1.PostedFile.FileName;
-            if (FileUpload1.PostedFile.FileName == "")
+            if (FileUpload1.PostedFile.FileName == "" && FileUpload1.FileBytes.LongLength<1800000)
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "alert('No se seleccino archivo');", true);
             }
@@ -50,7 +49,7 @@ namespace AVM.Controles.Especialista
             {
                 if (File.Exists(Server.MapPath("../Archivos/Examen/" + nombreReal + ".pdf")))
                 {
-
+                    //Remplazar?
                 }
                 else
                 {
@@ -76,6 +75,7 @@ namespace AVM.Controles.Especialista
             {
                 string archivo = Path.GetFileName(FileUpload1.PostedFile.FileName);
                 FileUpload1.PostedFile.SaveAs(this.carpeta + this.nombreReal + extencion);
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelNotificacion').removeClass('ocultar').addClass('mostrar'); </script>");
             }
             catch (Exception)
             {
@@ -89,24 +89,8 @@ namespace AVM.Controles.Especialista
 
         }
 
+     
 
-
-        #region IEspecialista
-        public CEspecialista UsuarioLogeadoEspecialista { get { return null; } set { } }
-        public DataSet Empleados { set { } }
-
-        DataSet IEspecialista.Empleados
-        {
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public void Mensaje(string Mensaje, int tipo)
-        {
-            throw new NotImplementedException();
-        }
-        #endregion
+      
     }
 }

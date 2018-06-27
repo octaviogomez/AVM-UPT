@@ -6,15 +6,12 @@
                 <asp:Label ID="LabelNumeroControl" runat="server" Text=""></asp:Label></strong>
         </li>
         <li class="list-group-item">Contraseña:
-            <asp:Label ID="LabelClave" runat="server" Text=""></asp:Label></li>
+       <s>     <asp:Label ID="LabelClave" runat="server" Text=""></asp:Label></s></li>
         <li class="list-group-item">Nombre: 
                         <strong>
                             <asp:Label ID="LabelNombre" runat="server" Text=""></asp:Label></strong>
         </li>
-          <li class="list-group-item">Apellidos: 
-                        <strong>
-                            <asp:Label ID="LabelApellidos" runat="server" Text=""></asp:Label></strong>
-        </li>
+        
         <li class="list-group-item">Sexo:
                         <strong>
                             <asp:Label ID="LabelSexo" runat="server" Text=""></asp:Label></strong>
@@ -44,4 +41,9 @@
 
     </ul>
 </div>
+<script>
+    (function () {
+      
 
+    })();
+</script>

@@ -18,7 +18,7 @@
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>Información
+                        <span class="oi oi-info"></span>   Información
                     </a>
                 </h5>
             </div>
@@ -26,8 +26,9 @@
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <ol>
-                            <li>Para eliminar una <strong>Cita</strong> identifiquela, y despues de click en    <span class="oi oi-trash"></span></li>
-                            <li>Para realizar una <strong>Cita</strong> identifiquela, y despues de click en      <span class="oi oi-circle-check"></span></li>
+                            <li>Ingrese alguna matrícula y de click en buscar.</li>
+                            <li>En el panel lateral podrá ver los diferentes tipos de historiales que hay.</li>
+                            <li>Para descargar o imprimir, se debe de dar click en <strong><span class="oi oi-print"></span>Imprimir</strong></li>
                         </ol>
                         <br />
                     </div>
@@ -38,14 +39,20 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-8 col-md-4">
-                            <label for="TextBoxidUsuario">Usuario:</label>
+                        <div class="col-4 col-md-4">
+                            <label for="TextBoxidUsuario">Matrícula:</label>
                             <asp:TextBox ID="TextBoxidUsuario" runat="server" CssClass="form-control" TextMode="Number" required=""></asp:TextBox>
                         </div>
 
                         <div class="col-4  col-md-4">
                             <br />
                             <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" OnClick="ButtonBuscar_Click" />
+                        </div>
+                        <div class="col-4  col-md-4">
+                            <br />
+                            <div class="alert alert-warning ocultar " role="alert" id="PanelAviso" >
+                                    Sin resultados!
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +70,7 @@
                     <div class="col-12 col-md-9">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                
+
                                 <uc1:contHistoMedico runat="server" ID="contHistoMedico" />
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -81,5 +88,9 @@
     </div>
 
 
+    <script>
+        (function () {
 
+        })();
+    </script>
 </asp:Content>

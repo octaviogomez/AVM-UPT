@@ -7,7 +7,7 @@
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>Información
+                        <span class="oi oi-info"></span>   Información
                     </a>
                 </h5>
             </div>
@@ -17,14 +17,14 @@
                         <ol>
                             <li>Seleccione una fecha.</li>
                             <li>Seleccione un horario</li>
-                             <li>Ingrese la matrícula del usuario.</li>
-                             <li>En caso de ser de algún familiar seleccionar "si."</li>
+                             <li>Ingrese la matrícula del usuario, y busquelo.</li>
+                             <li>En caso de ser de algún familiar, dar click "si" </li>
                         </ol>
                         <br />
                     </div>
                 </div>
             </div>
-
+            <br />
 
 
             <h3>Datos del especialista</h3>

@@ -1,16 +1,11 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="contFechasBloqueadas.ascx.cs" Inherits="AVM.Controles.Especialista.contFechasBloqueadas" %>
 <div class="container colorBlanco">
-
-    
-            <h5 class="card-title">Instrucciones:</h5>
-            <p class="card-text">Para eliminar una fecha solo de clic en cancelar.</p>
-            <br />
             <asp:Panel ID="PanelListadoCitas" runat="server" Height="450px" ScrollBars="Vertical" CssClass="border border-primary">
                 <div class="table-responsive">
                     <asp:GridView ID="GridViewFechasBloqueadas" runat="server" CssClass="table table-striped table-bordered table-hover" AllowPaging="true" OnPageIndexChanging="GridViewFechasBloqueadas_PageIndexChanging" AutoGenerateColumns="false" OnRowCommand="GridView1_OnRowCommand" >
                        <%----%>
                         <Columns>
-                            <asp:TemplateField ShowHeader="False" HeaderText="IdCita" Visible="false" ControlStyle-CssClass="">
+                            <asp:TemplateField ShowHeader="False" HeaderText="Id" Visible="false" ControlStyle-CssClass="">
                                 <ItemTemplate>
                                     <asp:Label ID="LabelId" Visible="false" runat="server" Text='<%# Eval("Id")%>'></asp:Label>
                                 </ItemTemplate>
@@ -40,18 +35,18 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Eliminar cita</h5>
+               
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                Esta seguro de eliminar la reservación ?
+                Esta seguro de eliminar la fecha bloqueada?
             </div>
             <div class="modal-footer">
                 <asp:TextBox ID="TextBoxPkReservacion" runat="server" Visible="false" Enabled="false"></asp:TextBox>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <asp:Button ID="ButtonEliminarCita" runat="server" Text="Eliminar " CssClass="btn btn-danger" comman="ButtonEliminarFechaBloqueada_Click"  />
+                <asp:Button ID="ButtonEliminarCita" runat="server" Text="Eliminar " CssClass="btn btn-danger" OnClick="ButtonEliminarCita_Click" />
                 <%--OnClick="ButtonEliminarCita_Click"--%>
             </div>
         </div>

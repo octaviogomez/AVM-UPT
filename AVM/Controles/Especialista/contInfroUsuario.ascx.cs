@@ -58,16 +58,19 @@ namespace AVM.Controles.Especialista
                 if (value != null)
                 {
                     LabelNumeroControl.Text = value.alu_NumControl.ToString();
-                    LabelNombre.Text = value.alu_Nombre;
-                    LabelApellidos.Text=  value.alu_ApePaterno + " " + value.alu_ApeMaterno;
+                    LabelClave.Text = value.alu_Password;
+                    LabelNombre.Text = value.alu_Nombre;                  
                     LabelSexo.Text = value.alu_Sexo;
                     LabelFechaNacimiento.Text = value.alu_FechaNacimiento;
                     LabelCarrera.Text = value.alu_Carrera;
                     LabelNoSeguro.Text = value.Noseguro;
                     LabelCurp.Text = value.curp;
                     LabelIngreso.Text = value.AnioRegistro;
+          
 
-
+                }else
+                {
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script>      $('#PanelAviso').removeClass('ocultar').addClass('mostrar');</script>", false);
 
                 }
             }
@@ -88,9 +91,12 @@ namespace AVM.Controles.Especialista
                     LabelNoSeguro.Text = value.Noseguro;
                     LabelCurp.Text = value.curp;
                     LabelIngreso.Text = value.AnioRegistro;
+                    LabelClave.Text = value.alu_Password;
+               
 
-
-
+                }
+                else {
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script>      $('#PanelAviso').removeClass('ocultar').addClass('mostrar');</script>", false);
                 }
             }
         }

@@ -80,7 +80,7 @@ namespace Core.Presenter
                 else
                 {
                     ViewAlumno.UsuarioLogeado = null;
-                    ViewAlumno.Mensaje("No Valido", 2);
+                    ViewAlumno.Mensaje("Datos incorrectos", 2);
                 }
                
             }
@@ -126,12 +126,12 @@ namespace Core.Presenter
                     catch (Exception)
                     {
 
-                      
+                        ViewAlumno.UsuarioActulizar = null;
                     }
                 }
                 else
                 {
-                    ViewAlumno.Mensaje("No Valido", 2);
+                    ViewAlumno.Mensaje("Datos incorrectos", 2);
                 }
             }
             else

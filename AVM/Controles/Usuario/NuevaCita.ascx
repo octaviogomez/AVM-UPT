@@ -10,7 +10,7 @@
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>  Instrucciones:
+                        <span class="oi oi-info"></span>Instrucciones:
                     </a>
                 </h5>
             </div>
@@ -25,9 +25,9 @@
                             <li>En caso que la cita sea para algun familiar, activar la casilla de cita familiar.</li>
                         </ol>
                         <br />
-                         <div class="alert alert-warning" role="alert">
-                             <strong>Nota:</strong> En caso de que no se muestre algún horario, significa que esa fecha no esta disponible.
-                            </div>
+                        <div class="alert alert-warning" role="alert">
+                            <strong>Nota:</strong> En caso de que no se muestre algún horario, significa que esa fecha no esta disponible.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -52,6 +52,7 @@
                 <div class="col-md-5 mb-5">
                     <strong>
                         <label for="DropDownListHorarios">3. Fecha</label></strong>
+                    
                     <asp:TextBox ID="TextBoxFecha" runat="server" TextMode="Date" CssClass="form-control" AutoPostBack="true" OnTextChanged="TextBoxFecha_TextChanged1"></asp:TextBox>
                 </div>
                 <div class="col-md-2 mb-2">
@@ -104,6 +105,9 @@
 </div>
 <script>
     (function () {
+       
+
+ 
 
     })();
 </script>

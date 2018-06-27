@@ -10,87 +10,60 @@
 namespace AVM.Controles.Especialista {
     
     
-    public partial class contInfroUsuario {
+    public partial class contOdontograma {
         
         /// <summary>
-        /// LabelNumeroControl control.
+        /// NumeroDiente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelNumeroControl;
+        protected global::System.Web.UI.WebControls.TextBox NumeroDiente;
         
         /// <summary>
-        /// LabelClave control.
+        /// DiagnosticoDiente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelClave;
+        protected global::System.Web.UI.WebControls.TextBox DiagnosticoDiente;
         
         /// <summary>
-        /// LabelNombre control.
+        /// TratamientoDiente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelNombre;
+        protected global::System.Web.UI.WebControls.TextBox TratamientoDiente;
         
         /// <summary>
-        /// LabelSexo control.
+        /// ComentarioDiente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelSexo;
+        protected global::System.Web.UI.WebControls.TextBox ComentarioDiente;
         
         /// <summary>
-        /// LabelFechaNacimiento control.
+        /// AgregarOdontograma control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelFechaNacimiento;
+        protected global::System.Web.UI.WebControls.Button AgregarOdontograma;
         
         /// <summary>
-        /// LabelCarrera control.
+        /// GridViewOdontogtrama control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelCarrera;
-        
-        /// <summary>
-        /// LabelNoSeguro control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelNoSeguro;
-        
-        /// <summary>
-        /// LabelCurp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelCurp;
-        
-        /// <summary>
-        /// LabelIngreso control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelIngreso;
+        protected global::System.Web.UI.WebControls.GridView GridViewOdontogtrama;
     }
 }

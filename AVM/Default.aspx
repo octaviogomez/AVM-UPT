@@ -22,7 +22,7 @@
             <div class="row">
 
                 <div class="col-1">
-                    <asp:Image ID="ImagenLogo" runat="server" ImageUrl="~/Imagenes/Universidad/corazon.png" Height="65px" Width="76px" CssClass="img-fluid"  alt="Responsive image"/>
+                    <asp:Image ID="ImagenLogo" runat="server" ImageUrl="~/Imagenes/Universidad/corazon.png" Height="65px" Width="76px" alt="Responsive image" />
                 </div>
                 <div class="col-10 text-center">
                     <h2>Universidad Politécnica de Tulancingo</h2>
@@ -48,8 +48,9 @@
                                     <div class="card-body">
                                         <h4 class="card-title">Inicio de Sesión</h4>
                                         <div class="form-group">
-                                            <label for="TextBoxNumDeControl"
-                                                ><span class="oi oi-person" />Matrícula
+                                            <label for="TextBoxNumDeControl">
+                                                <span class="oi oi-person"></span>
+                                                Matrícula
 
                                             </label>
                                             <asp:TextBox PlaceHolder="Escriba su matrícula" ID="TextBoxNumeroDeControl" runat="server" required="Ingrese su matrícula" CssClass="form-control input-lg" value="" pattern="[0-9]{1,7}" title="Solo números. Tamaño :7 digitos" autofocus=""></asp:TextBox>
@@ -71,7 +72,12 @@
 
                                         </div>
                                         <div class="form-group my-2">
-                                            <asp:Button ID="Button1" runat="server" Text="Entrar" class="btn  btn-block fondoColor" OnClick="Button1_Click" />
+                                            <asp:Button ID="Button1" runat="server" Font-Size="Medium" Text="Entrar" class="btn  btn-block fondoColor" OnClick="Button1_Click" />
+                                        </div>
+                                        <div class="ocultar" id="PanelAviso">
+                                            <div class="alert alert-danger" role="alert">
+                                               Datos no correctos!
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

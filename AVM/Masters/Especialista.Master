@@ -83,7 +83,7 @@
                         <a class="nav-link" href="../../../Paginas/Especialista/Archivos.aspx">Archivos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../../Paginas/Especialista/BloquearFechas.aspx">Bloquear Fecha</a>
+                        <a class="nav-link" href="../../../Paginas/Especialista/BloquearFechas.aspx">Fechas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../../../">Salir</a>
@@ -105,36 +105,39 @@
 
     </form>
 
-
-
     <div class=" fondoColor footer">
-
-        <div class="container ">
+        <div class="container">
             <div class="row align-items-center">
-                <div class="col-1">
-                    <asp:Image ID="ImageLogoFooter" runat="server" ImageUrl="~/Imagenes/universidad/logoUpt.png" Height="80px" Width="70px" />
+                <div class="col-sm-8 col-md-2">
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Imagenes/universidad/logoUpt.png" Height="80px" Width="70px" />
                 </div>
-                <div class="col-7">
+                <div class="col-sm-8 col-md-5">
                     <p>© Universidad Politécnica de Tulancingo. Calle Ingenierías # 100. Col. Huapalcalco, Hidalgo, México C.P. 43629, Teléfono: 01(775) 75 5 82 02, Fax: 01(775) 75 5 83 21.</p>
                 </div>
-                <div class="col-3">
+                <div class=" col-sm-8 col-md-3">
                     <h4>Manuales</h4>
-
-                    <a href="#">Alumno</a><br />
-                    <a href="#">Especialista</a>
+                    <a href="../../Archivos/Manuales/alumno.pdf"  class="letraBlanca">Alumno</a><br />
+                     <a href="../../Archivos/Manuales/especialista.pdf"  class="letraBlanca">Especialista</a><br />
                 </div>
-                <div class="col-1">
-                    <asp:Image ID="Image1" runat="server" Width="80px" Height="70px" ImageUrl="~/Imagenes/universidad/corazon.png" />
+                <div class=" col-sm-8 col-md-2">
+                    <asp:Image ID="Image3" runat="server" Width="80px" Height="70px" ImageUrl="~/Imagenes/universidad/corazon.png" />
                 </div>
             </div>
         </div>
         <hr />
         <div class="container">
-            <div class="footer-copyright  text-center">
-                © 2018 Copyright:
-        <a href="http://www.upt.edu.mx/" class="letraBlanca">Universidad Politécnica de Tulancingo</a>
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col text-center">
+                    © 2018 Copyright: <a href="http://www.upt.edu.mx/" class="letraBlanca">Universidad Politécnica de Tulancingo</a>
+                </div>
+                <div class="col text-right">
+              <a href="../WebsMasters.aspx" class="letraBlanca">Webmaster</a>
+                </div>
+                </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>

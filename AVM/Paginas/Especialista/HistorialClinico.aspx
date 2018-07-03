@@ -26,9 +26,9 @@
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <ol>
-                            <li>Ingrese alguna matrícula y de click en buscar.</li>
+                            <li>Ingrese alguna matrícula y de clic en buscar.</li>
                             <li>En el panel lateral podrá ver los diferentes tipos de historiales que hay.</li>
-                            <li>Para descargar o imprimir, se debe de dar click en <strong><span class="oi oi-print"></span>Imprimir</strong></li>
+                            <li>Para descargar o imprimir, se debe de dar clic en <strong><span class="oi oi-print"></span>Imprimir</strong></li>
                         </ol>
                         <br />
                     </div>
@@ -39,18 +39,18 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-4 col-md-4">
+                        <div class="col-12 col-md-4">
                             <label for="TextBoxidUsuario">Matrícula:</label>
                             <asp:TextBox ID="TextBoxidUsuario" runat="server" CssClass="form-control" TextMode="Number" required=""></asp:TextBox>
                         </div>
 
-                        <div class="col-4  col-md-4">
+                        <div class="col-12  col-md-4">
                             <br />
                             <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" OnClick="ButtonBuscar_Click" />
                         </div>
-                        <div class="col-4  col-md-4">
+                        <div class="col-12  col-md-4">
                             <br />
-                            <div class="alert alert-warning ocultar " role="alert" id="PanelAviso" >
+                            <div class="alert alert-warning ocultar" role="alert" id="PanelAviso" >
                                     Sin resultados!
                             </div>
                         </div>

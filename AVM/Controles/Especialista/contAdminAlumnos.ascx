@@ -39,13 +39,13 @@
                             <asp:BoundField Visible="true" DataField="Nombre" HeaderText="Nombre" />
                             <asp:BoundField Visible="true" DataField="alu_Sexo" HeaderText="Sexo" />
                             <asp:BoundField Visible="true" DataField="alu_Password" HeaderText="Contraseña" />
-                            <asp:BoundField Visible="true" DataField="FechaNacimiento" HeaderText="FechaNacimiento" />
+                            <asp:BoundField Visible="true" DataField="FechaNacimiento" HeaderText="Nacimiento" />
                             <asp:BoundField Visible="true" DataField="Descripcion" HeaderText="Carrera" />
-                            <asp:BoundField Visible="true" DataField="NoSeguro" HeaderText="NoSeguro" />
-                            <asp:BoundField Visible="true" DataField="AnioIngreso" HeaderText="AnioIngreso" />
+                            <asp:BoundField Visible="true" DataField="NoSeguro" HeaderText="NSS" />
+                            <asp:BoundField Visible="true" DataField="AnioIngreso" HeaderText="Ingreso" />
 
 
-                            <asp:TemplateField ShowHeader="False" HeaderText="Consulta">
+                            <asp:TemplateField ShowHeader="False" HeaderText="Info">
                                 <ItemTemplate>
                                     <asp:LinkButton ID="LinkButtonConsulta" runat="server" CommandName="Consulta" CssClass="form-control btn btn-outline-info" ToolTip="Consulta general del usuario">
                                      <span class="oi oi-person"></span>

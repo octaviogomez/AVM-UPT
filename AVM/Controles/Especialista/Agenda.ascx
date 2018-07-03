@@ -15,8 +15,8 @@
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <ol>
-                            <li>Para eliminar una <strong>Cita</strong> identifiquela, y despues de click en    <span class="oi oi-trash"> </span></li> 
-                              <li>Para realizar una <strong>Cita</strong> identifiquela, y despues de click en      <span class="oi oi-circle-check"></span></li> 
+                            <li>Para eliminar una <strong>Cita</strong> identifiquela, y despues de clic en    <span class="oi oi-trash"> </span></li> 
+                              <li>Para realizar una <strong>Cita</strong> identifiquela, y despues de clic en      <span class="oi oi-circle-check"></span></li> 
                         </ol>
                         <br />
                     </div>
@@ -50,7 +50,7 @@
                            
                             <asp:BoundField Visible="true" DataField="Estado" HeaderText="Estado" />
                             <asp:BoundField Visible="true" DataField="Nombre" HeaderText="Nombre" ItemStyle-Font-Bold="true" />
-                            <asp:BoundField Visible="true" DataField="Matricula" HeaderText="Matricula" />
+                            <asp:BoundField Visible="true" DataField="Matricula" HeaderText="Matrícula" />
                             <asp:BoundField Visible="true" DataField="Fecha" HeaderText="Fecha" />
                             <asp:BoundField Visible="true" DataField="Horario" HeaderText="Horario" />
                             <asp:BoundField Visible="true" DataField="Usuario" HeaderText="Usuario" />

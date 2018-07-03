@@ -25,8 +25,8 @@
                         <div class="card-body">
                             <ul>
 
-                                <li>Para visualizar un <strong>usuario</strong> identifiquelo, y despues de click en       <span class="oi oi-person"></span></li>
-                                <li>Para eliminar un <strong>usuario</strong> identifiquel, y despues de click en    <span class="oi oi-trash"></span></li>
+                                <li>Para visualizar un <strong>usuario</strong> identifiquelo, y despues de clic en       <span class="oi oi-person"></span></li>
+                                <li>Para eliminar un <strong>usuario</strong> identifiquel, y despues de clic en    <span class="oi oi-trash"></span></li>
                             </ul>
                             <br />
                             <ol>

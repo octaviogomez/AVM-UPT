@@ -5,16 +5,19 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Datos del usuario</h5>
-          
+
                 <div class="row">
                     <div class="col">
-                        <asp:Label ID="LabelNombre" runat="server" Text="Nombre:"></asp:Label>
+                        <strong>Nombre:</strong>
+                        <asp:Label ID="LabelNombre" runat="server" Text=""></asp:Label>
                     </div>
                     <div class="col">
-                        <asp:Label ID="LabelMatricula" runat="server" Text="Matricula:"></asp:Label>
+                        <strong>Matricula:</strong>
+                        <asp:Label ID="LabelMatricula" runat="server" Text=""></asp:Label>
                     </div>
                     <div class="col">
-                        <asp:Label ID="LabelTipo" runat="server" Text="Tipo:"></asp:Label>
+                        <strong>Tipo:</strong>
+                        <asp:Label ID="LabelTipo" runat="server" Text=""></asp:Label>
                     </div>
 
                 </div>
@@ -26,6 +29,7 @@
                 <h5 class="card-title">Interrogatorio al paciente</h5>
                 <div class="form-group">
                     <asp:TextBox ID="ResumenAntecedente" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="vResumenAntecedente" runat="server" ControlToValidate="ResumenAntecedente" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
                 </div>
             </div>
 
@@ -36,30 +40,40 @@
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="Talla">Talla (cm)</label>
-                        <asp:TextBox ID="Talla" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+                        <asp:TextBox ID="Talla" runat="server" CssClass="form-control" TextMode="Number" min="100" max="250"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="vTalla" runat="server" ControlToValidate="Talla" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
                     </div>
                     <div class="form-group col-md-3">
                         <label for="Temperatura">Temperatura</label>
-                        <asp:TextBox ID="Temperatura" runat="server" CssClass="form-control" placeholder="" pattern="^\d+(?:[\.\,]\d+)?$"></asp:TextBox>
+                        <asp:TextBox ID="Temperatura" runat="server" CssClass="form-control" TextMode="Number" step="0.01" title="Currency" pattern="^\d+(?:\.\d{1,2})?$" min="32" max="45"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="vTemperatura" runat="server" ControlToValidate="Temperatura" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
                     </div>
                     <div class="form-group col-md-3">
                         <label for="Peso">Peso (kg)</label>
-                        <asp:TextBox ID="Peso" runat="server" CssClass="form-control" pattern="\d*\.?\d*"></asp:TextBox>
+                        <asp:TextBox ID="Peso" runat="server" TextMode="Number" CssClass="form-control" step="0.01" title="Currency" pattern="^\d+(?:\.\d{1,2})?$" min="20" max="300"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="vPeso" runat="server" ControlToValidate="Peso" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+
                     </div>
                     <div class="form-group col-md-3">
                         <label for="RtimoCardiaco">Ritmo Cardiaco</label>
-                        <asp:TextBox ID="RtimoCardiaco" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+                        <asp:TextBox ID="RtimoCardiaco" runat="server" CssClass="form-control" TextMode="Number" min="0" max="1000"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="vRtimoCardiaco" runat="server" ControlToValidate="RtimoCardiaco" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="Presion">Presión Arterial(mm)</label>
-                        <asp:TextBox ID="Presion" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+                        <asp:TextBox ID="Presion" runat="server" CssClass="form-control" TextMode="Number" min="0" max="1000"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="vPresion" runat="server" ControlToValidate="Presion" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+
                     </div>
                     <div class="form-group col-md-3">
                         <label for="Presion1">Presión Arterial(hg)</label>
-                        <asp:TextBox ID="Presion1" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+                        <asp:TextBox ID="Presion1" runat="server" CssClass="form-control" TextMode="Number" min="0" max="1000"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="vPresion1" runat="server" ControlToValidate="Presion1" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+
                     </div>
                 </div>
             </div>
@@ -69,6 +83,7 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="ResumenExploracion" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="vResumenExploracion" runat="server" ControlToValidate="ResumenExploracion" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
                 </div>
             </div>
             <div class="card-body">
@@ -76,6 +91,7 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="autocompleteDiagnostico" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="vautocompleteDiagnostico" runat="server" ControlToValidate="autocompleteDiagnostico" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
                 </div>
             </div>
             <div class="card-body">
@@ -83,43 +99,90 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="PlanTratamiento" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="vPlanTratamiento" runat="server" ControlToValidate="PlanTratamiento" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+
                 </div>
             </div>
             <div class="card-body">
-                <h5 class="card-title">Dias de Reposo</h5>
+                <h5 class="card-title">Días de Reposo</h5>
                 <div class="form-row">
                     <div class="col-md-3">
-                        <asp:TextBox ID="DiasReposo" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+                        <asp:TextBox ID="DiasReposo" runat="server" CssClass="form-control" TextMode="Number" Text="0"></asp:TextBox>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <asp:Button ID="ButtonGuardar" runat="server" Text="Guardar" CssClass="btn btn-success btn-lg btn-block" OnClick="ButtonGuardar_Click" />
+                    <asp:Button ID="ButtonGenerarCita" runat="server" Text="Realizar" CssClass="btn btn-success btn-lg btn-block" ValidationGroup="cita" OnClick="ButtonGenerarCita_Click" />
                 </div>
                 <div class="col-4">
-                    <asp:ImageButton ID="ImageButtonImpresora" runat="server" ImageUrl="~/Imagenes/impresora.jpg" Height="100" Width="100" OnClick="ImageButtonImpresora_Click" />
+                    <asp:ImageButton ID="ImageButtonImpresora" runat="server" ImageUrl="~/Imagenes/impresora.jpg" Height="85" Width="85" OnClick="ImageButtonImpresora_Click" />
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Consulta médica</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Desea imprimir la consulta?
+            </div>
+            <div class="modal-footer">
+                <asp:ImageButton ID="ImageButtonImpirmir" runat="server" ImageUrl="~/Imagenes/impresora.jpg" Height="85" Width="85" OnClick="ImageButtonImpresora_Click" />
+                <asp:Button ID="ButtonGuardar" runat="server" Text="Guardar" CssClass="btn btn-success" OnClick="ButtonGuardar_Click" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
 <script>
-    $(document).ready(function () {
-        //Autocomplete
-        $(function () {
-            $.ajax({
-                type: 'GET',
-                url: 'https://raw.githubusercontent.com/octaviovs/CIE10/master/cie10.json',
-                success: function (response) {
-                    var myArray = $.parseJSON(response);
-                    var renglones = {};
 
-                    console.log(myArray);
 
-                }
-            });
-        });
-    });
+    (function () {
+
+
+        $('#exampleModal').modal('show');
+        //$(document).ready(function () {
+        //        //Autocomplete
+        //        $(function () {
+        //            $.ajax({
+        //                type: 'GET',
+        //                url: 'https://raw.githubusercontent.com/octaviovs/CIE10/master/cie10.json',
+        //                success: function (response) {
+        //                    var myArray = $.parseJSON(response);
+        //                    var renglones = {};
+
+        //                    console.log(myArray);
+
+        //                }
+        //            });
+        //        });
+        //    });
+
+
+
+    })();
+
+
+
+
 </script>
+

@@ -49,6 +49,15 @@ namespace AVM.Controles.Especialista {
         protected global::System.Web.UI.WebControls.TextBox ResumenAntecedente;
         
         /// <summary>
+        /// vResumenAntecedente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vResumenAntecedente;
+        
+        /// <summary>
         /// Talla control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace AVM.Controles.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Talla;
+        
+        /// <summary>
+        /// vTalla control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vTalla;
         
         /// <summary>
         /// Temperatura control.
@@ -67,6 +85,15 @@ namespace AVM.Controles.Especialista {
         protected global::System.Web.UI.WebControls.TextBox Temperatura;
         
         /// <summary>
+        /// vTemperatura control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vTemperatura;
+        
+        /// <summary>
         /// Peso control.
         /// </summary>
         /// <remarks>
@@ -74,6 +101,15 @@ namespace AVM.Controles.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Peso;
+        
+        /// <summary>
+        /// vPeso control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vPeso;
         
         /// <summary>
         /// RtimoCardiaco control.
@@ -85,6 +121,15 @@ namespace AVM.Controles.Especialista {
         protected global::System.Web.UI.WebControls.TextBox RtimoCardiaco;
         
         /// <summary>
+        /// vRtimoCardiaco control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vRtimoCardiaco;
+        
+        /// <summary>
         /// Presion control.
         /// </summary>
         /// <remarks>
@@ -92,6 +137,15 @@ namespace AVM.Controles.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Presion;
+        
+        /// <summary>
+        /// vPresion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vPresion;
         
         /// <summary>
         /// Presion1 control.
@@ -103,6 +157,15 @@ namespace AVM.Controles.Especialista {
         protected global::System.Web.UI.WebControls.TextBox Presion1;
         
         /// <summary>
+        /// vPresion1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vPresion1;
+        
+        /// <summary>
         /// ResumenExploracion control.
         /// </summary>
         /// <remarks>
@@ -110,6 +173,15 @@ namespace AVM.Controles.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ResumenExploracion;
+        
+        /// <summary>
+        /// vResumenExploracion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vResumenExploracion;
         
         /// <summary>
         /// autocompleteDiagnostico control.
@@ -121,6 +193,15 @@ namespace AVM.Controles.Especialista {
         protected global::System.Web.UI.WebControls.TextBox autocompleteDiagnostico;
         
         /// <summary>
+        /// vautocompleteDiagnostico control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vautocompleteDiagnostico;
+        
+        /// <summary>
         /// PlanTratamiento control.
         /// </summary>
         /// <remarks>
@@ -128,6 +209,15 @@ namespace AVM.Controles.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox PlanTratamiento;
+        
+        /// <summary>
+        /// vPlanTratamiento control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vPlanTratamiento;
         
         /// <summary>
         /// DiasReposo control.
@@ -139,13 +229,13 @@ namespace AVM.Controles.Especialista {
         protected global::System.Web.UI.WebControls.TextBox DiasReposo;
         
         /// <summary>
-        /// ButtonGuardar control.
+        /// ButtonGenerarCita control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonGuardar;
+        protected global::System.Web.UI.WebControls.Button ButtonGenerarCita;
         
         /// <summary>
         /// ImageButtonImpresora control.
@@ -155,5 +245,23 @@ namespace AVM.Controles.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton ImageButtonImpresora;
+        
+        /// <summary>
+        /// ImageButtonImpirmir control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImageButtonImpirmir;
+        
+        /// <summary>
+        /// ButtonGuardar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonGuardar;
     }
 }

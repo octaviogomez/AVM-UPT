@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NuevaCita.ascx.cs" Inherits="AVM.Controles.Usuario.NuevaCita" %>
 <div class="container colorBlanco">
     <div class="card">
-        <h5 class="card-header">Nueva Consulta </h5>
+        <h5 class="card-header">Agendar Consulta </h5>
         <div class="card-body">
 
 
@@ -10,7 +10,7 @@
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>Instrucciones:
+                        <span class="oi oi-info"></span>   Instrucciones:
                     </a>
                 </h5>
             </div>
@@ -18,7 +18,7 @@
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <ol>
-                            <li>Seleccionar una área, puede ser medica, dental o psicologica</li>
+                            <li>Seleccionar una área, puede ser médica, dental o psicológica</li>
                             <li>Seleccionar algún especialista.</li>
                             <li>Selecionar fecha de la cita.</li>
                             <li>Verificar horarios.</li>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-
+            <br />
             <div class="form-row">
                 <div class="col-md-5 mb-5">
                     <strong>
@@ -52,7 +52,6 @@
                 <div class="col-md-5 mb-5">
                     <strong>
                         <label for="DropDownListHorarios">3. Fecha</label></strong>
-                    
                     <asp:TextBox ID="TextBoxFecha" runat="server" TextMode="Date" CssClass="form-control" AutoPostBack="true" OnTextChanged="TextBoxFecha_TextChanged1"></asp:TextBox>
                 </div>
                 <div class="col-md-2 mb-2">
@@ -61,6 +60,11 @@
                     <strong>
                         <label for="DropDownListHorario">4. Horarios</label></strong>
                     <asp:DropDownList ID="DropDownListHorario" runat="server" CssClass="form-control" placeholder="Fecha" required="Puede que la fecha no este disponible, verifique otra"></asp:DropDownList>
+                    <asp:Panel ID="PanelAvisoHorarios" runat="server" Visible="false">
+                        <div class="alert alert-warning oculto" role="alert">
+                            Sin horarios disponibles, consulte otra fecha.
+                        </div>
+                    </asp:Panel>
                 </div>
             </div>
             <div class="form-row">
@@ -74,8 +78,9 @@
                 <div class="col-md-2 mb-2">
                 </div>
                 <div class="col-md-5 mb-5">
-                    <asp:Button ID="ButtonReuistrarConsulta" runat="server" Text="Agendar" OnClick="ButtonReuistrarConsulta_Click" CssClass="btn btn-success btn-lg btn-block" Font-Size="Medium" />
-
+                    <asp:LinkButton ID="ButtonReuistrarConsulta" runat="server" OnClick="ButtonReuistrarConsulta_Click" CssClass="btn btn-success btn-lg btn-block" Font-Size="Medium"  >    <span class="oi oi-file"></span>   Agendar</asp:LinkButton>
+                   
+             
                 </div>
             </div>
 
@@ -105,9 +110,21 @@
 </div>
 <script>
     (function () {
-       
 
- 
+        var miFechaActual = new Date();
+        dia = miFechaActual.getDate();
+        mes = parseInt(miFechaActual.getMonth()) + 1;
+        anio = miFechaActual.getFullYear();
+
+        var min = "" + anio + "-" + mes + "-" + dia;
+        var max = "" + anio + "-" + mes + "-" + (dia + 5);;
+
+        console.log(min);
+        console.log(max);
+
+        $("#ContentPlaceHolder1_NuevaCita_TextBoxFecha").prop("min", min);
+        $("#ContentPlaceHolder1_NuevaCita_TextBoxFecha").prop("max", max);
+
 
     })();
 </script>

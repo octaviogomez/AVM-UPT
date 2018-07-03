@@ -110,7 +110,7 @@ namespace AVM.Controles.Usuario
 
         protected void ButtonActualizarNoSocial_Click(object sender, EventArgs e)
         {
-            if (textboxNoSocial.Text != "" )
+            if (textboxNoSocial.Text != "" || !string.IsNullOrWhiteSpace(textboxNoSocial.Text))
             {
                 this.opcionGetUsuarioLogeado = 2;
                 vistaAlumno.crudAlumno(UsuarioLogeado, 7);
@@ -121,14 +121,17 @@ namespace AVM.Controles.Usuario
                 Session.Add("UsuarioLogeado", UsuarioActulizar);
 
                 textboxNoSocial.Text = "";
-               
+
                 Response.Redirect(Request.RawUrl);
+            }
+            else {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "alert('Datos requeridos');", true);
             }
         }
 
         protected void ButtonActulizarCurp_Click(object sender, EventArgs e)
         {
-            if (textboxCurp.Text != "")
+            if (textboxCurp.Text != "" || !string.IsNullOrWhiteSpace(textboxCurp.Text))
             {
                 this.opcionGetUsuarioLogeado = 2;
                 vistaAlumno.crudAlumno(UsuarioLogeado, 15);
@@ -142,6 +145,9 @@ namespace AVM.Controles.Usuario
                 textboxNoSocial.Text = "";
 
                 Response.Redirect(Request.RawUrl);
+            }
+            else {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "alert('Datos requeridos');", true);
             }
         }
 

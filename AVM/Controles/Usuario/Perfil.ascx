@@ -15,7 +15,7 @@
                 </div>
             </asp:Panel>
 
-                 <div class="card-header" id="headingOne">
+            <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <span class="oi oi-info"></span>   Información:
@@ -26,8 +26,8 @@
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <ul>
-                            <li>Para actualizar su contraseña de click en  <span class="oi oi-transfer"></span></li> 
-                            <li>Para agrear o nodificar su <strong>Número de Seguridad Social</strong> o su <strong>CURP</strong> de click <span class="oi oi-reload"></span></li>
+                            <li>Para actualizar su contraseña de clic en  <span class="oi oi-transfer"></span></li>
+                            <li>Para agregar o modificar su <strong>Número de Seguridad Social</strong> o su <strong>CURP</strong> de clic <span class="oi oi-reload"></span></li>
                         </ul>
                         <br />
                     </div>
@@ -37,44 +37,41 @@
 
             <div class="card">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Numero de control:
-                        <strong>
-                            <asp:Label ID="LabelNumeroControl" runat="server" Text=""></asp:Label></strong>
+                    <li class="list-group-item">
+                        <strong>Numero de control:</strong>
+                        <asp:Label ID="LabelNumeroControl" runat="server" Text=""></asp:Label>
                     </li>
                     <li class="list-group-item">
-                        <asp:LinkButton ID="LinkButtonClave" runat="server"  ToolTip="Cambiar contraseña" data-toggle="modal" data-target="#Contrasena"> <span class="oi oi-transfer"></span></asp:LinkButton>
-                        Contraseña: 
+                        <asp:LinkButton ID="LinkButtonClave" runat="server" data-toggle="modal" data-target="#Contrasena" data-placement="top" data-toggleA="tooltip" title="Actualizar contraseña"> <span class="oi oi-transfer"></span></asp:LinkButton>
+                        <strong>Contraseña:</strong>
                         <asp:Label ID="LabelClave" runat="server" Text=""></asp:Label>
-
-                    </li>
-                    <li class="list-group-item">Nombre: 
-                        <strong>
-                            <asp:Label ID="LabelNombre" runat="server" Text=""></asp:Label></strong>
-
-                    </li>
-                    <li class="list-group-item">Sexo:
-                        <strong>
-                            <asp:Label ID="LabelSexo" runat="server" Text=""></asp:Label></strong>
-                    </li>
-                    <li class="list-group-item">Fecha nacimiento:  
-                         <strong>
-                             <asp:Label ID="LabelFechaNacimiento" runat="server" Text=""></asp:Label></strong>
-                    </li>
-                    <li class="list-group-item">Carrera:                  
-                         <strong>
-                             <asp:Label ID="LabelCarrera" runat="server" Text=""></asp:Label></strong>
                     </li>
                     <li class="list-group-item">
-                        <asp:LinkButton ID="LinkButtonNoSocial" runat="server" ToolTip="Actilizar Número de seguro social" data-toggle="modal" data-target="#NumeroSocial"> <span class="oi oi-reload"></span></asp:LinkButton>
-                        Número de seguro social:        
-                         <strong>
-                             <asp:Label ID="LabelNoSeguro" runat="server" Text=""></asp:Label></strong>
+                        <strong>Nombre: </strong>
+                        <asp:Label ID="LabelNombre" runat="server" Text=""></asp:Label>
                     </li>
                     <li class="list-group-item">
-                        <asp:LinkButton ID="LinkButtonCrup" runat="server"  ToolTip="Actilizar CURP" data-toggle="modal" data-target="#Curp"> <span class="oi oi-reload"></span></asp:LinkButton>
-                        Curp: 
-                      <strong>
-                          <asp:Label ID="LabelCurp" runat="server" Text=""></asp:Label></strong>
+                        <strong>Sexo:</strong>
+                        <asp:Label ID="LabelSexo" runat="server" Text=""></asp:Label>
+                    </li>
+                    <li class="list-group-item">
+                         <strong>Fecha nacimiento:</strong>
+                             <asp:Label ID="LabelFechaNacimiento" runat="server" Text=""></asp:Label>
+                    </li>
+                    <li class="list-group-item">              
+                         <strong>Carrera:</strong>
+                             <asp:Label ID="LabelCarrera" runat="server" Text=""></asp:Label>
+                    </li>
+                    <li class="list-group-item">
+                        <asp:LinkButton ID="LinkButtonNoSocial" runat="server" data-placement="top" data-toggleA="tooltip" title="Actilizar Número de seguro social" data-toggle="modal" data-target="#NumeroSocial"> <span class="oi oi-reload"></span></asp:LinkButton>
+                            
+                         <strong> Número de seguro social:</strong>
+                             <asp:Label ID="LabelNoSeguro" runat="server" Text=""></asp:Label>
+                    </li>
+                    <li class="list-group-item">
+                        <asp:LinkButton ID="LinkButtonCrup" runat="server" data-placement="top" data-toggleA="tooltip" title="Actilizar CURP" data-toggle="modal" data-target="#Curp"> <span class="oi oi-reload"></span></asp:LinkButton>
+                      <strong>Curp: </strong>
+                          <asp:Label ID="LabelCurp" runat="server" Text=""></asp:Label>
 
                     </li>
 
@@ -153,7 +150,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            
+
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -162,7 +159,7 @@
                 <div class="row">
                     <div class="col">Nueva contraseña:</div>
                     <div class="col">
-                        <asp:TextBox ID="textboxClave1" runat="server" pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,40})$" title="8 a 10 caractéres, al menos un dígito y un carácter alfabético"></asp:TextBox>
+                        <asp:TextBox ID="textboxClave1" runat="server" pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,20})$" title="8 a 20 caractéres, al menos un dígito y un carácter alfabético"></asp:TextBox>
                     </div>
                     <div class="col">
                     </div>
@@ -170,7 +167,7 @@
                 <div class="row">
                     <div class="col">Repetir</div>
                     <div class="col">
-                        <asp:TextBox ID="textboxClave2" runat="server" pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,40})$" title="8 a 10 caractéres, al menos un dígito y un carácter alfabético"></asp:TextBox>
+                        <asp:TextBox ID="textboxClave2" runat="server" pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,20})$" title="8 a 20 caractéres, al menos un dígito y un carácter alfabético"></asp:TextBox>
                     </div>
                     <div class="col">
                     </div>
@@ -185,3 +182,10 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    (function () {
+        $('[data-toggleA="tooltip"]').tooltip();
+    })();
+</script>

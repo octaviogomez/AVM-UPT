@@ -16,7 +16,7 @@
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <ol>
-                            <li>Para eliminar identifique la consulta, y despues de click en    <span class="oi oi-trash"> </span></li> 
+                            <li>Para eliminar identifique la consulta, y despues de clic en    <span class="oi oi-trash"> </span></li> 
                         </ol>
                         <br />
                     </div>

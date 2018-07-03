@@ -22,6 +22,15 @@ namespace AVM.Controles.Especialista {
         protected global::System.Web.UI.WebControls.TextBox NumeroDiente;
         
         /// <summary>
+        /// vNumeroDiente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vNumeroDiente;
+        
+        /// <summary>
         /// DiagnosticoDiente control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace AVM.Controles.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox DiagnosticoDiente;
+        
+        /// <summary>
+        /// vDiagnosticoDiente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vDiagnosticoDiente;
         
         /// <summary>
         /// TratamientoDiente control.
@@ -40,6 +58,15 @@ namespace AVM.Controles.Especialista {
         protected global::System.Web.UI.WebControls.TextBox TratamientoDiente;
         
         /// <summary>
+        /// vTratamientoDiente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vTratamientoDiente;
+        
+        /// <summary>
         /// ComentarioDiente control.
         /// </summary>
         /// <remarks>
@@ -47,6 +74,15 @@ namespace AVM.Controles.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ComentarioDiente;
+        
+        /// <summary>
+        /// vComentarioDiente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vComentarioDiente;
         
         /// <summary>
         /// AgregarOdontograma control.

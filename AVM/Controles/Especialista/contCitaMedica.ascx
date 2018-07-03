@@ -22,9 +22,6 @@
 
                 </div>
             </div>
-
-
-
             <div class="card-body">
                 <h5 class="card-title">Interrogatorio al paciente</h5>
                 <div class="form-group">
@@ -147,11 +144,7 @@
     </div>
 </div>
 
-
-
-
-
-
+<script src="../../Scripts/bootstrap.min.js"></script>
 
 <script>
 
@@ -159,23 +152,23 @@
     (function () {
 
 
-        $('#exampleModal').modal('show');
-        //$(document).ready(function () {
-        //        //Autocomplete
-        //        $(function () {
-        //            $.ajax({
-        //                type: 'GET',
-        //                url: 'https://raw.githubusercontent.com/octaviovs/CIE10/master/cie10.json',
-        //                success: function (response) {
-        //                    var myArray = $.parseJSON(response);
-        //                    var renglones = {};
 
-        //                    console.log(myArray);
+        $(document).ready(function () {
+                //Autocomplete
+                $(function () {
+                    $.ajax({
+                        type: 'GET',
+                        url: 'https://raw.githubusercontent.com/octaviovs/CIE10/master/cie10.json',
+                        success: function (response) {
+                            var myArray = $.parseJSON(response);
+                            var renglones = {};
 
-        //                }
-        //            });
-        //        });
-        //    });
+                            console.log(myArray);
+
+                        }
+                    });
+                });
+            });
 
 
 

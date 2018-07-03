@@ -27,9 +27,9 @@ namespace AVM.Controles.Especialista
             if (objInfo != null && objEspe != null)
             {
                 vistaConsulta = new WConsulta(this);
-                LabelMatricula.Text = "Matrícula:" + objInfo.alu_NumControl;
-                LabelNombre.Text = "Nombre:" + objInfo.alu_Nombre;
-                LabelTipo.Text = "Tipo:" + objInfo.tipo_usuario;
+                LabelMatricula.Text =  objInfo.alu_NumControl;
+                LabelNombre.Text =  objInfo.alu_Nombre;
+                LabelTipo.Text =  objInfo.tipo_usuario;
             }
             else
             {
@@ -173,6 +173,10 @@ namespace AVM.Controles.Especialista
             Response.Redirect("AgendaCitas.aspx", true);
         }
 
+        protected void ButtonGenerarCita_Click(object sender, EventArgs e)
+        {
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script> $('#exampleModal').modal('show');</script>", false);
+        }
         protected void ImageButtonImpresora_Click(object sender, ImageClickEventArgs e)
         {
             DateTime fechaHoy = DateTime.Now;

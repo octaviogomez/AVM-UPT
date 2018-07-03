@@ -2,7 +2,7 @@
 <div class="container colorBlanco">
 
     <div class="card">
-        <h5 class="card-header">Consulta y cancelacion de citas</h5>
+        <h5 class="card-header">   <span class="oi oi-clock"></span>  Consulta y cancelación de citas</h5>
         <div class="card-body">
             
             <div class="card-header" id="headingOne">

@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container colorBlanco">
         <div class="card">
-            <h5 class="card-header">Historial Clínico</h5>
+            <h5 class="card-header">Historial de Citas</h5>
             <br />
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
@@ -20,7 +20,13 @@
                         <ol>
                             <li>Ingrese alguna matrícula y de seleccione el tipo de historial que desea.</li>
                             <li>En el panel lateral podrá ver los diferentes tipos de historiales que hay.</li>
-                            <li>Para descargar o imprimir, se debe de dar click en <strong><span class="oi oi-print"></span>Imprimir</strong></li>
+                            <li>Para descargar o imprimir, se debe de dar clic en <strong><span class="oi oi-print"></span>Imprimir</strong></li>
+                            <li>
+
+                                <div class="alert alert-info" role="alert">
+                                    Nota:
+                                </div>
+                            </li>
                         </ol>
                         <br />
                     </div>
@@ -71,20 +77,29 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="table-responsive">
-                        <asp:GridView ID="GridViewHistorialCitas" runat="server" CssClass="table table-striped table-bordered table-hover" OnRowCommand="GridView1_OnRowCommand">
+                        <asp:GridView ID="GridViewHistorialCitas" runat="server" CssClass="table table-striped table-bordered table-hover" OnRowCommand="GridView1_OnRowCommand" AutoGenerateColumns="false">
                             <Columns>
                                 <asp:TemplateField ShowHeader="False" HeaderText="IdCita" Visible="false" ControlStyle-CssClass="">
                                     <ItemTemplate>
                                         <asp:Label ID="LabelId" Visible="false" runat="server" Text='<%# Eval("Id")%>'></asp:Label>
                                     </ItemTemplate>
                                 </asp:TemplateField>
-                                <asp:TemplateField ShowHeader="False" HeaderText="Consulta">
+                                <asp:TemplateField ShowHeader="False" HeaderText="Info">
                                     <ItemTemplate>
                                         <asp:LinkButton ID="LinkButtonConsulta" runat="server" CommandName="Consulta" CssClass="form-control btn btn-outline-info">
                                   <span class="oi oi-document"></span>
                                         </asp:LinkButton>
                                     </ItemTemplate>
                                 </asp:TemplateField>
+
+
+                                <asp:BoundField Visible="true" DataField="Matrícula" HeaderText="Matrícula" />
+                                <asp:BoundField Visible="true" DataField="Especialista" HeaderText="Especialista" />
+                                <asp:BoundField Visible="true" DataField="Fecha" HeaderText="Fecha" ItemStyle-Font-Bold="true" />
+
+
+
+
                             </Columns>
                         </asp:GridView>
                     </div>
@@ -206,9 +221,9 @@
                         </div>
 
                         <div class="card-body">
-                          <h5 class="card-title">Días de reposo</h5>
+                            <h5 class="card-title">Días de reposo</h5>
                             <div>
-                                <asp:TextBox ID="Diasreposo" runat="server" ReadOnly="True" ></asp:TextBox>
+                                <asp:TextBox ID="Diasreposo" runat="server" ReadOnly="True"></asp:TextBox>
                             </div>
                         </div>
                     </div>

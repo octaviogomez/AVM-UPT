@@ -22,13 +22,31 @@ namespace AVM.Masters {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
-        /// ImageLogoMenu control.
+        /// ImageRolMedico control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageLogoMenu;
+        protected global::System.Web.UI.WebControls.Image ImageRolMedico;
+        
+        /// <summary>
+        /// ImageRolDental control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImageRolDental;
+        
+        /// <summary>
+        /// ImageRolPisco control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImageRolPisco;
         
         /// <summary>
         /// LabelNombreEspecialista control.

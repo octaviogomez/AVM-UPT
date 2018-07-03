@@ -1755,7 +1755,9 @@
     <Content Include="Imagenes\Roles\cepillo.png" />
     <Content Include="Imagenes\Roles\charlar.png" />
     <Content Include="Imagenes\Roles\conferencias.png" />
+    <Content Include="Imagenes\Roles\dental.png" />
     <Content Include="Imagenes\Roles\doc.png" />
+    <Content Include="Imagenes\Roles\pisco.png" />
     <Content Include="Imagenes\universidad\Acuse.png" />
     <Content Include="Imagenes\universidad\baner.jpg" />
     <Content Include="Imagenes\universidad\corazon.png" />

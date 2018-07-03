@@ -4,7 +4,7 @@
 
 
     <div class="card">
-        <h5 class="card-header">Información del usuario</h5>
+        <h5 class="card-header">   <span class="oi oi-person"></span>  Información del usuario</h5>
         <div class="card-body">
             <asp:Panel ID="PanelAviso" runat="server">
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">

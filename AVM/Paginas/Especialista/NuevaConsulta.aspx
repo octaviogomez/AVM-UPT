@@ -15,7 +15,7 @@
 
     <div class="container colorBlanco">
         <div class="card">
-            <h5 class="card-header">Consulta</h5>
+            <h5 class="card-header">   <span class="oi oi-medical-cross"></span>  Consulta</h5>
             <br />
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">

@@ -229,31 +229,31 @@ namespace AVM.Controles.Especialista {
         protected global::System.Web.UI.WebControls.TextBox DiasReposo;
         
         /// <summary>
-        /// ButtonGenerarCita control.
+        /// LinkButtonImpirmir1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonGenerarCita;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonImpirmir1;
         
         /// <summary>
-        /// ImageButtonImpresora control.
+        /// HyperLinkMedico control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButtonImpresora;
+        protected global::System.Web.UI.WebControls.LinkButton HyperLinkMedico;
         
         /// <summary>
-        /// ImageButtonImpirmir control.
+        /// LinkButton1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButtonImpirmir;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
         
         /// <summary>
         /// ButtonGuardar control.

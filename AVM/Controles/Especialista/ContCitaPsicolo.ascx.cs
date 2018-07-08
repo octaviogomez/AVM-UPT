@@ -27,9 +27,9 @@ namespace AVM.Controles.Especialista
             if (objInfo != null && objEspe != null)
             {
                 vistaConsulta = new WConsulta(this);
-                LabelMatricula.Text = "Matrícula:" + objInfo.alu_NumControl;
-                LabelNombre.Text = "Nombre:" + objInfo.alu_Nombre;
-                LabelTipo.Text = "Tipo:" + objInfo.tipo_usuario;
+                LabelMatricula.Text =  objInfo.alu_NumControl;
+                LabelNombre.Text = objInfo.alu_Nombre;
+                LabelTipo.Text = objInfo.tipo_usuario;
             }
             else
             {
@@ -167,13 +167,12 @@ namespace AVM.Controles.Especialista
         }
         #endregion
 
-        protected void ButtonGuardar_Click(object sender, EventArgs e)
+        protected void ButtonGenerarCita_Click(object sender, EventArgs e)
         {
-            vistaConsulta.ReguistrarConsulta(NewConsulta);
-            Response.Redirect("AgendaCitas.aspx", true);
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script> $('#exampleModal').modal('show');</script>", false);
         }
 
-        protected void ImageButtonImpresora_Click(object sender, ImageClickEventArgs e)
+        protected void HyperLinkMedico_Click(object sender, EventArgs e)
         {
             DateTime fechaHoy = DateTime.Now;
             string fecha = fechaHoy.ToShortDateString();
@@ -215,8 +214,6 @@ namespace AVM.Controles.Especialista
                 pdfDoc.Open();
 
 
-
-
                 cadenaFinal += "<h4> © Universidad Politécnica de Tulancingo.  Calle Ingenierías # 100. Col. Huapalcalco, Tulancingo, Hidalgo, México. C.P. 43629, Teléfono: 01(775) 75 5 82 02, Fax: 01(775) 75 5 83 21 </h5>";
 
 
@@ -248,6 +245,12 @@ namespace AVM.Controles.Especialista
             {
                 Response.Write(ex.ToString());
             }
+        }
+
+        protected void ButtonGuardar_Click(object sender, EventArgs e)
+        {
+            vistaConsulta.ReguistrarConsulta(NewConsulta);
+            Response.Redirect("AgendaCitas.aspx", true);
         }
     }
 }

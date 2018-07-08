@@ -1,5 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ContCitaDental.ascx.cs" Inherits="AVM.Controles.Especialista.ContCitaDental" %>
 
+
 <div class="container">
     <div class="card">
         <div class="card">
@@ -26,7 +27,7 @@
                 <h5 class="card-title">Interrogatorio al paciente</h5>
                 <div class="form-group">
                     <asp:TextBox ID="ResumenAntecedente" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vResumenAntecedente" runat="server" ControlToValidate="ResumenAntecedente" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+                    <asp:RequiredFieldValidator ID="vResumenAntecedente" runat="server" ControlToValidate="ResumenAntecedente" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
                 </div>
             </div>
 
@@ -35,44 +36,42 @@
             <div class="card-body">
                 <h5 class="card-title">Datos físicos</h5>
                 <div class="form-row">
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-2">
                         <label for="Talla">Talla (cm)</label>
                         <asp:TextBox ID="Talla" runat="server" CssClass="form-control" TextMode="Number" min="100" max="250"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vTalla" runat="server" ControlToValidate="Talla" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+                        <asp:RequiredFieldValidator ID="vTalla" runat="server" ControlToValidate="Talla" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-2">
                         <label for="Temperatura">Temperatura</label>
                         <asp:TextBox ID="Temperatura" runat="server" CssClass="form-control" TextMode="Number" step="0.01" title="Currency" pattern="^\d+(?:\.\d{1,2})?$" min="32" max="45"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vTemperatura" runat="server" ControlToValidate="Temperatura" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+                        <asp:RequiredFieldValidator ID="vTemperatura" runat="server" ControlToValidate="Temperatura" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-2">
                         <label for="Peso">Peso (kg)</label>
                         <asp:TextBox ID="Peso" runat="server" TextMode="Number" CssClass="form-control" step="0.01" title="Currency" pattern="^\d+(?:\.\d{1,2})?$" min="20" max="300"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vPeso" runat="server" ControlToValidate="Peso" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+                        <asp:RequiredFieldValidator ID="vPeso" runat="server" ControlToValidate="Peso" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
 
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-2">
                         <label for="RtimoCardiaco">Ritmo Cardiaco</label>
                         <asp:TextBox ID="RtimoCardiaco" runat="server" CssClass="form-control" TextMode="Number" min="0" max="1000"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vRtimoCardiaco" runat="server" ControlToValidate="RtimoCardiaco" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
-
+                        <asp:RequiredFieldValidator ID="vRtimoCardiaco" runat="server" ControlToValidate="RtimoCardiaco" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
                     </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="Presion">Presión Arterial(mm)</label>
+                    <div class="form-group col-md-2">
+                        <label for="Presion" style="font-size:x-small">Presión Arterial(mm)</label>
                         <asp:TextBox ID="Presion" runat="server" CssClass="form-control" TextMode="Number" min="0" max="1000"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vPresion" runat="server" ControlToValidate="Presion" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+                        <asp:RequiredFieldValidator ID="vPresion" runat="server" ControlToValidate="Presion" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
 
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="Presion1">Presión Arterial(hg)</label>
+                    <div class="form-group col-md-2">
+                        <label for="Presion1" style="font-size:x-small">Presión Arterial(hg)</label>
                         <asp:TextBox ID="Presion1" runat="server" CssClass="form-control" TextMode="Number" min="0" max="1000"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vPresion1" runat="server" ControlToValidate="Presion1" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+                        <asp:RequiredFieldValidator ID="vPresion1" runat="server" ControlToValidate="Presion1" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
 
                     </div>
                 </div>
+
+
             </div>
 
             <div class="card-body">
@@ -80,7 +79,7 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="ResumenExploracion" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vResumenExploracion" runat="server" ControlToValidate="ResumenExploracion" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+                    <asp:RequiredFieldValidator ID="vResumenExploracion" runat="server" ControlToValidate="ResumenExploracion" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
                 </div>
             </div>
             <div class="card-body">
@@ -88,7 +87,7 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="autocompleteDiagnostico" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vautocompleteDiagnostico" runat="server" ControlToValidate="autocompleteDiagnostico" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+                    <asp:RequiredFieldValidator ID="vautocompleteDiagnostico" runat="server" ControlToValidate="autocompleteDiagnostico" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
                 </div>
             </div>
             <div class="card-body">
@@ -96,7 +95,7 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="PlanTratamiento" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vPlanTratamiento" runat="server" ControlToValidate="PlanTratamiento" ValidationGroup="cita" ErrorMessage="Campo requerido" CssClass="alert alert-warning btn-lg btn-block" />
+                    <asp:RequiredFieldValidator ID="vPlanTratamiento" runat="server" ControlToValidate="PlanTratamiento" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
 
                 </div>
             </div>
@@ -111,12 +110,17 @@
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <asp:Button ID="ButtonGenerarCita" runat="server" Text="Realizar" CssClass="btn btn-success btn-lg btn-block" ValidationGroup="cita" OnClick="ButtonGenerarCita_Click" />
+                    <asp:LinkButton ID="LinkButtonImpirmir1" runat="server" CssClass="btn btn-success btn-lg btn-block" ValidationGroup="cita" OnClick="ButtonGenerarCita_Click">  <span class="oi oi-check"></span> Realizar</asp:LinkButton>
+
                 </div>
                 <div class="col-4">
-                    <asp:ImageButton ID="ImageButtonImpresora" runat="server" ImageUrl="~/Imagenes/impresora.jpg" Height="85" Width="85" OnClick="ImageButtonImpresora_Click" />
+                    <asp:LinkButton ID="HyperLinkMedico" runat="server" CssClass="btn btn-info btn-lg btn-lock" OnClick="HyperLinkMedico_Click"> 
+                <span class="oi oi-print"></span> Imprimir
+                    </asp:LinkButton>
+
                 </div>
             </div>
+            <br />
         </div>
     </div>
 </div>
@@ -134,10 +138,13 @@
                 </button>
             </div>
             <div class="modal-body">
-                Desea imprimir la consulta?
+                Desea imprimir la consulta?    
+                 <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-info btn-lg btn-lock" OnClick="HyperLinkMedico_Click"> 
+                <span class="oi oi-print"></span> Imprimir
+                 </asp:LinkButton>
             </div>
             <div class="modal-footer">
-                <asp:ImageButton ID="ImageButtonImpirmir" runat="server" ImageUrl="~/Imagenes/impresora.jpg" Height="85" Width="85" OnClick="ImageButtonImpresora_Click" />
+
                 <asp:Button ID="ButtonGuardar" runat="server" Text="Guardar" CssClass="btn btn-success" OnClick="ButtonGuardar_Click" />
             </div>
         </div>
@@ -145,3 +152,37 @@
 </div>
 
 <script src="../../Scripts/bootstrap.min.js"></script>
+
+<script>
+
+
+    (function () {
+
+
+
+        $(document).ready(function () {
+            //Autocomplete
+            $(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://raw.githubusercontent.com/octaviovs/CIE10/master/cie10.json',
+                    success: function (response) {
+                        var myArray = $.parseJSON(response);
+                        var renglones = {};
+
+                        console.log(myArray);
+
+                    }
+                });
+            });
+        });
+
+
+
+    })();
+
+
+
+
+</script>
+

@@ -3,6 +3,8 @@
 <%@ Register Src="~/Controles/Especialista/contInfroUsuario.ascx" TagPrefix="uc1" TagName="contInfroUsuario" %>
 <%@ Register Src="~/Controles/Especialista/contCarnet.ascx" TagPrefix="uc1" TagName="contCarnet" %>
 <%@ Register Src="~/Controles/Especialista/contExamenPsico.ascx" TagPrefix="uc1" TagName="contExamenPsico" %>
+<%@ Register Src="~/Controles/Especialista/contSubirArchivo.ascx" TagPrefix="uc1" TagName="contSubirArchivo" %>
+
 
 
 
@@ -17,7 +19,7 @@
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>   Información
+                        <span class="oi oi-info"></span>Información
                     </a>
                 </h5>
             </div>
@@ -39,22 +41,23 @@
                     <div class="row">
                         <div class="col-4">
                             <label for="TextBoxidUsuario">Matrícula:</label>
-                            <asp:TextBox ID="TextBoxidUsuario" runat="server" CssClass="form-control" TextMode="Number" required=""></asp:TextBox>
+                            <asp:TextBox ID="TextBoxidUsuario" runat="server" CssClass="form-control" TextMode="Number" value="0"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="vTextBoxidUsuario" runat="server" ControlToValidate="TextBoxidUsuario" ValidationGroup="buscar"  CssClass=" alert-warning" ErrorMessage="Campo requerido" />
                         </div>
 
                         <div class="col-4">
                             <br />
-                            <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" OnClick="ButtonBuscar_Click" />
+                            <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" ValidationGroup="buscar" OnClick="ButtonBuscar_Click" />
                         </div>
                         <div class="col-4">
                             <div class="alert alert-warning ocultar" role="alert" id="PanelAviso">
                                 <br />
-                              Sin resultados!
+                                Sin resultados!
                             </div>
                         </div>
                     </div>
                 </div>
-              
+
 
             </div>
             <div class="card-body">
@@ -83,7 +86,8 @@
                                 <uc1:contCarnet runat="server" ID="contCarnet" />
                             </div>
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                <uc1:contExamenPsico runat="server" ID="contExamenPsico" />
+                                <uc1:contSubirArchivo runat="server" ID="contSubirArchivo" />
+                                <%-- <uc1:contExamenPsico runat="server" ID="contExamenPsico" />--%>
                             </div>
 
                         </div>

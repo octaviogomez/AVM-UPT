@@ -22,6 +22,15 @@ namespace AVM.Paginas.Especialista {
         protected global::System.Web.UI.WebControls.TextBox TextBoxidUsuario;
         
         /// <summary>
+        /// vTextBoxidUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vTextBoxidUsuario;
+        
+        /// <summary>
         /// ButtonBuscar control.
         /// </summary>
         /// <remarks>
@@ -49,12 +58,12 @@ namespace AVM.Paginas.Especialista {
         protected global::AVM.Controles.Especialista.contCarnet contCarnet;
         
         /// <summary>
-        /// contExamenPsico control.
+        /// contSubirArchivo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AVM.Controles.Especialista.contExamenPsico contExamenPsico;
+        protected global::AVM.Controles.Especialista.contSubirArchivo contSubirArchivo;
     }
 }

@@ -26,7 +26,7 @@ namespace AVM.Controles.Especialista
                 embed += " or download <a target = \"_blank\" href = \"http://get.adobe.com/reader/\">Adobe PDF Reader</a> to view the file.";
                 embed += "</object>";
                 PDFCarnet.Text = string.Format(embed, ResolveUrl("~/Archivos/Carnet/" + valor + ".pdf"));
-
+                HyperLinkVistaCompletaCarnet.NavigateUrl = "~/Archivos/Carnet/" + valor + ".pdf";
 
 
             }

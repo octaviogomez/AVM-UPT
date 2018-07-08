@@ -1,4 +1,5 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Perfil.ascx.cs" Inherits="AVM.Controles.Usuario.Perfil" %>
+﻿
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Perfil.ascx.cs" Inherits="AVM.Controles.Usuario.Perfil" %>
 <div class="container colorBlanco">
 
 

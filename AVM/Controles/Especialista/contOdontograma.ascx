@@ -14,12 +14,12 @@
         <div class="form-group col-md-3">
             <label for="NumeroDiente">Número de diente</label>
             <asp:TextBox ID="NumeroDiente" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="vNumeroDiente" runat="server" ControlToValidate="NumeroDiente" ValidationGroup="odonto" ErrorMessage="Campo requerido" CssClas="alert alert-warning btn-lg btn-block" />
+            <asp:RequiredFieldValidator ID="vNumeroDiente" runat="server" ControlToValidate="NumeroDiente" ValidationGroup="odonto" ErrorMessage="Campo requerido" CssClass=" alert-warning " />
         </div>
         <div class="form-group col-md-9">
             <label for="DiagnosticoDiente">Diagnóstico</label>
             <asp:TextBox ID="DiagnosticoDiente" runat="server" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="vDiagnosticoDiente" runat="server" ControlToValidate="DiagnosticoDiente" ValidationGroup="odonto" ErrorMessage="Campo requerido" CssClas="alert alert-warning btn-lg btn-block" />
+            <asp:RequiredFieldValidator ID="vDiagnosticoDiente" runat="server" ControlToValidate="DiagnosticoDiente" ValidationGroup="odonto" ErrorMessage="Campo requerido" CssClass=" alert-warning " />
         </div>
     </div>
 
@@ -28,12 +28,12 @@
         <div class="form-group col-md-6">
             <label for="Peso">Tratamiento</label>
             <asp:TextBox ID="TratamientoDiente" runat="server" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="vTratamientoDiente" runat="server" ControlToValidate="TratamientoDiente" ValidationGroup="odonto" ErrorMessage="Campo requerido" CssClas="alert alert-warning btn-lg btn-block" />
+            <asp:RequiredFieldValidator ID="vTratamientoDiente" runat="server" ControlToValidate="TratamientoDiente" ValidationGroup="odonto" ErrorMessage="Campo requerido" CssClass=" alert-warning " />
         </div>
         <div class="form-group col-md-6">
             <label for="ComentarioDiente">Comentario</label>
             <asp:TextBox ID="ComentarioDiente" runat="server" Font-Size="Medium" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="vComentarioDiente" runat="server" ControlToValidate="ComentarioDiente"  ValidationGroup="odonto" ErrorMessage="Campo requerido" CssClas="alert alert-warning btn-lg btn-block" />
+                            <asp:RequiredFieldValidator ID="vComentarioDiente" runat="server" ControlToValidate="ComentarioDiente"  ValidationGroup="odonto" ErrorMessage="Campo requerido" CssClass=" alert-warning " />
     
         </div>
     </div>

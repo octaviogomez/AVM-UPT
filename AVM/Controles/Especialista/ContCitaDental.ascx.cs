@@ -167,17 +167,14 @@ namespace AVM.Controles.Especialista
         }
         #endregion
 
-        protected void ButtonGuardar_Click(object sender, EventArgs e)
-        {
-            vistaConsulta.ReguistrarConsulta(NewConsulta);
-            Response.Redirect("AgendaCitas.aspx", true);
-        }
+
 
         protected void ButtonGenerarCita_Click(object sender, EventArgs e)
         {
             ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script> $('#exampleModal').modal('show');</script>", false);
         }
-        protected void ImageButtonImpresora_Click(object sender, ImageClickEventArgs e)
+
+        protected void HyperLinkMedico_Click(object sender, EventArgs e)
         {
             DateTime fechaHoy = DateTime.Now;
             string fecha = fechaHoy.ToShortDateString();
@@ -202,9 +199,9 @@ namespace AVM.Controles.Especialista
                             "</TABLE><br/><br/><br/><br/>";
             cadenaFinal += "<table border=1><tr><td>Especialista: " + objEspe.Nombre + " " + objEspe.Apellido + "</td><td>Firma</td></tr></table>";
             string nom = "RecetaMedica" + LabelNombre.Text;
+
             ImprimirPDF(cadenaFinal, nom);
         }
-
         private void ImprimirPDF(string cadenaFinal, string nom)
         {
             Document pdfDoc = new Document(PageSize.A4, 10, 10, 10, 10);
@@ -234,14 +231,10 @@ namespace AVM.Controles.Especialista
 
                 //Close your PDF 
                 pdfDoc.Close();
-
                 Response.ContentType = "application/pdf";
-
                 //Set default file Name as current datetime 
                 Response.AddHeader("content-disposition", "attachment; filename=" + nom + ".pdf");
                 System.Web.HttpContext.Current.Response.Write(pdfDoc);
-
-
                 Response.Flush();
                 Response.End();
 
@@ -251,6 +244,13 @@ namespace AVM.Controles.Especialista
                 Response.Write(ex.ToString());
             }
         }
+
+        protected void ButtonGuardar_Click(object sender, EventArgs e)
+        {
+            vistaConsulta.ReguistrarConsulta(NewConsulta);
+            Response.Redirect("AgendaCitas.aspx", true);
+        }
+
     }
 
 }

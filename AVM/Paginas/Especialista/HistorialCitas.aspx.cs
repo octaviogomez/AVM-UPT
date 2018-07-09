@@ -24,6 +24,15 @@ namespace AVM.Paginas.Especialista
         //Especialista
         CEspecialista usuariologeado;//Objeto donde se guarda los datos de sesion del especialista
 
+
+        public enum tabIndex {
+            tab1=1,
+            tab2=2
+        }
+        public void setTab(tabIndex value) {
+            HiddenField1.Value = ((int)value).ToString();
+        }
+
         public GridViewRow FilaSeleccionada
         {
             get;
@@ -239,8 +248,9 @@ namespace AVM.Paginas.Especialista
                 codigo = (((Label)FilaSeleccionada.FindControl("LabelId")).Text);
 
                 vistaConsulta.ListarHistorialCitas(13, codigo, DatosPasienteConsulta);
+                
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script> </script>", false);
-
+                setTab(tabIndex.tab2);
             }
 
 

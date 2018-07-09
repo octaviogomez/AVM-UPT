@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="contReportesCuestionarioMedico.ascx.cs" Inherits="AVM.Controles.Admin.contReportesCuestionarioMedico" %>
-<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 <div class="container colorBlanco">
 <div id="accordion">
         <div class="card">
@@ -36,9 +36,12 @@
                 <div class="col-md-5 mb-5">
                     <strong>
                         <label for="DropDownListEspecialista">2. Año de ingreso</label></strong>
-                    <asp:DropDownList ID="DropDownListEspecialista" runat="server" CssClass="form-control" required="Se necesita un especialista"></asp:DropDownList>
+                    <asp:DropDownList ID="DropDownListEspecialista" runat="server" CssClass="form-control" required="Se necesita un especialista" Visible="false"></asp:DropDownList>
                 </div>
             </div>
+              
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
               
                 <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="824px" Height="614px" Style="margin-top: 23px" ShowBackButton="False" ShowExportControls="False" ShowFindControls="False" ShowPageNavigationControls="False" ShowPrintButton="False" ShowRefreshButton="False" ShowZoomControl="False">
                     <LocalReport ReportPath="Report.rdlc">

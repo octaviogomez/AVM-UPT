@@ -219,6 +219,11 @@ C:\Users\Aurelio\Desktop\Man\AVM-UPT\AVM\obj\Debug\AVM.dll
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\AVM\obj\Debug\AVM.pdb
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\AVM\bin\itextsharp.dll
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\AVM\bin\itextsharp.xml
+C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\itextsharp.dll
+C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\itextsharp.xml
+C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.WebForms.xml
 C:\Users\octav\Desktop\AVM\AVM\bin\roslyn\csc.exe
 C:\Users\octav\Desktop\AVM\AVM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\octav\Desktop\AVM\AVM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -242,6 +247,8 @@ C:\Users\octav\Desktop\AVM\AVM\bin\itextsharp.dll
 C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.AspNet.FriendlyUrls.dll
 C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
 C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.ReportViewer.WinForms.dll
 C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.ScriptManager.MSAjax.dll
 C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.ScriptManager.WebForms.dll
 C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.Web.Infrastructure.dll
@@ -270,8 +277,5 @@ C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.csprojResolveAssemblyReference.cache
 C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.dll
 C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.pdb
-C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\itextsharp.dll
-C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\itextsharp.xml
-C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.WebForms.dll
-C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.Common.dll
-C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.WebForms.xml
+C:\Users\octav\Desktop\AVM\AVM\obj\Debug\RdlCompile.cache
+C:\Users\octav\Desktop\AVM\AVM\obj\Debug\RdlCompile.compiled

@@ -45,7 +45,7 @@ namespace AVM.Controles.Usuario
 
             }
             else {
-                Response.Redirect("../../Default.aspx", true);//
+                Response.Redirect("Default.aspx", true);//
             }
 
         }

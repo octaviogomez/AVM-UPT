@@ -166,22 +166,44 @@ namespace AVM.Paginas.Especialista
                 if (value!=null)
                 {
                     LabelIdCita.Text = value.Tables[0].Rows[0][0].ToString();   // id de cita
+
                     LabelMatriculaAlumno.Text = value.Tables[0].Rows[0][1].ToString(); // matricula 
+                    matriculaAlumnoPsico.Text = value.Tables[0].Rows[0][1].ToString(); // matricula 
+
+
                     ResumenAntecedente.Text = value.Tables[0].Rows[0][2].ToString(); // resumen antecedente
                     Peso.Text = value.Tables[0].Rows[0][3].ToString(); // peso
                     Talla.Text = value.Tables[0].Rows[0][4].ToString(); // talla
                     Presion.Text = value.Tables[0].Rows[0][5].ToString(); // presion
 
                     TextBoxDiagnostico.Text = value.Tables[0].Rows[0][6].ToString(); // diagnostico
+                    diagnosticoPsico.Text = value.Tables[0].Rows[0][6].ToString(); // diagnostico
+
+
                     PlanTratamiento.Text = value.Tables[0].Rows[0][7].ToString(); // plan de tratamiento
+                    tratamientoPsico.Text= value.Tables[0].Rows[0][7].ToString(); // plan de tratamiento
+
                     ResumenExploracion.Text = value.Tables[0].Rows[0][8].ToString();
+                    exploPisco.Text = value.Tables[0].Rows[0][8].ToString();
                     //datos del medico
                     labelNombreMedico.Text = value.Tables[0].Rows[0][9].ToString();
+                    NombrePsicologo.Text= value.Tables[0].Rows[0][9].ToString();
+
+
                     LabelEspecialidad.Text = value.Tables[0].Rows[0][10].ToString();
+                    EspeciliadadPsicologo.Text= value.Tables[0].Rows[0][10].ToString();
+
                     LabelFecha.Text = value.Tables[0].Rows[0][11].ToString();
+                    fechaPsico.Text = value.Tables[0].Rows[0][11].ToString();
+
                     labelHora.Text = value.Tables[0].Rows[0][12].ToString();
+                    horapsico.Text = value.Tables[0].Rows[0][12].ToString();
+
                     LabelNombreAlumno.Text = value.Tables[0].Rows[0][13].ToString();
+                    usuarioPsico.Text= value.Tables[0].Rows[0][13].ToString();
+
                     labelIdMedico.Text = value.Tables[0].Rows[0][14].ToString();
+                    matriculaPsicologo.Text = value.Tables[0].Rows[0][14].ToString();
                     //add mas
                     Temperatura.Text = value.Tables[0].Rows[0][15].ToString();
                     Ritmocaridaco.Text = value.Tables[0].Rows[0][16].ToString();
@@ -217,8 +239,10 @@ namespace AVM.Paginas.Especialista
                 codigo = (((Label)FilaSeleccionada.FindControl("LabelId")).Text);
 
                 vistaConsulta.ListarHistorialCitas(13, codigo, DatosPasienteConsulta);
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script> </script>", false);
+
             }
-           
+
 
             FilaSeleccionada.Dispose();
         }

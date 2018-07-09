@@ -47,7 +47,7 @@
 
     <div class="form-group col-md-3">
         <br />
-
-        <asp:Button ID="Guardar" runat="server" Text="Guardar" CssClass="btn btn-success btn-lg btn-block " OnClick="Guardar_Click" ValidationGroup="alta" />
+        <asp:LinkButton ID="Guardar" runat="server"  CssClass="btn btn-success btn-lg btn-block " OnClick="Guardar_Click" ValidationGroup="alta"><span class="oi oi-check"></span> Guardar</asp:LinkButton>
+      
     </div>
 </div>

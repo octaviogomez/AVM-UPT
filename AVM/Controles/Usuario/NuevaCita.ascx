@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NuevaCita.ascx.cs" Inherits="AVM.Controles.Usuario.NuevaCita" %>
 <div class="container colorBlanco">
     <div class="card">
-        <h5 class="card-header">Agendar Consulta </h5>
+        <h5 class="card-header">   <span class="oi oi-calendar"></span>  Agendar Consulta </h5>
         <div class="card-body">
 
 
@@ -119,8 +119,6 @@
         var min = "" + anio + "-" + mes + "-" + dia;
         var max = "" + anio + "-" + mes + "-" + (dia + 5);;
 
-        console.log(min);
-        console.log(max);
 
         $("#ContentPlaceHolder1_NuevaCita_TextBoxFecha").prop("min", min);
         $("#ContentPlaceHolder1_NuevaCita_TextBoxFecha").prop("max", max);

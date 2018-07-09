@@ -11,7 +11,7 @@
     <div class="container colorBlanco">
 
         <div class="card">
-            <h5 class="card-header">Administrar usuarios</h5>
+            <h5 class="card-header">   <span class="oi oi-people"></span>  Administrar usuarios</h5>
             <div class="card-body">
                 <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
@@ -26,7 +26,7 @@
                             <ul>
 
                                 <li>Para visualizar un <strong>usuario</strong> identifiquelo, y despues de clic en       <span class="oi oi-person"></span></li>
-                                <li>Para eliminar un <strong>usuario</strong> identifiquel, y despues de clic en    <span class="oi oi-trash"></span></li>
+                                <li>Para eliminar un <strong>usuario</strong> identifiquelo, y despues de clic en    <span class="oi oi-trash"></span></li>
                             </ul>
                             <br />
                             <ol>

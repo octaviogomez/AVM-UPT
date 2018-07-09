@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="controlCitaRapida.ascx.cs" Inherits="AVM.Controles.Especialista.controlCitaRapida" %>
 <div class="container colorBlanco">
     <div class="card">
-        <h5 class="card-header">Cita rápida</h5>
+        <h5 class="card-header">   <span class="oi oi-medical-cross"></span>  Cita rápida</h5>
         <div class="card-body">
 
             <div class="card-header" id="headingOne">

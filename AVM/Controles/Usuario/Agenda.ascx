@@ -2,7 +2,7 @@
 <div class="container colorBlanco">
 
     <div class="card">
-        <h5 class="card-header">Consulta y cancelacion de citas</h5>
+        <h5 class="card-header">   <span class="oi oi-clock"></span>  Consulta y cancelación de citas</h5>
         <div class="card-body">
             
             <div class="card-header" id="headingOne">
@@ -61,7 +61,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Cancelar Consulta</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

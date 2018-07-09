@@ -22,6 +22,20 @@ namespace AVM.Masters
             {
 
                 LabelNombreEspecialista.Text = objLoggerdUserEspecialista.Nombre;
+                switch (objLoggerdUserEspecialista.fk_Especialidad)
+                {
+                    case "1":
+                        ImageRolMedico.Visible = true;
+                        break;
+                    case "2":
+                        ImageRolDental.Visible = true;
+                        break;
+                    case "3":
+                        ImageRolPisco.Visible = true;
+                        break;
+                    default:
+                        break;
+                }
             }
             else
             {

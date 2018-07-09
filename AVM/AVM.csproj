@@ -1760,7 +1760,9 @@
     <Content Include="Imagenes\Roles\cepillo.png" />
     <Content Include="Imagenes\Roles\charlar.png" />
     <Content Include="Imagenes\Roles\conferencias.png" />
+    <Content Include="Imagenes\Roles\dental.png" />
     <Content Include="Imagenes\Roles\doc.png" />
+    <Content Include="Imagenes\Roles\pisco.png" />
     <Content Include="Imagenes\universidad\Acuse.png" />
     <Content Include="Imagenes\universidad\baner.jpg" />
     <Content Include="Imagenes\universidad\corazon.png" />
@@ -3153,7 +3155,6 @@
     <Content Include="Paginas\Default.aspx" />
     <Content Include="Paginas\Especialista\AdminAlumnos.aspx" />
     <Content Include="Paginas\Especialista\AgendaCitas.aspx" />
-    <Content Include="Paginas\Especialista\Archivos.aspx" />
     <Content Include="Paginas\Especialista\BloquearFechas.aspx" />
     <Content Include="Paginas\Especialista\CitaRapida.aspx" />
     <Content Include="Paginas\Especialista\Default.aspx" />
@@ -3502,13 +3503,6 @@
     </Compile>
     <Compile Include="Paginas\Especialista\AgendaCitas.aspx.designer.cs">
       <DependentUpon>AgendaCitas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Especialista\Archivos.aspx.cs">
-      <DependentUpon>Archivos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Especialista\Archivos.aspx.designer.cs">
-      <DependentUpon>Archivos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Especialista\BloquearFechas.aspx.cs">
       <DependentUpon>BloquearFechas.aspx</DependentUpon>

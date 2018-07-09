@@ -2,7 +2,7 @@
 <div class="container colorBlanco">
     <div class="card">
         <div class="card-header">
-            <h5 class="card-title">Carnet</h5>
+            <h5 class="card-title">   <span class="oi oi-file"></span>  Carnet</h5>
         </div>
         <div class="card-body">
             <br />
@@ -57,16 +57,19 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
 <script>
     (function () {
-
+   
 
 
         $("#ContentPlaceHolder1_SubirCarnet_FileUpload1").change(function () {
             //limpiamos todo
-
-
-
             var fileExtension = ['pdf'];//  var fileExtension = ['jpeg', 'jpg', 'png', 'gif', 'bmp'];
             if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
                 $('#PanelAviso').removeClass('ocultar').addClass('mostrar');

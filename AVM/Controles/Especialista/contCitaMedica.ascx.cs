@@ -165,13 +165,14 @@ namespace AVM.Controles.Especialista
         }
         #endregion
 
-        protected void ButtonGuardar_Click(object sender, EventArgs e)
+
+
+        protected void ButtonGenerarCita_Click(object sender, EventArgs e)
         {
-            vistaConsulta.ReguistrarConsulta(NewConsulta);
-            Response.Redirect("AgendaCitas.aspx", true);
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script> $('#exampleModal').modal('show');</script>", false);
         }
 
-        protected void ImageButtonImpresora_Click(object sender, ImageClickEventArgs e)
+        protected void HyperLinkMedico_Click(object sender, EventArgs e)
         {
             DateTime fechaHoy = DateTime.Now;
             string fecha = fechaHoy.ToShortDateString();
@@ -192,14 +193,13 @@ namespace AVM.Controles.Especialista
                 "<TR><TD colspan=2><b>Nombre:</b> " + LabelNombre.Text + "</TD><TD colspan=2><b>Matrícula:</b> " + LabelMatricula.Text + "</TD></TR>" +
                             "<TR><TD colspan=4><b>Diagnóstico:</b> " + autocompleteDiagnostico.Text + "</TD></TR>" +
                             "<TR><TD colspan=4><b>Plan de tratamiento:</b> " + PlanTratamiento.Text + "</TD></TR>" +
-           //                 "<tr><TD colspan=2><b>Días de reposo: </b>" + DiasReposo.Text + "</TD><TD colspan=2><b>Tipo de usuario: </b>" + TipoDeConsulta.Text + "</TD></tr>" +
+                            //                 "<tr><TD colspan=2><b>Días de reposo: </b>" + DiasReposo.Text + "</TD><TD colspan=2><b>Tipo de usuario: </b>" + TipoDeConsulta.Text + "</TD></tr>" +
                             "</TABLE><br/><br/><br/><br/>";
             cadenaFinal += "<table border=1><tr><td>Especialista: " + objEspe.Nombre + " " + objEspe.Apellido + "</td><td>Firma</td></tr></table>";
             string nom = "RecetaMedica" + LabelNombre.Text;
 
             ImprimirPDF(cadenaFinal, nom);
         }
-
         private void ImprimirPDF(string cadenaFinal, string nom)
         {
             Document pdfDoc = new Document(PageSize.A4, 10, 10, 10, 10);
@@ -229,14 +229,10 @@ namespace AVM.Controles.Especialista
 
                 //Close your PDF 
                 pdfDoc.Close();
-
                 Response.ContentType = "application/pdf";
-
                 //Set default file Name as current datetime 
                 Response.AddHeader("content-disposition", "attachment; filename=" + nom + ".pdf");
                 System.Web.HttpContext.Current.Response.Write(pdfDoc);
-
-
                 Response.Flush();
                 Response.End();
 
@@ -247,10 +243,13 @@ namespace AVM.Controles.Especialista
             }
         }
 
-        protected void ButtonGenerarCita_Click(object sender, EventArgs e)
+        protected void ButtonGuardar_Click(object sender, EventArgs e)
         {
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script> $('#exampleModal').modal('show');</script>", false);
+            vistaConsulta.ReguistrarConsulta(NewConsulta);
+            Response.Redirect("AgendaCitas.aspx", true);
         }
+
+     
     }
 
 }

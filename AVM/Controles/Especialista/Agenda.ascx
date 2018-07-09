@@ -2,12 +2,12 @@
 <div class="container colorBlanco">
 
     <div class="card">
-        <h5 class="card-header">Citas</h5>
+        <h5 class="card-header">    <span class="oi oi-clock"></span>  Citas</h5>
         <div class="card-body">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>   Información
+                          <span class="oi oi-info"></span>  Información
                     </a>
                 </h5>
             </div>

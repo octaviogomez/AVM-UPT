@@ -270,3 +270,8 @@ C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.csprojResolveAssemblyReference.cache
 C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.dll
 C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.pdb
+C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\itextsharp.dll
+C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\itextsharp.xml
+C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.WebForms.xml

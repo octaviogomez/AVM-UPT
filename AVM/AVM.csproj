@@ -52,6 +52,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -143,6 +145,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Controles\Admin\contCargarDatosAlumnos.ascx" />
+    <Content Include="Controles\Admin\contReportesCuestionarioDental.ascx" />
+    <Content Include="Controles\Admin\contReportesCuestionarioMedico.ascx" />
+    <Content Include="Controles\Admin\contReportesCuestionarioPsicologico.ascx" />
     <Content Include="Controles\Especialista\Agenda.ascx" />
     <Content Include="Controles\Especialista\contAdminAlumnos.ascx" />
     <Content Include="Controles\Especialista\contAgregarFechaBloqueada.ascx" />
@@ -3229,6 +3234,27 @@
     </Compile>
     <Compile Include="Controles\Admin\contCargarDatosAlumnos.ascx.designer.cs">
       <DependentUpon>contCargarDatosAlumnos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioDental.ascx.cs">
+      <DependentUpon>contReportesCuestionarioDental.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioDental.ascx.designer.cs">
+      <DependentUpon>contReportesCuestionarioDental.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioMedico.ascx.cs">
+      <DependentUpon>contReportesCuestionarioMedico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioMedico.ascx.designer.cs">
+      <DependentUpon>contReportesCuestionarioMedico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioPsicologico.ascx.cs">
+      <DependentUpon>contReportesCuestionarioPsicologico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioPsicologico.ascx.designer.cs">
+      <DependentUpon>contReportesCuestionarioPsicologico.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Especialista\Agenda.ascx.cs">
       <DependentUpon>Agenda.ascx</DependentUpon>

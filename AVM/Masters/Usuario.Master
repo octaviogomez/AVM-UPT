@@ -14,9 +14,7 @@
     <script src="../../Scripts/jquery-3.3.1.min.js"></script>
     <script src="../../Scripts/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
     <script src="../../Scripts/bootstrap.min.js"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
 </head>
 
 <body>

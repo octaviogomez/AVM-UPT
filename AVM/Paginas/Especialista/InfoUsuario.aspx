@@ -14,12 +14,12 @@
 
     <div class="container colorBlanco">
         <div class="card">
-            <h5 class="card-header">Información del usuario</h5>
+            <h5 class="card-header">   <span class="oi oi-person"></span>  Información del usuario</h5>
             <br />
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>Información
+                        <span class="oi oi-info"></span>   Información
                     </a>
                 </h5>
             </div>
@@ -47,7 +47,8 @@
 
                         <div class="col-4">
                             <br />
-                            <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" ValidationGroup="buscar" OnClick="ButtonBuscar_Click" />
+                            <asp:HyperLink ID="ButtonBuscar" runat="server"  CssClass="btn btn-success btn-lg btn-block" ValidationGroup="buscar" OnClick="ButtonBuscar_Click" ><span class="oi oi-magnifying-glass"></span>Buscar</asp:HyperLink>
+                         
                         </div>
                         <div class="col-4">
                             <div class="alert alert-warning ocultar" role="alert" id="PanelAviso">

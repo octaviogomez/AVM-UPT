@@ -46,7 +46,7 @@
                                 <asp:ListItem Text="Tipo" Value="0"></asp:ListItem>
                                 <asp:ListItem Text="Médico" Value="1"></asp:ListItem>
                                 <asp:ListItem Text="Dental" Value="2"></asp:ListItem>
-                                <asp:ListItem Text="Psicologico" Value="3"></asp:ListItem>
+                                <asp:ListItem Text="Psicológico" Value="3"></asp:ListItem>
                        
                             </asp:DropDownList>
                         </div>
@@ -59,8 +59,6 @@
             </div>
             <br />
             <ul class="nav nav-pills col-12 mb-3" id="pills-tab" role="tablist">
-                
-            <asp:HiddenField ID="HiddenField1" runat="server" />
                 <li class="nav-item">
                     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Consultas</a>
                 </li>
@@ -68,7 +66,7 @@
                     <asp:LinkButton ID="LinkButtonMedico" runat="server" class="nav-link" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" data-tipo="medico" Visible="false">Médico/Dental</asp:LinkButton>
                 </li>
                 <li class="nav-item">
-                    <asp:LinkButton ID="LinkButtonPsico" runat="server" class="nav-link" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" data-tipo="pisco" Visible="false">Psicologico</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButtonPsico" runat="server" class="nav-link" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" data-tipo="pisco" Visible="false">Psicológico</asp:LinkButton>
                 </li>
                 <li class="nav-item">
                     <asp:LinkButton ID="LinkButtonOdonto" runat="server" class="nav-link" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" data-tipo="odonto" Visible="false">Odontograma</asp:LinkButton>
@@ -198,7 +196,11 @@
                         </div>
                     </div>
                     <asp:Label ID="LabelIdCita" runat="server" Text="Id:" Font-Size="Medium" Visible="false"></asp:Label>
-
+                    <div> 
+                        <asp:LinkButton ID="HyperLinkDental" runat="server" CssClass="btn btn-outline-info btn-lg btn-lock" OnClick="Button1_Click"> 
+                        <span class="oi oi-print"></span> Imprimir
+                        </asp:LinkButton>
+                    </div><br />
 
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
@@ -264,13 +266,13 @@
                         <h5 class="card-title">Plan de Tratamiento</h5>
                         <asp:TextBox ID="tratamientoPsico" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
                     </div>
-                   
-
-
+                    <div> 
+                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-outline-info btn-lg btn-lock" OnClick="Button1_Click"> 
+                        <span class="oi oi-print"></span> Imprimir
+                        </asp:LinkButton>
+                    </div><br />
                 </div>
-
             </div>
-
         </div>
     </div>
     <script>
@@ -281,3 +283,4 @@
 
     </script>
 </asp:Content>
+

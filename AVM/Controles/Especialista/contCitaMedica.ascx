@@ -26,7 +26,7 @@
                 <h5 class="card-title">Interrogatorio al paciente</h5>
                 <div class="form-group">
                     <asp:TextBox ID="ResumenAntecedente" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vResumenAntecedente" runat="server" ControlToValidate="ResumenAntecedente" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                    <asp:RequiredFieldValidator ID="vResumenAntecedente" runat="server" ControlToValidate="ResumenAntecedente" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
                 </div>
             </div>
 
@@ -38,34 +38,34 @@
                     <div class="form-group col-md-2">
                         <label for="Talla">Talla (cm)</label>
                         <asp:TextBox ID="Talla" runat="server" CssClass="form-control" TextMode="Number" min="100" max="250"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vTalla" runat="server" ControlToValidate="Talla" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                        <asp:RequiredFieldValidator ID="vTalla" runat="server" ControlToValidate="Talla" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
                     </div>
                     <div class="form-group col-md-2">
                         <label for="Temperatura">Temperatura</label>
                         <asp:TextBox ID="Temperatura" runat="server" CssClass="form-control" TextMode="Number" step="0.01" title="Currency" pattern="^\d+(?:\.\d{1,2})?$" min="32" max="45"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vTemperatura" runat="server" ControlToValidate="Temperatura" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                        <asp:RequiredFieldValidator ID="vTemperatura" runat="server" ControlToValidate="Temperatura" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
                     </div>
                     <div class="form-group col-md-2">
                         <label for="Peso">Peso (kg)</label>
                         <asp:TextBox ID="Peso" runat="server" TextMode="Number" CssClass="form-control" step="0.01" title="Currency" pattern="^\d+(?:\.\d{1,2})?$" min="20" max="300"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vPeso" runat="server" ControlToValidate="Peso" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                        <asp:RequiredFieldValidator ID="vPeso" runat="server" ControlToValidate="Peso" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
 
                     </div>
                     <div class="form-group col-md-2">
                         <label for="RtimoCardiaco">Ritmo Cardiaco</label>
                         <asp:TextBox ID="RtimoCardiaco" runat="server" CssClass="form-control" TextMode="Number" min="0" max="1000"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vRtimoCardiaco" runat="server" ControlToValidate="RtimoCardiaco" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                        <asp:RequiredFieldValidator ID="vRtimoCardiaco" runat="server" ControlToValidate="RtimoCardiaco" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
                     </div>
                     <div class="form-group col-md-2">
                         <label for="Presion" style="font-size:x-small">Presión Arterial(mm)</label>
                         <asp:TextBox ID="Presion" runat="server" CssClass="form-control" TextMode="Number" min="0" max="1000"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vPresion" runat="server" ControlToValidate="Presion" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                        <asp:RequiredFieldValidator ID="vPresion" runat="server" ControlToValidate="Presion" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
 
                     </div>
                     <div class="form-group col-md-2">
                         <label for="Presion1" style="font-size:x-small">Presión Arterial(hg)</label>
                         <asp:TextBox ID="Presion1" runat="server" CssClass="form-control" TextMode="Number" min="0" max="1000"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="vPresion1" runat="server" ControlToValidate="Presion1" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                        <asp:RequiredFieldValidator ID="vPresion1" runat="server" ControlToValidate="Presion1" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="ResumenExploracion" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vResumenExploracion" runat="server" ControlToValidate="ResumenExploracion" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                    <asp:RequiredFieldValidator ID="vResumenExploracion" runat="server" ControlToValidate="ResumenExploracion" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
                 </div>
             </div>
             <div class="card-body">
@@ -85,7 +85,7 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="autocompleteDiagnostico" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vautocompleteDiagnostico" runat="server" ControlToValidate="autocompleteDiagnostico" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                    <asp:RequiredFieldValidator ID="vautocompleteDiagnostico" runat="server" ControlToValidate="autocompleteDiagnostico" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
                 </div>
             </div>
             <div class="card-body">
@@ -93,7 +93,7 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="PlanTratamiento" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vPlanTratamiento" runat="server" ControlToValidate="PlanTratamiento" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                    <asp:RequiredFieldValidator ID="vPlanTratamiento" runat="server" ControlToValidate="PlanTratamiento" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
 
                 </div>
             </div>

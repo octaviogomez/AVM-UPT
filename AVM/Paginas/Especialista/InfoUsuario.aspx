@@ -47,7 +47,8 @@
 
                         <div class="col-4">
                             <br />
-                            <asp:HyperLink ID="ButtonBuscar" runat="server"  CssClass="btn btn-success btn-lg btn-block" ValidationGroup="buscar" OnClick="ButtonBuscar_Click" ><span class="oi oi-magnifying-glass"></span>Buscar</asp:HyperLink>
+                            <asp:LinkButton ID="ButtonBuscar" runat="server"  CssClass="btn btn-success btn-lg btn-block" ValidationGroup="buscar" OnClick="ButtonBuscar_Click" ><span class="oi oi-magnifying-glass"></span>Buscar</asp:LinkButton>
+                   
                          
                         </div>
                         <div class="col-4">

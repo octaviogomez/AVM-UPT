@@ -25,7 +25,7 @@
             <br />
             <asp:Panel ID="PanelListadoCitas" runat="server" Height="450px" ScrollBars="Vertical" CssClass="border border-primary">
                 <div class="table-responsive">
-                    <asp:GridView ID="GridViewCitasPasiente" runat="server" CssClass="table table-striped table-bordered table-hover" AutoGenerateColumns="false" OnRowCommand="GridView1_OnRowCommand">
+                    <asp:GridView ID="GridViewCitasPasiente" runat="server" CssClass="table table-striped table-bordered table-hover" AutoGenerateColumns="False" OnRowCommand="GridView1_OnRowCommand">
                         <Columns>
                             <asp:TemplateField ShowHeader="False" HeaderText="IdCita" Visible="false" ControlStyle-CssClass="">
                                 <ItemTemplate>
@@ -49,12 +49,14 @@
                             </asp:TemplateField>
                            
                             <asp:BoundField Visible="true" DataField="Estado" HeaderText="Estado" />
-                            <asp:BoundField Visible="true" DataField="Nombre" HeaderText="Nombre" ItemStyle-Font-Bold="true" />
+                            <asp:BoundField Visible="true" DataField="Nombre" HeaderText="Nombre" ItemStyle-Font-Bold="true" >
+                            <ItemStyle Font-Bold="True" />
+                            </asp:BoundField>
                             <asp:BoundField Visible="true" DataField="Matricula" HeaderText="Matrícula" />
                             <asp:BoundField Visible="true" DataField="Fecha" HeaderText="Fecha" />
                             <asp:BoundField Visible="true" DataField="Horario" HeaderText="Horario" />
                             <asp:BoundField Visible="true" DataField="Usuario" HeaderText="Usuario" />
-                            <asp:TemplateField ShowHeader="False" HeaderText="Cancelación">
+                            <asp:TemplateField ShowHeader="False" HeaderText="Cancelar">
                                 <ItemTemplate>
                                     <asp:LinkButton ID="LinkButtonCancelar" runat="server" CommandName="Cancelar" CssClass="form-control btn btn-outline-danger">
                                       <span class="oi oi-trash"></span>

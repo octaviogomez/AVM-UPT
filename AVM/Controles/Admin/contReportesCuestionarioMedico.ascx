@@ -27,7 +27,7 @@
                 <div class="col-md-5 mb-5">
                     <strong>
                         <label for="DropDownListReporte">1. Seleccione reporte</label></strong>
-                    <asp:DropDownList ID="DropDownListReporte" runat="server" CssClass="form-control" required="Se necesita seleccionar reporte"  AutoPostBack="true">
+                    <asp:DropDownList ID="DropDownListReporte" runat="server" CssClass="form-control" required="Se necesita seleccionar reporte" OnSelectedIndexChanged="DropDownClick"  AutoPostBack="true">
                         <asp:ListItem Selected="False" Value="0" Text="Seleccione reporte" Enabled="true"></asp:ListItem>
                     </asp:DropDownList>
                 </div>
@@ -35,8 +35,8 @@
                 </div>
                 <div class="col-md-5 mb-5">
                     <strong>
-                        <label for="DropDownListEspecialista">2. Año de ingreso</label></strong>
-                    <asp:DropDownList ID="DropDownListEspecialista" runat="server" CssClass="form-control" required="Se necesita un especialista" Visible="false"></asp:DropDownList>
+                        <label for="DropDownListEspecialista">2. Exportar a:</label></strong>
+                    <asp:DropDownList ID="DropDownListExportar" runat="server" CssClass="form-control" required="Se necesita seleccionar reporte" OnSelectedIndexChanged="DropDownClickExportar" AutoPostBack="true"></asp:DropDownList>
                 </div>
             </div>
               

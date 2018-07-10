@@ -29,6 +29,12 @@ namespace AVM.Controles.Admin
                 DropDownListReporte.Items.Add(new ListItem("1.- Alimentación diaría"));
                 DropDownListReporte.Items.Add(new ListItem("2.- ¿Cuantas veces realizas ejercicio?"));
                 DropDownListReporte.Items.Add(new ListItem("3.- ¿Cual es su grupo sanguineo?"));
+
+                DropDownListExportar.Items.Clear();
+                DropDownListExportar.Items.Add(new ListItem("PDF"));
+                DropDownListExportar.Items.Add(new ListItem("WORD"));
+                DropDownListExportar.Items.Add(new ListItem("EXCEL"));
+                DropDownListExportar.Items.Add(new ListItem("PNG"));
                 WReporteVista = new WReporte(this);
                 WReporteVista.obtenerDatosReporte(10);
             }
@@ -56,7 +62,50 @@ namespace AVM.Controles.Admin
 
             }
         }
+        public void exportarReporte(string formato, string extension)
+        {
+            Warning[] warnings;
+            string[] streamids;
+            string mimeType;
+            string encoding;
+            string filenameExtension;
 
+            byte[] bytes = ReportViewer1.LocalReport.Render(
+                formato, null, out mimeType, out encoding, out filenameExtension,
+                out streamids, out warnings);
+
+            Response.Buffer = true;
+            Response.Clear();
+            Response.ContentType = mimeType;
+            Response.AddHeader("content-disposition", "attachment; filename= reporte" + "." + extension);
+            Response.OutputStream.Write(bytes, 0, bytes.Length); // create the file  
+            Response.Flush(); // send it to the client to download  
+            Response.End();
+        }
+        protected void DropDownClickExportar(object sender, EventArgs e)
+        {
+            if (DropDownListExportar.Text == "PDF")
+            {
+                exportarReporte("PDF", "pdf");
+
+            }
+            if (DropDownListExportar.Text == "WORD")
+            {
+                exportarReporte("WORD", "docx");
+
+            }
+            if (DropDownListExportar.Text == "EXCEL")
+            {
+                exportarReporte("EXCEL", "xls");
+
+            }
+            if (DropDownListExportar.Text == "PNG")
+            {
+                exportarReporte("image", "png");
+
+            }
+
+        }
         #region interfaz
         public List<CReporte> listaDatosReporte
         {

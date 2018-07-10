@@ -22,13 +22,13 @@ namespace AVM.Controles.Admin {
         protected global::System.Web.UI.WebControls.DropDownList DropDownListReporte;
         
         /// <summary>
-        /// DropDownListEspecialista control.
+        /// DropDownListExportar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListEspecialista;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListExportar;
         
         /// <summary>
         /// ScriptManager1 control.

@@ -56,7 +56,7 @@
                         <a class="nav-link " href="../../../Paginas/Admin/ReportesCuestionario.aspx">Reportes Cuestionario</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link " href="../../../Paginas/Admin/CargarExcel.aspx">Estadísticas</a>
+                        <a class="nav-link " href="../../../Paginas/Admin/Estadisticas.aspx">Estadísticas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="../../../Paginas/Admin/CargarExcel.aspx">Cargar Excel</a>

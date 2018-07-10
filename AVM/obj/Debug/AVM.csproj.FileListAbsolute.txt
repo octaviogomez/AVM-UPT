@@ -221,9 +221,6 @@ C:\Users\Aurelio\Desktop\Man\AVM-UPT\AVM\bin\itextsharp.dll
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\AVM\bin\itextsharp.xml
 C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\itextsharp.dll
 C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\itextsharp.xml
-C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.WebForms.dll
-C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.Common.dll
-C:\Users\pedro\Desktop\Proyecto\AVM-UPT\AVM\bin\Microsoft.ReportViewer.WebForms.xml
 C:\Users\octav\Desktop\AVM\AVM\bin\roslyn\csc.exe
 C:\Users\octav\Desktop\AVM\AVM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\octav\Desktop\AVM\AVM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll

@@ -56,22 +56,29 @@ namespace AVM.Controles.Usuario
             {
                 CAlumno objaux = this.objLoggerinf;
 
-                switch (this.opcionGetUsuarioLogeado)
+                try
                 {
-                    case 0:
-                        return this.objLoggerinf;
-                    case 1:
-                        objaux.alu_Password = (textboxClave1.Text == textboxClave1.Text) ? textboxClave1.Text : objaux.alu_Password;
-                        return objaux;
-                    case 2:
-                        objaux.Noseguro = textboxNoSocial.Text;
-                        objaux.curp = textboxCurp.Text;
-                        return objaux;
+                    switch (this.opcionGetUsuarioLogeado)
+                    {
+                        case 0:
+                            return this.objLoggerinf;
+                        case 1:
+                            objaux.alu_Password = (textboxClave1.Text == textboxClave1.Text) ? textboxClave1.Text : objaux.alu_Password;
+                            return objaux;
+                        case 2:
+                            objaux.Noseguro = textboxNoSocial.Text;
+                            objaux.curp = textboxCurp.Text;
+                            return objaux;
 
 
-                    default:
-                        return this.objLoggerinf;
+                        default:
+                            return this.objLoggerinf;
 
+                    }
+                }
+                catch (Exception)
+                {
+                    return null;
                 }
             } 
                 set
@@ -112,17 +119,25 @@ namespace AVM.Controles.Usuario
         {
             if (textboxNoSocial.Text != "" || !string.IsNullOrWhiteSpace(textboxNoSocial.Text))
             {
-                this.opcionGetUsuarioLogeado = 2;
-                vistaAlumno.crudAlumno(UsuarioLogeado, 7);
+                try
+                {
+                    this.opcionGetUsuarioLogeado = 2;
+                    vistaAlumno.crudAlumno(UsuarioLogeado, 7);
 
-                vistaAlumno.ActualizarDatosDeAlumno(UsuarioLogeado); //actualizamos los datos de la variable se sesion   
-                Session.Clear();// limpiamos la sesion  
+                    vistaAlumno.ActualizarDatosDeAlumno(UsuarioLogeado); //actualizamos los datos de la variable se sesion   
+                    Session.Clear();// limpiamos la sesion  
 
-                Session.Add("UsuarioLogeado", UsuarioActulizar);
+                    Session.Add("UsuarioLogeado", UsuarioActulizar);
 
-                textboxNoSocial.Text = "";
+                    textboxNoSocial.Text = "";
 
-                Response.Redirect(Request.RawUrl);
+                    Response.Redirect(Request.RawUrl);
+                }
+                catch (Exception)
+                {
+
+                    
+                }
             }
             else {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "alert('Datos requeridos');", true);
@@ -133,18 +148,25 @@ namespace AVM.Controles.Usuario
         {
             if (textboxCurp.Text != "" || !string.IsNullOrWhiteSpace(textboxCurp.Text))
             {
-                this.opcionGetUsuarioLogeado = 2;
-                vistaAlumno.crudAlumno(UsuarioLogeado, 15);
+                try
+                {
+                    this.opcionGetUsuarioLogeado = 2;
+                    vistaAlumno.crudAlumno(UsuarioLogeado, 15);
 
-                Session.Clear();// limpiamos la sesion
+                    Session.Clear();// limpiamos la sesion
 
-                vistaAlumno.ActualizarDatosDeAlumno(UsuarioLogeado); //actualizamos los datos de la variable se sesion   
+                    vistaAlumno.ActualizarDatosDeAlumno(UsuarioLogeado); //actualizamos los datos de la variable se sesion   
 
-                Session.Add("UsuarioLogeado", UsuarioActulizar);
+                    Session.Add("UsuarioLogeado", UsuarioActulizar);
 
-                textboxNoSocial.Text = "";
+                    textboxNoSocial.Text = "";
 
-                Response.Redirect(Request.RawUrl);
+                    Response.Redirect(Request.RawUrl);
+                }
+                catch (Exception)
+                {
+
+                }
             }
             else {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "alert('Datos requeridos');", true);

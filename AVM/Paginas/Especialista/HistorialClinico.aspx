@@ -12,11 +12,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container colorBlanco">
         <div class="card">
-            <h5 class="card-header"><span class="oi oi-folder"></span>Historial Clínico</h5>
+            <h5 class="card-header">    <span class="oi oi-folder"></span>Historial Clínico</h5>
             <br />
 
             <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
+                <h5 class="m">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <span class="oi oi-info"></span>   Información
                     </a>

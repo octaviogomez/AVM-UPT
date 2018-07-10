@@ -40,15 +40,6 @@ namespace AVM.Paginas.Especialista {
         protected global::System.Web.UI.WebControls.Button ButtonBuscar;
         
         /// <summary>
-        /// HiddenField1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HiddenField1;
-        
-        /// <summary>
         /// LinkButtonMedico control.
         /// </summary>
         /// <remarks>
@@ -247,6 +238,15 @@ namespace AVM.Paginas.Especialista {
         protected global::System.Web.UI.WebControls.Label LabelIdCita;
         
         /// <summary>
+        /// HyperLinkDental control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton HyperLinkDental;
+        
+        /// <summary>
         /// NombrePsicologo control.
         /// </summary>
         /// <remarks>
@@ -335,5 +335,14 @@ namespace AVM.Paginas.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tratamientoPsico;
+        
+        /// <summary>
+        /// LinkButton1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
     }
 }

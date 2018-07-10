@@ -194,7 +194,7 @@ namespace AVM.Controles.Especialista
                             "<TR><TD colspan=4><b>Resumen de la exploracion:</b> " + ResumenExploracion.Text + "</TD></TR>" +
                             "<TR><TD colspan=4><b>Diagnóstico:</b> " + autocompleteDiagnostico.Text + "</TD></TR>" +
                             "<TR><TD colspan=4><b>Plan de tratamiento:</b> " + PlanTratamiento.Text + "</TD></TR>" +
-                            //                 "<tr><TD colspan=2><b>Días de reposo: </b>" + DiasReposo.Text + "</TD><TD colspan=2><b>Tipo de usuario: </b>" + TipoDeConsulta.Text + "</TD></tr>" +
+                            "<tr><TD colspan=2><b>Tipo de usuario: </b>" + LabelTipo.Text + "</TD></tr>" +
                             "</TABLE><br/><br/><br/><br/>";
             cadenaFinal += "<table border=1><tr><td>Especialista: " + objEspe.Nombre + " " + objEspe.Apellido + "</td><td>Firma</td></tr></table>";
             string nom = "RecetaMedica" + LabelNombre.Text;

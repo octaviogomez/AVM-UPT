@@ -27,7 +27,7 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="ResumenExploracion" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vResumenExploracion" runat="server" ControlToValidate="ResumenExploracion" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                    <asp:RequiredFieldValidator ID="vResumenExploracion" runat="server" ControlToValidate="ResumenExploracion" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
 
                 </div>
             </div>
@@ -36,14 +36,14 @@
 
                 <div class="form-group">
                     <asp:TextBox ID="autocompleteDiagnostico" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vautocompleteDiagnostico" runat="server" ControlToValidate="autocompleteDiagnostico" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                    <asp:RequiredFieldValidator ID="vautocompleteDiagnostico" runat="server" ControlToValidate="autocompleteDiagnostico" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
                 </div>
             </div>
             <div class="card-body">
                 <h5 class="card-title">PlanTratamiento</h5>
                 <div class="form-group">
                     <asp:TextBox ID="PlanTratamiento" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="vPlanTratamiento" runat="server" ControlToValidate="PlanTratamiento" ValidationGroup="cita" ErrorMessage="Falta" CssClass="alert-danger" />
+                    <asp:RequiredFieldValidator ID="vPlanTratamiento" runat="server" ControlToValidate="PlanTratamiento" ValidationGroup="cita" ErrorMessage="Requerido" CssClass="alert-danger" />
 
                 </div>
             </div>

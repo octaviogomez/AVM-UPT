@@ -98,7 +98,7 @@
                 <div class="row">
                     <div class="col">NSS:</div>
                     <div class="col">
-                        <asp:TextBox ID="textboxNoSocial" runat="server" ValidationGroup="ValidacionSocial" TextMode="Number" min="8" MaxLength="20"></asp:TextBox>
+                        <asp:TextBox ID="textboxNoSocial" runat="server" ValidationGroup="ValidacionSocial" TextMode="Number" min="11" MaxLength="20"></asp:TextBox>
                     </div>
                     <div class="col">
                         <a href="http://www.imss.gob.mx/tramites/imss02008" target="_blank">Consulta</a>

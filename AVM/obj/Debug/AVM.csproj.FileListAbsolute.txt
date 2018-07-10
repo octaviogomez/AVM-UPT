@@ -275,7 +275,7 @@ C:\Users\octav\Desktop\AVM\AVM\bin\Antlr3.Runtime.pdb
 C:\Users\octav\Desktop\AVM\AVM\bin\Newtonsoft.Json.xml
 C:\Users\octav\Desktop\AVM\AVM\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.csprojResolveAssemblyReference.cache
-C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.dll
-C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.pdb
 C:\Users\octav\Desktop\AVM\AVM\obj\Debug\RdlCompile.cache
 C:\Users\octav\Desktop\AVM\AVM\obj\Debug\RdlCompile.compiled
+C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.dll
+C:\Users\octav\Desktop\AVM\AVM\obj\Debug\AVM.pdb

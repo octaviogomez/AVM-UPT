@@ -13,6 +13,15 @@ namespace AVM.Controles.Especialista {
     public partial class contSubirArchivo {
         
         /// <summary>
+        /// HyperLinkVistaCompleta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkVistaCompleta;
+        
+        /// <summary>
         /// PDFCarnet control.
         /// </summary>
         /// <remarks>
@@ -38,14 +47,5 @@ namespace AVM.Controles.Especialista {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnUpload;
-        
-        /// <summary>
-        /// HyperLinkVistaCompleta control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLinkVistaCompleta;
     }
 }

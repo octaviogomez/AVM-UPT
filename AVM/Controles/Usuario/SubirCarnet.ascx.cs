@@ -27,12 +27,9 @@ namespace AVM.Controles.Usuario
             if (objLoggerinf != null && objLoggerinf.alu_Rol == 1)
             {
                 carpetaCarnet = Server.MapPath("~/Archivos/Carnet/");//carpeta de archivos   
+                HyperLinkVistaCompleta.NavigateUrl = "~/Archivos/Carnet/" + objLoggerinf.alu_NumControl + ".pdf";
 
-                //Carga de carnet
 
-                //Para optimzar esto, se puede crear una interfaz llamada archivo la cual se implementaria en las paginas a usar
-                // y al momento de hacer llamando de esta, en la parte de set se establce cual objeto Embedido seria
-               
                 try
                 {
                     string embed = "<object data=\"{0}\" type=\"application/pdf\" width=\"600px\" height=\"500px\">";
@@ -106,6 +103,6 @@ namespace AVM.Controles.Usuario
 
         }
 
-      
+     
     }
 }

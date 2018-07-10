@@ -59,6 +59,8 @@
             </div>
             <br />
             <ul class="nav nav-pills col-12 mb-3" id="pills-tab" role="tablist">
+                
+            <asp:HiddenField ID="HiddenField1" runat="server" />
                 <li class="nav-item">
                     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Consultas</a>
                 </li>

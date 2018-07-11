@@ -54,7 +54,7 @@
                         <a class="nav-link " href="../../../Paginas/Usuario/CancelarCita.aspx">Agenda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../../../Paginas/Usuario/Cuestionario.aspx">Cuestionario</a>
+                        <a class="nav-link " href="../../../Paginas/Usuario/Cuestionarios.aspx">Cuestionario</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../../../Paginas/Usuario/InfoUsuario.aspx">Perfil</a>

@@ -88,3 +88,10 @@ C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\bin\Debug\itextsharp.xml
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\obj\Debug\Core.dll
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\obj\Debug\Core.pdb
+C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\bin\Debug\Core.dll
+C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\bin\Debug\Core.pdb
+C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\bin\Debug\itextsharp.dll
+C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\bin\Debug\itextsharp.xml
+C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\obj\Debug\Core.dll
+C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\obj\Debug\Core.pdb

@@ -13,13 +13,22 @@ namespace AVM.Controles.Especialista {
     public partial class contSubirArchivo {
         
         /// <summary>
-        /// TextBoxNombre control.
+        /// HyperLinkVistaCompleta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxNombre;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkVistaCompleta;
+        
+        /// <summary>
+        /// PDFCarnet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal PDFCarnet;
         
         /// <summary>
         /// FileUpload1 control.

@@ -98,10 +98,11 @@ namespace AVM.Controles.Especialista
                     }
                     catch (Exception e)
                     {
+                        PanelAviso.Visible = true;                     
                     }
                 }
                 else {
-                   
+                    PanelAviso.Visible = true;
                 }
             }
         }

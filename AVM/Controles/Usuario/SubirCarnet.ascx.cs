@@ -21,15 +21,14 @@ namespace AVM.Controles.Usuario
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+
             objLoggerinf = (CAlumno)Session["UsuarioLogeado"];
             if (objLoggerinf != null && objLoggerinf.alu_Rol == 1)
             {
                 carpetaCarnet = Server.MapPath("~/Archivos/Carnet/");//carpeta de archivos   
+                HyperLinkVistaCompleta.NavigateUrl = "~/Archivos/Carnet/" + objLoggerinf.alu_NumControl + ".pdf";
 
-                //Carga de carnet
-
-                //Para optimzar esto, se puede crear una interfaz llamada archivo la cual se implementaria en las paginas a usar
-                // y al momento de hacer llamando de esta, en la parte de set se establce cual objeto Embedido seria
 
                 try
                 {
@@ -48,7 +47,7 @@ namespace AVM.Controles.Usuario
             }
             else
             {
-                Response.Redirect("../../Default.aspx", true);//
+                Response.Redirect("Default.aspx", true);//
             }
         }
 
@@ -104,6 +103,6 @@ namespace AVM.Controles.Usuario
 
         }
 
-      
+     
     }
 }

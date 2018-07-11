@@ -27,9 +27,9 @@ namespace AVM.Controles.Especialista
             if (objInfo != null && objEspe != null)
             {
                 vistaConsulta = new WConsulta(this);
-                LabelMatricula.Text = "Matrícula:" + objInfo.alu_NumControl;
-                LabelNombre.Text = "Nombre:" + objInfo.alu_Nombre;
-                LabelTipo.Text = "Tipo:" + objInfo.tipo_usuario;
+                LabelMatricula.Text =  objInfo.alu_NumControl;
+                LabelNombre.Text = objInfo.alu_Nombre;
+                LabelTipo.Text = objInfo.tipo_usuario;
             }
             else
             {
@@ -167,13 +167,12 @@ namespace AVM.Controles.Especialista
         }
         #endregion
 
-        protected void ButtonGuardar_Click(object sender, EventArgs e)
+        protected void ButtonGenerarCita_Click(object sender, EventArgs e)
         {
-            vistaConsulta.ReguistrarConsulta(NewConsulta);
-            Response.Redirect("AgendaCitas.aspx", true);
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "ModalView", "<script> $('#exampleModal').modal('show');</script>", false);
         }
 
-        protected void ImageButtonImpresora_Click(object sender, ImageClickEventArgs e)
+        protected void HyperLinkMedico_Click(object sender, EventArgs e)
         {
             DateTime fechaHoy = DateTime.Now;
             string fecha = fechaHoy.ToShortDateString();
@@ -195,7 +194,7 @@ namespace AVM.Controles.Especialista
                             "<TR><TD colspan=4><b>Resumen de la exploracion:</b> " + ResumenExploracion.Text + "</TD></TR>" +
                             "<TR><TD colspan=4><b>Diagnóstico:</b> " + autocompleteDiagnostico.Text + "</TD></TR>" +
                             "<TR><TD colspan=4><b>Plan de tratamiento:</b> " + PlanTratamiento.Text + "</TD></TR>" +
-                            //                 "<tr><TD colspan=2><b>Días de reposo: </b>" + DiasReposo.Text + "</TD><TD colspan=2><b>Tipo de usuario: </b>" + TipoDeConsulta.Text + "</TD></tr>" +
+                            "<tr><TD colspan=2><b>Tipo de usuario: </b>" + LabelTipo.Text + "</TD></tr>" +
                             "</TABLE><br/><br/><br/><br/>";
             cadenaFinal += "<table border=1><tr><td>Especialista: " + objEspe.Nombre + " " + objEspe.Apellido + "</td><td>Firma</td></tr></table>";
             string nom = "RecetaMedica" + LabelNombre.Text;
@@ -213,8 +212,6 @@ namespace AVM.Controles.Especialista
 
                 //Open PDF Document to write data 
                 pdfDoc.Open();
-
-
 
 
                 cadenaFinal += "<h4> © Universidad Politécnica de Tulancingo.  Calle Ingenierías # 100. Col. Huapalcalco, Tulancingo, Hidalgo, México. C.P. 43629, Teléfono: 01(775) 75 5 82 02, Fax: 01(775) 75 5 83 21 </h5>";
@@ -248,6 +245,12 @@ namespace AVM.Controles.Especialista
             {
                 Response.Write(ex.ToString());
             }
+        }
+
+        protected void ButtonGuardar_Click(object sender, EventArgs e)
+        {
+            vistaConsulta.ReguistrarConsulta(NewConsulta);
+            Response.Redirect("AgendaCitas.aspx", true);
         }
     }
 }

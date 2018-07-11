@@ -6,7 +6,7 @@
      
     </div>
     <div class="col-6">
-        <asp:Button ID="ButtonAgregar" runat="server" Text="Agregar" CssClass="btn btn-success" OnClick="ButtonAgregar_Click" ValidationGroup="alta" />
+        <asp:Button ID="ButtonAgregar" runat="server" Text="Agregar" CssClass="btn btn-warning" OnClick="ButtonAgregar_Click" ValidationGroup="alta" />
 
     </div>
 </div>

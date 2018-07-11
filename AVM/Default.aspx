@@ -48,24 +48,21 @@
                                     <div class="card-body">
                                         <h4 class="card-title">Inicio de Sesión</h4>
                                         <div class="form-group">
-                                            <label for="TextBoxNumDeControl">
-                                                <span class="oi oi-person"></span>
-                                                Matrícula
-
+                                            <label for="TextBoxNumDeControl"><span class="oi oi-person"></span>   Matrícula:
                                             </label>
                                             <asp:TextBox PlaceHolder="Escriba su matrícula" ID="TextBoxNumeroDeControl" runat="server" required="Ingrese su matrícula" CssClass="form-control input-lg" value="" pattern="[0-9]{1,7}" title="Solo números. Tamaño :7 digitos" autofocus=""></asp:TextBox>
                                         </div>
                                         <div class="form-group">
-                                            <label for="password">
-                                                <span class="oi oi-key"></span>Contraseña
-                                            </label>
+                                            <label for="password"><span class="oi oi-key"></span>   Contraseña:</label>
                                             <asp:TextBox PlaceHolder="Escriba su contraseña" ID="TextBoxContrasena" runat="server" required="" CssClass="form-control input-lg " TextMode="Password" pattern="[A-Za-z0-9]{1,25}" title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 25"></asp:TextBox>
 
                                         </div>
                                         <div class="row center-align">
 
+                                             
                                             <div class="col m10 s10">
-                                                <br />
+                                           <label>        Usuario:</label>
+                                                
                                                 <asp:DropDownList ID="DropDownListRoles" runat="server" CssClass="form-control"></asp:DropDownList>
                                                 <br />
                                             </div>

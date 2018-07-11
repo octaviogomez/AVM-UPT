@@ -15,12 +15,12 @@
 
     <div class="container colorBlanco">
         <div class="card">
-            <h5 class="card-header">Consulta</h5>
+            <h5 class="card-header">   <span class="oi oi-medical-cross"></span>  Consulta</h5>
             <br />
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>Información
+                        <span class="oi oi-info"></span>   Información
                     </a>
                 </h5>
             </div>
@@ -31,20 +31,20 @@
                     <div class="card-body">
                         <asp:Panel ID="PanelInforMedico" runat="server" Visible="false">
                             <ul>
-                                <li>En la sección de </li>
-                                <li>En la sección de <strong>Carnet Médico</strong> lo encontrara en un formato PDF.</li>
+                                <li>Tenga cuidado al realizar la consulta, llene con información correcta los campos.</li>
+                             
                             </ul>
                         </asp:Panel>
                         <asp:Panel ID="PanelInfoDental" runat="server" Visible="false">
                             <ul>
-                                <li>En la sección de </li>
-                                <li>En la sección de <strong>Carnet Médico</strong> lo encontrara en un formato PDF.</li>
+                       
+                                <li>En la sección de <strong>Odontograma</strong> lo encontrara datos del usuario.</li>
                             </ul>
                         </asp:Panel>
                         <asp:Panel ID="PanelInfoPsico" runat="server" Visible="false">
                             <ul>
-                                <li>En la sección de </li>
-                                <li>En la sección de <strong>Carnet Médico</strong> lo encontrara en un formato PDF.</li>
+       <li>Tenga cuidado al realizar la consulta, llene con información correcta los campos.</li>
+                             
                             </ul>
                         </asp:Panel>
                         <br />

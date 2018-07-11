@@ -13,6 +13,15 @@ namespace AVM.Controles.Especialista {
     public partial class contCarnet {
         
         /// <summary>
+        /// HyperLinkVistaCompletaCarnet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkVistaCompletaCarnet;
+        
+        /// <summary>
         /// PDFCarnet control.
         /// </summary>
         /// <remarks>

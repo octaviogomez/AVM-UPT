@@ -89,11 +89,12 @@ namespace AVM.Controles.Especialista
                     }
                     else
                     {
-                        Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "alert('No encontrado');", true);
+                        PanelAviso.Visible = true;
                     }
                 }
                 catch
                 {
+                    PanelAviso.Visible = true;
                 }
             }
         }
@@ -173,6 +174,7 @@ namespace AVM.Controles.Especialista
 
         protected void ButtonBUscarID_Click(object sender, EventArgs e)
         {
+            PanelAviso.Visible = false;
             LabelNombreAlumno.Text = "";
 
             if (!string.IsNullOrWhiteSpace(TextBoxIdAlumno.Text))
@@ -181,7 +183,7 @@ namespace AVM.Controles.Especialista
             }
             else
             {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "alert('Ingrese id pasiente');", true);
+                PanelAviso.Visible = true;
             }
         }
 

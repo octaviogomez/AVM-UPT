@@ -39,7 +39,7 @@ namespace AVM.Controles.Usuario
             }
             else
             {
-                Response.Redirect("../../Default.aspx", true);//
+                Response.Redirect("Default.aspx", true);//
             }
         }
 
@@ -205,13 +205,23 @@ namespace AVM.Controles.Usuario
 
         private void LlenadoComboHorario(DropDownList Combo, int Opcion, string Fecha, string fk_Especialista)
         {
+
             WConsultaVista.ListarHora(Opcion, Fecha, fk_Especialista);/// se implementa el llenado de la interfaz
+            PanelAvisoHorarios.Visible = false;
             if (listaDatos != null)
             {
+                if(listaDatos.Count<1)
+                       PanelAvisoHorarios.Visible = !false;
+
                 foreach (CConsulta item in listaDatos)
                 {
                     Combo.Items.Add(new ListItem(item.Descripcion, item.Id.ToString()));
                 }
+
+
+            }
+            else {
+             
             }
         }
         public void Mensaje(string Mensaje, int tipo)

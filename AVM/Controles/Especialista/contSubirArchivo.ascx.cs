@@ -1,96 +1,108 @@
 ﻿using System;
 
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-
 using Core.Model;
-using Core.View;
-using Core.Presenter;
 using System.IO;
-using System.Data;
+using System.Web;
 
 namespace AVM.Controles.Especialista
 {
     public partial class contSubirArchivo : System.Web.UI.UserControl
     {
-        CEspecialista objLoggerinf;
-  
+       public CAlumno objLoggerinf;//objeto que tiene datos del GET
+        public string carpetaCarnet;
 
-        public string carpeta;
-        public string nombreReal;
-
-        public bool bandera = false;
         protected void Page_Load(object sender, EventArgs e)
         {
-            bandera = false;
-
-            objLoggerinf = (CEspecialista)Session["UsuarioLogeadoEspecialista"];
-            if (objLoggerinf != null && objLoggerinf.Rol == 2)
-            {
-            
-                carpeta = Server.MapPath("~/Archivos/Examen/");
-            }
-            else
-            {
-                Response.Redirect("Default.aspx", true);//
-            }
-        }
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            objLoggerinf = new CAlumno();
+            carpetaCarnet = Server.MapPath("~/Archivos/Examen/");//carpeta de archivos   
 
 
-        public void UploadFile(object sender, EventArgs e)
-        {
-            nombreReal = TextBoxNombre.Text != "" ? TextBoxNombre.Text : FileUpload1.PostedFile.FileName;
-            if (FileUpload1.PostedFile.FileName == "" && FileUpload1.FileBytes.LongLength<1800000)
-            {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "alert('No se seleccino archivo');", true);
-            }
-            else
-            {
-                if (File.Exists(Server.MapPath("../Archivos/Examen/" + nombreReal + ".pdf")))
-                {
-                    //Remplazar?
-                }
-                else
-                {
-                    cargarArchivo();
-                }
-            }
-
-        }
-
-        public void cargarArchivo()
-        {
-
-            string extencion = Path.GetExtension(FileUpload1.PostedFile.FileName);
-            switch (extencion.ToLower())
-            {
-                case ".pdf": break;
-
-                default:
-                    Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "alert('Formato no correcto   >:v');", true);
-                    return;
-            }
             try
             {
-                string archivo = Path.GetFileName(FileUpload1.PostedFile.FileName);
-                FileUpload1.PostedFile.SaveAs(this.carpeta + this.nombreReal + extencion);
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelNotificacion').removeClass('ocultar').addClass('mostrar'); </script>");
+                string valor = (Request.QueryString["id"].ToString() != null) ? Request.QueryString["id"].ToString() : "";
+                objLoggerinf.alu_NumControl = valor;
+
+                HyperLinkVistaCompleta.NavigateUrl = "~/Archivos/Examen/"+valor+".pdf";
             }
             catch (Exception)
             {
-                throw;
+                objLoggerinf.alu_NumControl = "0";
             }
-            finally
+
+
+
+
+            try
             {
-                Response.Redirect(Request.RawUrl);
-                TextBoxNombre.Text = "";
+                string embed = "<object data=\"{0}\" type=\"application/pdf\" width=\"800px\" height=\"700px\">";
+                embed += "If you are unable to view file, you can download from <a href = \"{0}\">here</a>";
+                embed += " or download <a target = \"_blank\" href = \"http://get.adobe.com/reader/\">Adobe PDF Reader</a> to view the file.";
+                embed += "</object>";
+                PDFCarnet.Text = string.Format(embed, ResolveUrl("~/Archivos/Examen/" + objLoggerinf.alu_NumControl + ".pdf"));
+
+            }
+            catch (Exception)
+            {
+
+
             }
 
         }
 
-     
+        protected void btnUpload_Click(object sender, EventArgs e)
+        {
 
-      
+            if (FileUpload1.PostedFile.FileName == "" && FileUpload1.FileBytes.Length < 2000000)
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelAviso').removeClass('ocultar').addClass('mostrar'); </script>");
+
+            }
+            else
+            {
+                cargarArchivo();
+            }
+
+        }
+        public void cargarArchivo()
+        {
+
+            try
+            {
+                string extencion = Path.GetExtension(FileUpload1.PostedFile.FileName);
+                switch (extencion.ToLower())
+                {
+                    case ".pdf":
+                        break;
+                    default:
+                        Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelAviso').removeClass('ocultar').addClass('mostrar'); </script>");
+                        return;
+                }
+                string archivo = Path.GetFileName(FileUpload1.PostedFile.FileName);
+                try
+                {
+
+                    FileUpload1.PostedFile.SaveAs(carpetaCarnet + this.objLoggerinf.alu_NumControl + extencion);
+                }
+                catch (Exception)
+                {
+
+                    string A = "";
+                }
+
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script >   $('#PanelNotificacion').removeClass('ocultar').addClass('mostrar'); </script>");
+
+            }
+            catch (Exception e)
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelAviso').removeClass('ocultar').addClass('mostrar'); </script>");
+
+            }
+
+
+        }
+
+
     }
 }

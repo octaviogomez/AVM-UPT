@@ -58,43 +58,65 @@ namespace AVM.Controles.Admin
 
         private void Import_To_Grid(string FilePath, string Extension, string isHDR)
         {
-            dt = new DataTable();
-            string conStr = "";
-            switch (Extension)
+            try
             {
-                case ".xls": //Excel 97-03
-                    conStr = ConfigurationManager.ConnectionStrings["Excel03ConString"].ConnectionString;
-                    break;
-                case ".xlsx": //Excel 07
-                    conStr = ConfigurationManager.ConnectionStrings["Excel07ConString"].ConnectionString;
-                    break;
+                dt = new DataTable();
+                string conStr = "";
+                switch (Extension)
+                {
+                    case ".xls": //Excel 97-03
+                        conStr = ConfigurationManager.ConnectionStrings["Excel03ConString"].ConnectionString;
+                        break;
+                    case ".xlsx": //Excel 07
+                        conStr = ConfigurationManager.ConnectionStrings["Excel07ConString"].ConnectionString;
+                        break;
+                }
+                conStr = String.Format(conStr, FilePath, isHDR);
+                OleDbConnection connExcel = new OleDbConnection(conStr);
+                OleDbCommand cmdExcel = new OleDbCommand();
+                OleDbDataAdapter oda = new OleDbDataAdapter();
+
+                cmdExcel.Connection = connExcel;
+
+                //Get the name of First Sheet
+                connExcel.Open();
+                DataTable dtExcelSchema;
+                dtExcelSchema = connExcel.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+                string SheetName = dtExcelSchema.Rows[0]["TABLE_NAME"].ToString();
+                connExcel.Close();
+
+                //Read Data from First Sheet
+                connExcel.Open();
+                cmdExcel.CommandText = "SELECT * From [" + SheetName + "]";
+                oda.SelectCommand = cmdExcel;
+                oda.Fill(dt);
+
+                connExcel.Close();
+
+                //Bind Data to GridView
+                GridView1.Caption = Path.GetFileName(FilePath);
+                GridView1.DataSource = dt;
+                try
+                {
+                    GridView1.DataBind();
+                }
+                catch (Exception e)
+                {
+                    throw new System.Web.HttpException();
+                    
+                }
+                
+                if (GridView1.Rows.Count > 0 && GridView1.Columns.Count == 8)
+                {
+                    Importar.Visible = true;
+                }
             }
-            conStr = String.Format(conStr, FilePath, isHDR);
-            OleDbConnection connExcel = new OleDbConnection(conStr);
-            OleDbCommand cmdExcel = new OleDbCommand();
-            OleDbDataAdapter oda = new OleDbDataAdapter();
+            catch (Exception)
+            {
 
-            cmdExcel.Connection = connExcel;
-
-            //Get the name of First Sheet
-            connExcel.Open();
-            DataTable dtExcelSchema;
-            dtExcelSchema = connExcel.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-            string SheetName = dtExcelSchema.Rows[0]["TABLE_NAME"].ToString();
-            connExcel.Close();
-
-            //Read Data from First Sheet
-            connExcel.Open();
-            cmdExcel.CommandText = "SELECT * From [" + SheetName + "]";
-            oda.SelectCommand = cmdExcel;
-            oda.Fill(dt);
-
-            connExcel.Close();
-
-            //Bind Data to GridView
-            GridView1.Caption = Path.GetFileName(FilePath);
-            GridView1.DataSource = dt;
-            GridView1.DataBind();
+                
+            }
+           
         }
         protected void PageIndexChanging(object sender, GridViewPageEventArgs e)
         {

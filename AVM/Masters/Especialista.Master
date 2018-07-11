@@ -16,6 +16,7 @@
     <script src="../../Scripts/jquery-3.3.1.min.js"></script>
     <script src="../../Scripts/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
     <script src="../../Scripts/bootstrap.min.js"></script>
+
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 
@@ -39,7 +40,9 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
             <a class="navbar-brand" href="#">
-                <asp:Image ID="ImageLogoMenu" runat="server" ImageUrl="~/Imagenes/Roles/doc.png" Width="30" Height="30" class="d-inline-block align-top" alt="" />
+                <asp:Image ID="ImageRolMedico" runat="server" ImageUrl="~/Imagenes/Roles/doc.png" Width="30" Height="30" class="d-inline-block align-top" alt=""  Visible="false"/>
+                <asp:Image ID="ImageRolDental" runat="server" ImageUrl="~/Imagenes/Roles/dental.png" Width="30" Height="30" class="d-inline-block align-top" alt="" Visible="false" />
+                <asp:Image ID="ImageRolPisco" runat="server" ImageUrl="~/Imagenes/Roles/pisco.png" Width="30" Height="30" class="d-inline-block align-top" alt="" Visible="false"/>
                 <asp:Label ID="LabelNombreEspecialista" runat="server" Text="NombreEspecialista"></asp:Label>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,10 +53,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../../../Paginas/Admin/Default.aspx"><span class="oi oi-home"></span>  Inicio<span class="sr-only">(current)</span></a>
+               
+                        <a class="nav-link" href="../../../Paginas/Especialista/Default.aspx"><span class="oi oi-home"></span>  Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../../../Paginas/Admin/ReportesCuestionario.aspx">Reportes cuestionario</a>
+            <a class="nav-link " href="../../../Paginas/Especialista/AgendaCitas.aspx">Agenda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="../../../Paginas/Especialista/CitaRapida.aspx">Cita Rápida</a>
@@ -79,9 +83,7 @@
                     </li>
                   
                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../../Paginas/Especialista/Archivos.aspx">Archivos</a>
-                    </li>
+                 
                     <li class="nav-item">
                         <a class="nav-link" href="../../../Paginas/Especialista/BloquearFechas.aspx">Fechas</a>
                     </li>
@@ -112,7 +114,7 @@
                     <asp:Image ID="Image2" runat="server" ImageUrl="~/Imagenes/universidad/logoUpt.png" Height="80px" Width="70px" />
                 </div>
                 <div class="col-sm-8 col-md-5">
-                    <p>© Universidad Politécnica de Tulancingo. Calle Ingenierías # 100. Col. Huapalcalco, Hidalgo, México C.P. 43629, Teléfono: 01(775) 75 5 82 02, Fax: 01(775) 75 5 83 21.</p>
+                    <p>© Universidad Politécnica de Tulancingo.</p>
                 </div>
                 <div class=" col-sm-8 col-md-3">
                     <h4>Manuales</h4>
@@ -128,11 +130,13 @@
         <div class="container">
             <div class="footer-copyright">
                 <div class="row">
-                    <div class="col text-center">
-                    © 2018 Copyright: <a href="http://www.upt.edu.mx/" class="letraBlanca">Universidad Politécnica de Tulancingo</a>
+                    <div class="col-3"></div>
+                    <div class="col-6 text-center">
+                    © 2018 Copyright: <a href="http://www.upt.edu.mx/" class="letraBlanca">Fábrica de Software</a>  |  <a href="../WebsMasters.aspx" class="letraBlanca">Web Master</a>
                 </div>
+                    <div class="col-3"></div>
                 <div class="col text-right">
-              <a href="../WebsMasters.aspx" class="letraBlanca">Webmaster</a>
+                  
                 </div>
                 </div>
             </div>

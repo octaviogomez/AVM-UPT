@@ -60,13 +60,6 @@ C:\Users\Administrador\Desktop\AVM-final\AVM-PRO\AVM-PRO\AVM-master\Core\bin\Deb
 C:\Users\Administrador\Desktop\AVM-final\AVM-PRO\AVM-PRO\AVM-master\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Users\Administrador\Desktop\AVM-final\AVM-PRO\AVM-PRO\AVM-master\Core\obj\Debug\Core.dll
 C:\Users\Administrador\Desktop\AVM-final\AVM-PRO\AVM-PRO\AVM-master\Core\obj\Debug\Core.pdb
-C:\Users\octav\Desktop\AVM\Core\bin\Debug\Core.dll
-C:\Users\octav\Desktop\AVM\Core\bin\Debug\Core.pdb
-C:\Users\octav\Desktop\AVM\Core\bin\Debug\itextsharp.dll
-C:\Users\octav\Desktop\AVM\Core\bin\Debug\itextsharp.xml
-C:\Users\octav\Desktop\AVM\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
-C:\Users\octav\Desktop\AVM\Core\obj\Debug\Core.dll
-C:\Users\octav\Desktop\AVM\Core\obj\Debug\Core.pdb
 C:\Users\pedro\Desktop\Proyecto\AVM-UPT\Core\bin\Debug\Core.dll
 C:\Users\pedro\Desktop\Proyecto\AVM-UPT\Core\bin\Debug\Core.pdb
 C:\Users\pedro\Desktop\Proyecto\AVM-UPT\Core\bin\Debug\itextsharp.dll
@@ -88,6 +81,7 @@ C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\bin\Debug\itextsharp.xml
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\obj\Debug\Core.dll
 C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\obj\Debug\Core.pdb
+<<<<<<< HEAD
 C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\bin\Debug\Core.dll
 C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\bin\Debug\Core.pdb
 C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\bin\Debug\itextsharp.dll
@@ -95,3 +89,12 @@ C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\bin\Debug\itextsharp.xml
 C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\obj\Debug\Core.dll
 C:\Users\Carlos\Desktop\AVM1\AVM-UPT\Core\obj\Debug\Core.pdb
+=======
+C:\Users\octav\Desktop\AVM\Core\bin\Debug\Core.dll
+C:\Users\octav\Desktop\AVM\Core\bin\Debug\Core.pdb
+C:\Users\octav\Desktop\AVM\Core\bin\Debug\itextsharp.dll
+C:\Users\octav\Desktop\AVM\Core\bin\Debug\itextsharp.xml
+C:\Users\octav\Desktop\AVM\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\octav\Desktop\AVM\Core\obj\Debug\Core.dll
+C:\Users\octav\Desktop\AVM\Core\obj\Debug\Core.pdb
+>>>>>>> origin/master

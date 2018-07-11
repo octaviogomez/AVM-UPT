@@ -1,13 +1,13 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="controlCitaRapida.ascx.cs" Inherits="AVM.Controles.Especialista.controlCitaRapida" %>
 <div class="container colorBlanco">
     <div class="card">
-        <h5 class="card-header">Cita rápida</h5>
+        <h5 class="card-header">   <span class="oi oi-medical-cross"></span>  Cita rápida</h5>
         <div class="card-body">
 
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="oi oi-info"></span>   Información
+                        <span class="oi oi-info"></span>   Instrucciones
                     </a>
                 </h5>
             </div>
@@ -17,8 +17,8 @@
                         <ol>
                             <li>Seleccione una fecha.</li>
                             <li>Seleccione un horario</li>
-                             <li>Ingrese la matrícula del usuario, y busquelo.</li>
-                             <li>En caso de ser de algún familiar, dar click "si" </li>
+                            <li>Ingrese la matrícula del usuario, y busquelo.</li>
+                            <li>En caso de ser de algún familiar, dar clic "si" </li>
                         </ol>
                         <br />
                     </div>
@@ -96,6 +96,11 @@
                 <div class="col-md-5 mb-5">
                     <strong>
                         <asp:Label ID="LabelNombreAlumno" runat="server" Text="" Font-Size="Large"></asp:Label></strong>
+                    <asp:Panel ID="PanelAviso" runat="server" Visible="false">
+                        <div class="alert alert-warning" role="alert">
+                            Sin resultados!
+                        </div>
+                    </asp:Panel>
                 </div>
                 <div class="col-md-2 mb-2">
                 </div>
@@ -112,3 +117,18 @@
     </div>
 </div>
 
+<script>
+
+    (function () {
+
+
+        $("#ContentPlaceHolder1_controlCitaRapida_TextBoxIdAlumno").on("click", function () {
+            $('#ContentPlaceHolder1_controlCitaRapida_TextBoxIdAlumno').val("");
+        });
+
+
+
+
+
+    })();
+</script>

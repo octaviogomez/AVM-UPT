@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AVM</RootNamespace>
     <AssemblyName>AVM</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,10 +53,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -82,7 +84,6 @@
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
@@ -111,6 +112,7 @@
     <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -143,6 +145,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Controles\Admin\contCargarDatosAlumnos.ascx" />
+    <Content Include="Controles\Admin\contEstadisticasEspecialistas.ascx" />
+    <Content Include="Controles\Admin\contReportesCuestionarioDental.ascx" />
+    <Content Include="Controles\Admin\contReportesCuestionarioMedico.ascx" />
+    <Content Include="Controles\Admin\contReportesCuestionarioPsicologico.ascx" />
     <Content Include="Controles\Especialista\Agenda.ascx" />
     <Content Include="Controles\Especialista\contAdminAlumnos.ascx" />
     <Content Include="Controles\Especialista\contAgregarFechaBloqueada.ascx" />
@@ -1756,7 +1762,9 @@
     <Content Include="Imagenes\Roles\cepillo.png" />
     <Content Include="Imagenes\Roles\charlar.png" />
     <Content Include="Imagenes\Roles\conferencias.png" />
+    <Content Include="Imagenes\Roles\dental.png" />
     <Content Include="Imagenes\Roles\doc.png" />
+    <Content Include="Imagenes\Roles\pisco.png" />
     <Content Include="Imagenes\universidad\Acuse.png" />
     <Content Include="Imagenes\universidad\baner.jpg" />
     <Content Include="Imagenes\universidad\corazon.png" />
@@ -3139,17 +3147,28 @@
     <Content Include="Iconos\icon\webp\zoom-out.webp" />
     <Content Include="Masters\Administrador.Master" />
     <Content Include="Archivos\Manuales\alumno.pdf" />
+    <Content Include="Controles\Admin\Datos\dsReporte.xsc">
+      <DependentUpon>dsReporte.xsd</DependentUpon>
+    </Content>
+    <None Include="Controles\Admin\Datos\dsReporte.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReporte.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Controles\Admin\Datos\dsReporte.xss">
+      <DependentUpon>dsReporte.xsd</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\avmupt - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\avmupt - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Paginas\Admin\CargarExcel.aspx" />
     <Content Include="Paginas\Admin\Default.aspx" />
+    <Content Include="Paginas\Admin\Estadisticas.aspx" />
     <Content Include="Paginas\Admin\Reportes.aspx" />
     <Content Include="Paginas\Admin\ReportesCuestionario.aspx" />
     <Content Include="Paginas\Default.aspx" />
     <Content Include="Paginas\Especialista\AdminAlumnos.aspx" />
     <Content Include="Paginas\Especialista\AgendaCitas.aspx" />
-    <Content Include="Paginas\Especialista\Archivos.aspx" />
     <Content Include="Paginas\Especialista\BloquearFechas.aspx" />
     <Content Include="Paginas\Especialista\CitaRapida.aspx" />
     <Content Include="Paginas\Especialista\Default.aspx" />
@@ -3232,6 +3251,39 @@
     </Compile>
     <Compile Include="Controles\Admin\contCargarDatosAlumnos.ascx.designer.cs">
       <DependentUpon>contCargarDatosAlumnos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\contEstadisticasEspecialistas.ascx.cs">
+      <DependentUpon>contEstadisticasEspecialistas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contEstadisticasEspecialistas.ascx.designer.cs">
+      <DependentUpon>contEstadisticasEspecialistas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioDental.ascx.cs">
+      <DependentUpon>contReportesCuestionarioDental.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioDental.ascx.designer.cs">
+      <DependentUpon>contReportesCuestionarioDental.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioMedico.ascx.cs">
+      <DependentUpon>contReportesCuestionarioMedico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioMedico.ascx.designer.cs">
+      <DependentUpon>contReportesCuestionarioMedico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioPsicologico.ascx.cs">
+      <DependentUpon>contReportesCuestionarioPsicologico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contReportesCuestionarioPsicologico.ascx.designer.cs">
+      <DependentUpon>contReportesCuestionarioPsicologico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\Datos\dsReporte.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReporte.xsd</DependentUpon>
     </Compile>
     <Compile Include="Controles\Especialista\Agenda.ascx.cs">
       <DependentUpon>Agenda.ascx</DependentUpon>
@@ -3453,6 +3505,13 @@
     <Compile Include="Paginas\Admin\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\Admin\Estadisticas.aspx.cs">
+      <DependentUpon>Estadisticas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Admin\Estadisticas.aspx.designer.cs">
+      <DependentUpon>Estadisticas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Admin\Reportes.aspx.cs">
       <DependentUpon>Reportes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3487,13 +3546,6 @@
     </Compile>
     <Compile Include="Paginas\Especialista\AgendaCitas.aspx.designer.cs">
       <DependentUpon>AgendaCitas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Especialista\Archivos.aspx.cs">
-      <DependentUpon>Archivos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Especialista\Archivos.aspx.designer.cs">
-      <DependentUpon>Archivos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Especialista\BloquearFechas.aspx.cs">
       <DependentUpon>BloquearFechas.aspx</DependentUpon>
@@ -3628,6 +3680,10 @@
       <Project>{1b9450b2-104b-4a42-808f-cff67e547ead}</Project>
       <Name>Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controles\Admin\Informes\Report.rdlc" />
+    <EmbeddedResource Include="Controles\Admin\Report.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -12,11 +12,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container colorBlanco">
         <div class="card">
-            <h5 class="card-header">Historial Clínico</h5>
+            <h5 class="card-header">    <span class="oi oi-folder"></span>Historial Clínico</h5>
             <br />
 
             <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
+                <h5 class="m">
                     <a class="linkAyuda" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <span class="oi oi-info"></span>   Información
                     </a>
@@ -26,10 +26,18 @@
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <ol>
-                            <li>Ingrese alguna matrícula y de click en buscar.</li>
+                            <li>Ingrese alguna matrícula y de clic en buscar.</li>
                             <li>En el panel lateral podrá ver los diferentes tipos de historiales que hay.</li>
-                            <li>Para descargar o imprimir, se debe de dar click en <strong><span class="oi oi-print"></span>Imprimir</strong></li>
+                            <li>Para descargar o imprimir, se debe de dar clic en <strong><span class="oi oi-print"></span>Imprimir</strong></li>
                         </ol>
+                        <div class="alert alert-info" role="alert">
+                            Para subir el documento tome en cuenta las siguientes recomendaciones.
+                       <ul>
+                           <li>Debe de ser un documento .pdf</li>
+                           <li>No debe de pesar más de 1 Mb.</li>
+                           <li>Por nombre llevara su matrícula.</li>
+                       </ul>
+                        </div>
                         <br />
                     </div>
                 </div>
@@ -39,19 +47,19 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-4 col-md-4">
+                        <div class="col-12 col-md-4">
                             <label for="TextBoxidUsuario">Matrícula:</label>
                             <asp:TextBox ID="TextBoxidUsuario" runat="server" CssClass="form-control" TextMode="Number" required=""></asp:TextBox>
                         </div>
 
-                        <div class="col-4  col-md-4">
+                        <div class="col-12  col-md-4">
                             <br />
                             <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" OnClick="ButtonBuscar_Click" />
                         </div>
-                        <div class="col-4  col-md-4">
+                        <div class="col-12  col-md-4">
                             <br />
-                            <div class="alert alert-warning ocultar " role="alert" id="PanelAviso" >
-                                    Sin resultados!
+                            <div class="alert alert-warning ocultar" role="alert" id="PanelAviso">
+                                Sin resultados!
                             </div>
                         </div>
                     </div>

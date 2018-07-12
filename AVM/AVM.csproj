@@ -170,6 +170,7 @@
     <Content Include="Controles\Usuario\CuesDental.ascx" />
     <Content Include="Controles\Usuario\CuesMedico.ascx" />
     <Content Include="Controles\Usuario\CuesPsico.ascx" />
+    <Content Include="Controles\Usuario\Cuestionario.ascx" />
     <Content Include="Controles\Usuario\NuevaCita.ascx" />
     <Content Include="Controles\Usuario\Perfil.ascx" />
     <Content Include="Controles\Usuario\SubirCarnet.ascx" />
@@ -3179,6 +3180,7 @@
     <Content Include="Paginas\Usuario\CancelarCita.aspx" />
     <Content Include="Paginas\Usuario\ConfUsuario.aspx" />
     <Content Include="Paginas\Usuario\Cuestionario.aspx" />
+    <Content Include="Paginas\Usuario\Cuestionarios.aspx" />
     <Content Include="Paginas\Usuario\Default.aspx" />
     <Content Include="Paginas\Usuario\InfoUsuario.aspx" />
     <Content Include="Paginas\Usuario\SubirArchivo.aspx" />
@@ -3430,6 +3432,13 @@
     <Compile Include="Controles\Usuario\CuesPsico.ascx.designer.cs">
       <DependentUpon>CuesPsico.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controles\Usuario\Cuestionario.ascx.cs">
+      <DependentUpon>Cuestionario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Usuario\Cuestionario.ascx.designer.cs">
+      <DependentUpon>Cuestionario.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controles\Usuario\NuevaCita.ascx.cs">
       <DependentUpon>NuevaCita.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3614,6 +3623,13 @@
     </Compile>
     <Compile Include="Paginas\Usuario\Cuestionario.aspx.designer.cs">
       <DependentUpon>Cuestionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Usuario\Cuestionarios.aspx.cs">
+      <DependentUpon>Cuestionarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Usuario\Cuestionarios.aspx.designer.cs">
+      <DependentUpon>Cuestionarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Usuario\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

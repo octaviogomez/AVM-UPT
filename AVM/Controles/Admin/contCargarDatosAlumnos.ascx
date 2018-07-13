@@ -84,6 +84,13 @@
         </Columns>
         </asp:GridView>
             </asp:Panel>
+
+<br />
+        <div id="PanelNotificacion" class="ocultar">
+            <div class="alert alert-success" role="alert">
+                Carga exitosa
+            </div>
+        </div>
     
 
 

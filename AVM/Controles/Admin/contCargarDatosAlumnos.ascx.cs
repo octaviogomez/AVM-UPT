@@ -102,14 +102,20 @@ namespace AVM.Controles.Admin
                 }
                 catch (Exception e)
                 {
-                    throw new System.Web.HttpException();
-                    
+                    GridView1.Visible = false;
+
                 }
                 
                 if (GridView1.Rows.Count > 0 && GridView1.Columns.Count == 8)
                 {
+                    GridView1.Visible = true;
                     Importar.Visible = true;
                     btnUpload.Visible = false;
+                   
+                }
+                else
+                {
+                    GridView1.Visible = false;
                 }
             }
             catch (Exception)
@@ -222,6 +228,9 @@ namespace AVM.Controles.Admin
                                 GridView1.DataBind();
                                 //dt.Reset();
                                 dt.Rows.Clear();
+                                Panel1.Visible = false;
+                                GridView1.Visible = false;
+                                Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script >   $('#PanelNotificacion').removeClass('ocultar').addClass('mostrar'); </script>");
                             }
                             catch (SqlException ex)
                             {

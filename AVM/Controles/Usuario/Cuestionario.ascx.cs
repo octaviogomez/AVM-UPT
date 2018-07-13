@@ -1452,35 +1452,8 @@ namespace AVM.Controles.Usuario
                 return CmiCuestionario;
             }
         }
-        public DataSet ListadoCuestionarioDental
-        {
-            set
-            {
-                if (value != null)
-                {
-
-                }
-            }
-        }
-        public DataSet ListadoCuestionarioMedico
-        {
-
-            set
-            {
-                if (value != null)
-                {
-                    folio = value.Tables[0].Rows[0][0].ToString();
-                }
-            }
-        }
-
-        public DataSet ListadoCuestionarioPsicologico
-        {
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+     
+     
 
         #endregion
 
@@ -1520,6 +1493,16 @@ namespace AVM.Controles.Usuario
         }
         #endregion
 
+        public DataSet ListadoCuestionario
+        {
+            set
+            {
+                if (value != null)
+                {
+                    folio = value.Tables[0].Rows[0][0].ToString();
+                }
+            }
+        }
         #region ICombo
         public List<CCuestionario> LlenarComboSangre
         {
@@ -1535,12 +1518,6 @@ namespace AVM.Controles.Usuario
             }
         }
 
-        public DataSet ListadoCuestionario
-        {
-            set
-            {
-            }
-        }
 
         private void LlenadoComboGenerico(DropDownList Combo, int Opcion)
         {
@@ -1764,7 +1741,7 @@ namespace AVM.Controles.Usuario
             cadenaFinal += "<br><br>";
             cadenaFinal += "El alumno: " + objLoggerinf.alu_Nombre + " " + objLoggerinf.alu_ApePaterno + " " + objLoggerinf.alu_ApeMaterno + ", con la matícula: " + objLoggerinf.alu_NumControl + ", ha llenado correctamente los cuestionarios.";
             cadenaFinal += "<br><br><br><br>";
-            //cadenaFinal += "Folio :" + folio;
+            cadenaFinal += "Folio :" + folio;
             string nom = "AcuseDeCuestionario" + objLoggerinf.alu_NumControl;
             imprimirPDF(cadenaFinal, nom);
         }

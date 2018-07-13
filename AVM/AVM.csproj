@@ -3171,6 +3171,10 @@
     <Content Include="Paginas\Admin\ReporteCuestionarioDental.aspx" />
     <Content Include="Paginas\Admin\ReporteCuestionarioMedico.aspx" />
     <Content Include="Paginas\Admin\ReporteCuestionarioPsicologico.aspx" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
     <Content Include="Paginas\Admin\InfoUsuario.aspx" />
     <Content Include="Paginas\Admin\NuevoUsuario.aspx" />
 
@@ -3562,9 +3566,14 @@
       <DependentUpon>ReporteCuestionarioPsicologico.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Paginas\Admin\ReporteCuestionarioPsicologico.aspx.designer.cs">
       <DependentUpon>ReporteCuestionarioPsicologico.aspx</DependentUpon>
     </Compile>
+=======
+
+
+>>>>>>> origin
     <Compile Include="Paginas\Admin\InfoUsuario.aspx.cs">
       <DependentUpon>InfoUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

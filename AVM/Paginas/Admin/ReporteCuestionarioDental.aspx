@@ -1,14 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Administrador.Master" AutoEventWireup="true" CodeBehind="Estadisticas.aspx.cs" Inherits="AVM.Paginas.Admin.Estadisticas" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Administrador.Master" AutoEventWireup="true" CodeBehind="ReporteCuestionarioDental.aspx.cs" Inherits="AVM.Paginas.Admin.ReporteCuestionarioDental" %>
 
-<%@ Register Src="~/Controles/Admin/contEstadisticasEspecialistas.ascx" TagPrefix="uc1" TagName="contEstadisticasEspecialistas" %>
-
+<%@ Register Src="~/Controles/Admin/contReportesCuestionarioDental.ascx" TagPrefix="uc1" TagName="contReportesCuestionarioDental" %>
 
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container colorBlanco">
 
     <div class="card">
-        <h5 class="card-header">    <span class="oi oi-spreadsheet"></span>  Estadísticas por Especialista</h5>
+        <h5 class="card-header">    <span class="oi oi-clipboard"></span>  Reporte Cuestionario Dental</h5>
         <div class="card-body">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
@@ -21,16 +20,16 @@
                 <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <ol>
-                            <li>Seleccione el especialista</li> 
-                            <li>Puede descargar un archivo en  diferentes formatos.</li> 
-                            <li>Asegurese de incluir la fecha correcta</li>
+                            <li>Seleccione la pregunta.</li> 
+                            <li>Puede descargar un archivo en  diferentes formatos</li> 
+                            <li>Puede cambiar la pregunta</li>
                         </ol>
                         <br />
                     </div>
                 </div>
             </div>
             <br />
-            <uc1:contEstadisticasEspecialistas runat="server" ID="contEstadisticasEspecialistas" />
+            <uc1:contReportesCuestionarioDental runat="server" ID="contReportesCuestionarioDental" />
             <br />
         </div>
     </div>

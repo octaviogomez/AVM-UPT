@@ -32,7 +32,15 @@
                     </div>
                 </div>
             </div>
-             
+             <div class="col-12 col-md-4">
+                        <div class="card border-dark">
+                    <div class="card-header">Estadísticas por Especialista</div>
+                    <div class="card-body text-dark">
+
+                        <p class="card-text">Consultar el número de consultas realizadas por especialista.</p>
+                    </div>
+                </div>
+            </div>
         </div>
   
         <br />

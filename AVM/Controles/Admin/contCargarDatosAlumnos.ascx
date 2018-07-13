@@ -1,24 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="contCargarDatosAlumnos.ascx.cs" Inherits="AVM.Controles.Admin.contCargarDatosAlumnos" %>
 <div class="container colorBlanco">
-    <div id="accordion">
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Instrucciones:
-                    </button>
-                </h5>
-            </div>
-            <div class="Row">
-                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    <p style="font-size: medium">1.-Seleccione un archivo Excel. </p>
-                    <p style="font-size: medium">2.-Debe de ser menos 1mb </p>
-                    <p style="font-size: medium">3.-Puede nombrar el archivo o dejar en blanco.</p>
-                    <p style="font-size: medium">Nota: Puede reemplazar archivos</p>
-                </div>
-            </div>
-            </div>
+    
+  
  
             <div class="form-row">
                 <div class="col-md-5 mb-5">
@@ -111,4 +94,3 @@
     
 
 
-</div>

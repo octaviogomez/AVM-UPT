@@ -4,3 +4,10 @@ C:\Users\octav\Desktop\AVM\Core\bin\Debug\itextsharp.dll
 C:\Users\octav\Desktop\AVM\Core\bin\Debug\itextsharp.xml
 C:\Users\octav\Desktop\AVM\Core\obj\Debug\Core.dll
 C:\Users\octav\Desktop\AVM\Core\obj\Debug\Core.pdb
+C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\bin\Debug\Core.dll
+C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\bin\Debug\Core.pdb
+C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\bin\Debug\itextsharp.dll
+C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\bin\Debug\itextsharp.xml
+C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\obj\Debug\Core.dll
+C:\Users\Aurelio\Desktop\Man\AVM-UPT\Core\obj\Debug\Core.pdb

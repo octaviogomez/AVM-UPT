@@ -78,7 +78,7 @@ namespace AVM.Controles.Admin
 
         protected void LinkButtonGuardar_Click(object sender, EventArgs e)
         {
-            //vistaEspecialista.ConfiguracionEmpleados(UsuarioLogeadoEspecialista, 3);
+            vistaEspecialista.ConfiguracionEmpleados(UsuarioLogeadoEspecialista, 3);
             Response.Redirect("AdminUsuarios.aspx", true);//
         }
     }

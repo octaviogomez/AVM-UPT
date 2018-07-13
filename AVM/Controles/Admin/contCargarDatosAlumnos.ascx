@@ -14,21 +14,14 @@
 </form>
 
                 </div>
-               
-
-               
-            </div>
-
-            <div class="form-group">
-                <div class="form-row">
-                <div class="col-md-5 mb-5">
-                     <asp:Button ID="btnUpload" runat="server" Text="Actualizar" OnClick="btnUpload_Click" CssClass="btn btn-info"  />
-                </div>
-                <div class="col-md-5 mb-5">
+               <div class="col-md-3 mb-3">
                      <asp:Button ID="Importar" runat="server" Text="Cargar a la base de datos" OnClick="Importar_Click" CssClass="btn btn-info" Visible="false"  />
                 </div>
-                    </div>
+                <div class="col-md-4 mb-4">
+                     <asp:Button ID="btnUpload" runat="server" Text="Actualizar" OnClick="btnUpload_Click" CssClass="btn btn-info"  />
+                </div>
 
+               
             </div>
    
             

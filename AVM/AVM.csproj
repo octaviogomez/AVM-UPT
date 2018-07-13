@@ -144,8 +144,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Controles\Admin\contAltaUsuario.ascx" />
     <Content Include="Controles\Admin\contCargarDatosAlumnos.ascx" />
     <Content Include="Controles\Admin\contEstadisticasEspecialistas.ascx" />
+    <Content Include="Controles\Admin\contListadoUsuarios.ascx" />
     <Content Include="Controles\Admin\contReportesCuestionarioDental.ascx" />
     <Content Include="Controles\Admin\contReportesCuestionarioMedico.ascx" />
     <Content Include="Controles\Admin\contReportesCuestionarioPsicologico.ascx" />
@@ -170,6 +172,7 @@
     <Content Include="Controles\Usuario\CuesDental.ascx" />
     <Content Include="Controles\Usuario\CuesMedico.ascx" />
     <Content Include="Controles\Usuario\CuesPsico.ascx" />
+    <Content Include="Controles\Usuario\Cuestionario.ascx" />
     <Content Include="Controles\Usuario\NuevaCita.ascx" />
     <Content Include="Controles\Usuario\Perfil.ascx" />
     <Content Include="Controles\Usuario\SubirCarnet.ascx" />
@@ -3160,12 +3163,18 @@
     <None Include="Properties\PublishProfiles\avmupt - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\avmupt - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Paginas\Admin\AdminUsuarios.aspx" />
     <Content Include="Paginas\Admin\CargarExcel.aspx" />
     <Content Include="Paginas\Admin\Default.aspx" />
     <Content Include="Paginas\Admin\Estadisticas.aspx" />
+<<<<<<< HEAD
     <Content Include="Paginas\Admin\ReporteCuestionarioDental.aspx" />
     <Content Include="Paginas\Admin\ReporteCuestionarioMedico.aspx" />
     <Content Include="Paginas\Admin\ReporteCuestionarioPsicologico.aspx" />
+=======
+    <Content Include="Paginas\Admin\InfoUsuario.aspx" />
+    <Content Include="Paginas\Admin\NuevoUsuario.aspx" />
+>>>>>>> origin/master
     <Content Include="Paginas\Admin\Reportes.aspx" />
     <Content Include="Paginas\Admin\ReportesCuestionario.aspx" />
     <Content Include="Paginas\Default.aspx" />
@@ -3182,6 +3191,7 @@
     <Content Include="Paginas\Usuario\CancelarCita.aspx" />
     <Content Include="Paginas\Usuario\ConfUsuario.aspx" />
     <Content Include="Paginas\Usuario\Cuestionario.aspx" />
+    <Content Include="Paginas\Usuario\Cuestionarios.aspx" />
     <Content Include="Paginas\Usuario\Default.aspx" />
     <Content Include="Paginas\Usuario\InfoUsuario.aspx" />
     <Content Include="Paginas\Usuario\SubirArchivo.aspx" />
@@ -3246,6 +3256,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\RouteConfig2.cs" />
+    <Compile Include="Controles\Admin\contAltaUsuario.ascx.cs">
+      <DependentUpon>contAltaUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contAltaUsuario.ascx.designer.cs">
+      <DependentUpon>contAltaUsuario.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controles\Admin\contCargarDatosAlumnos.ascx.cs">
       <DependentUpon>contCargarDatosAlumnos.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3259,6 +3276,13 @@
     </Compile>
     <Compile Include="Controles\Admin\contEstadisticasEspecialistas.ascx.designer.cs">
       <DependentUpon>contEstadisticasEspecialistas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\contListadoUsuarios.ascx.cs">
+      <DependentUpon>contListadoUsuarios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contListadoUsuarios.ascx.designer.cs">
+      <DependentUpon>contListadoUsuarios.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Admin\contReportesCuestionarioDental.ascx.cs">
       <DependentUpon>contReportesCuestionarioDental.ascx</DependentUpon>
@@ -3433,6 +3457,13 @@
     <Compile Include="Controles\Usuario\CuesPsico.ascx.designer.cs">
       <DependentUpon>CuesPsico.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controles\Usuario\Cuestionario.ascx.cs">
+      <DependentUpon>Cuestionario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Usuario\Cuestionario.ascx.designer.cs">
+      <DependentUpon>Cuestionario.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controles\Usuario\NuevaCita.ascx.cs">
       <DependentUpon>NuevaCita.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3485,6 +3516,13 @@
     <Compile Include="Masters\Usuario.Master.designer.cs">
       <DependentUpon>Usuario.Master</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\Admin\AdminUsuarios.aspx.cs">
+      <DependentUpon>AdminUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Admin\AdminUsuarios.aspx.designer.cs">
+      <DependentUpon>AdminUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Admin\CargarExcel.aspx.cs">
       <DependentUpon>CargarExcel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3506,6 +3544,7 @@
     <Compile Include="Paginas\Admin\Estadisticas.aspx.designer.cs">
       <DependentUpon>Estadisticas.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Paginas\Admin\ReporteCuestionarioDental.aspx.cs">
       <DependentUpon>ReporteCuestionarioDental.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3526,6 +3565,21 @@
     </Compile>
     <Compile Include="Paginas\Admin\ReporteCuestionarioPsicologico.aspx.designer.cs">
       <DependentUpon>ReporteCuestionarioPsicologico.aspx</DependentUpon>
+=======
+    <Compile Include="Paginas\Admin\InfoUsuario.aspx.cs">
+      <DependentUpon>InfoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Admin\InfoUsuario.aspx.designer.cs">
+      <DependentUpon>InfoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Admin\NuevoUsuario.aspx.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Admin\NuevoUsuario.aspx.designer.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
+>>>>>>> origin/master
     </Compile>
     <Compile Include="Paginas\Admin\Reportes.aspx.cs">
       <DependentUpon>Reportes.aspx</DependentUpon>
@@ -3638,6 +3692,13 @@
     </Compile>
     <Compile Include="Paginas\Usuario\Cuestionario.aspx.designer.cs">
       <DependentUpon>Cuestionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Usuario\Cuestionarios.aspx.cs">
+      <DependentUpon>Cuestionarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Usuario\Cuestionarios.aspx.designer.cs">
+      <DependentUpon>Cuestionarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Usuario\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

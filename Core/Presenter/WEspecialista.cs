@@ -83,14 +83,14 @@ namespace Core.Presenter
             }
         }
 
-        public void ListarEmpleados(int opcion, CEspecialista DatosEspecialista)
+        public void ListarEmpleados(int opcion)
         {
             bool ExistenDatos = false;
             DataSet dtsDatos = new DataSet();
 
             if (ExisteConexion())
             {
-                ExistenDatos = objEspecialista.listarEmpleados(opcion, ref dtsDatos,  DatosEspecialista);
+                ExistenDatos = objEspecialista.listarEmpleados(opcion, ref dtsDatos);
                 if (ExistenDatos == true)
                 {
                     ViewEspecialista.Empleados = dtsDatos;

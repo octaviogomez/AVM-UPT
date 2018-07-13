@@ -109,6 +109,7 @@ namespace AVM.Controles.Admin
                 if (GridView1.Rows.Count > 0 && GridView1.Columns.Count == 8)
                 {
                     Importar.Visible = true;
+                    btnUpload.Visible = false;
                 }
             }
             catch (Exception)

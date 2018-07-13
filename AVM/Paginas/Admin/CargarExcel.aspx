@@ -22,9 +22,20 @@
                         <ol>
                             <li>Seleccione un archivo Excel.</li> 
                             <li>Debe de ser menos 1mb</li> 
-                            <li>3.-Puede nombrar el archivo o dejar en blanco.</li>
+                            <li>Puede nombrar el archivo o dejar en blanco.</li>
                         </ol>
                         <br />
+                            <div class="alert alert-info" role="alert">
+                                Notas:
+                                <ul>
+                                    <li>
+                                        El archivo debe contener datos de los alumnos.
+                                    </li>
+                                    <li>
+                                        El formato del archivo tiene que coincidir con el que fue proporcionado.
+                                    </li>
+                                </ul>
+                            </div>
                     </div>
                 </div>
             </div>

@@ -146,6 +146,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Controles\Admin\contCargarDatosAlumnos.ascx" />
     <Content Include="Controles\Admin\contEstadisticasEspecialistas.ascx" />
+    <Content Include="Controles\Admin\contListadoUsuarios.ascx" />
     <Content Include="Controles\Admin\contReportesCuestionarioDental.ascx" />
     <Content Include="Controles\Admin\contReportesCuestionarioMedico.ascx" />
     <Content Include="Controles\Admin\contReportesCuestionarioPsicologico.ascx" />
@@ -3161,9 +3162,11 @@
     <None Include="Properties\PublishProfiles\avmupt - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\avmupt - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Paginas\Admin\AdminUsuarios.aspx" />
     <Content Include="Paginas\Admin\CargarExcel.aspx" />
     <Content Include="Paginas\Admin\Default.aspx" />
     <Content Include="Paginas\Admin\Estadisticas.aspx" />
+    <Content Include="Paginas\Admin\InfoUsuario.aspx" />
     <Content Include="Paginas\Admin\Reportes.aspx" />
     <Content Include="Paginas\Admin\ReportesCuestionario.aspx" />
     <Content Include="Paginas\Default.aspx" />
@@ -3258,6 +3261,13 @@
     </Compile>
     <Compile Include="Controles\Admin\contEstadisticasEspecialistas.ascx.designer.cs">
       <DependentUpon>contEstadisticasEspecialistas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\contListadoUsuarios.ascx.cs">
+      <DependentUpon>contListadoUsuarios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contListadoUsuarios.ascx.designer.cs">
+      <DependentUpon>contListadoUsuarios.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Admin\contReportesCuestionarioDental.ascx.cs">
       <DependentUpon>contReportesCuestionarioDental.ascx</DependentUpon>
@@ -3491,6 +3501,13 @@
     <Compile Include="Masters\Usuario.Master.designer.cs">
       <DependentUpon>Usuario.Master</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\Admin\AdminUsuarios.aspx.cs">
+      <DependentUpon>AdminUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Admin\AdminUsuarios.aspx.designer.cs">
+      <DependentUpon>AdminUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Admin\CargarExcel.aspx.cs">
       <DependentUpon>CargarExcel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3511,6 +3528,13 @@
     </Compile>
     <Compile Include="Paginas\Admin\Estadisticas.aspx.designer.cs">
       <DependentUpon>Estadisticas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Admin\InfoUsuario.aspx.cs">
+      <DependentUpon>InfoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Admin\InfoUsuario.aspx.designer.cs">
+      <DependentUpon>InfoUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Admin\Reportes.aspx.cs">
       <DependentUpon>Reportes.aspx</DependentUpon>

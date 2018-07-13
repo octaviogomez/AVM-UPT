@@ -1,2 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="contExamenPsico.ascx.cs" Inherits="AVM.Controles.Especialista.contExamenPsico" %>
-  <asp:Literal ID="PDFExamen" runat="server"></asp:Literal>

@@ -35,6 +35,18 @@ namespace Core.Model
             }
             return ExisteDatos;
         }
+        public bool listarEmpleados(int opcion, ref DataSet objDatos)
+        {
+            bool ExisteDatos = false;
+            List<SqlParameter> lstParametros = new List<SqlParameter>();
+            lstParametros.Add(new SqlParameter("@Op", SqlDbType.Int) { Value = opcion });
+            objDatos = objManagerBD.GetData("PEspecialista", lstParametros.ToArray());
+            if (objDatos.Tables.Count > 0)
+            {
+                ExisteDatos = true;
+            }
+            return ExisteDatos;
+        }
         public bool listarEmpleados(int opcion, ref DataSet objDatos, CEspecialista obj)
         {
             bool ExisteDatos = false;
@@ -80,7 +92,6 @@ namespace Core.Model
                 return true;
             return false;
         }
-
 
         #region variables del especialista
         public string pk_Especialista { get; set; }

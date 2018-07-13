@@ -22,15 +22,6 @@ namespace AVM.Controles.Admin {
         protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
         
         /// <summary>
-        /// btnUpload control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUpload;
-        
-        /// <summary>
         /// Importar control.
         /// </summary>
         /// <remarks>
@@ -38,6 +29,15 @@ namespace AVM.Controles.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Importar;
+        
+        /// <summary>
+        /// btnUpload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUpload;
         
         /// <summary>
         /// rbHDR control.

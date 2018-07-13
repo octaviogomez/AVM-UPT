@@ -3167,14 +3167,14 @@
     <Content Include="Paginas\Admin\CargarExcel.aspx" />
     <Content Include="Paginas\Admin\Default.aspx" />
     <Content Include="Paginas\Admin\Estadisticas.aspx" />
-<<<<<<< HEAD
+
     <Content Include="Paginas\Admin\ReporteCuestionarioDental.aspx" />
     <Content Include="Paginas\Admin\ReporteCuestionarioMedico.aspx" />
     <Content Include="Paginas\Admin\ReporteCuestionarioPsicologico.aspx" />
-=======
+
     <Content Include="Paginas\Admin\InfoUsuario.aspx" />
     <Content Include="Paginas\Admin\NuevoUsuario.aspx" />
->>>>>>> origin/master
+
     <Content Include="Paginas\Admin\Reportes.aspx" />
     <Content Include="Paginas\Admin\ReportesCuestionario.aspx" />
     <Content Include="Paginas\Default.aspx" />
@@ -3544,7 +3544,7 @@
     <Compile Include="Paginas\Admin\Estadisticas.aspx.designer.cs">
       <DependentUpon>Estadisticas.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
+
     <Compile Include="Paginas\Admin\ReporteCuestionarioDental.aspx.cs">
       <DependentUpon>ReporteCuestionarioDental.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3563,9 +3563,8 @@
       <DependentUpon>ReporteCuestionarioPsicologico.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Admin\ReporteCuestionarioPsicologico.aspx.designer.cs">
-      <DependentUpon>ReporteCuestionarioPsicologico.aspx</DependentUpon>
-=======
+
+
     <Compile Include="Paginas\Admin\InfoUsuario.aspx.cs">
       <DependentUpon>InfoUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3579,7 +3578,7 @@
     </Compile>
     <Compile Include="Paginas\Admin\NuevoUsuario.aspx.designer.cs">
       <DependentUpon>NuevoUsuario.aspx</DependentUpon>
->>>>>>> origin/master
+
     </Compile>
     <Compile Include="Paginas\Admin\Reportes.aspx.cs">
       <DependentUpon>Reportes.aspx</DependentUpon>

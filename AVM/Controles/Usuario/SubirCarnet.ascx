@@ -1,4 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SubirCarnet.ascx.cs" Inherits="AVM.Controles.Usuario.SubirCarnet" %>
+
+
 <div class="container colorBlanco">
     <div class="card">
         <div class="card-header">
@@ -27,11 +29,11 @@
             </div>
             <br />
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <asp:HyperLink ID="HyperLinkVistaCompleta" runat="server" Target="_blank" CssClass="badge badge-pill badge-info">Vista con el navegador</asp:HyperLink>
                 </div>
             </div>
@@ -60,13 +62,17 @@
                 </div>
                 <div class="col-12 col-md-8 ">
                     <div class="table-responsive">
-
-                        <asp:Literal ID="PDFCarnet" runat="server"></asp:Literal>
-
+                        
+                            <asp:Literal ID="PDFCarnet" runat="server"></asp:Literal>
+                       
                     </div>
 
                 </div>
             </div>
+
+
+
+
         </div>
     </div>
 </div>

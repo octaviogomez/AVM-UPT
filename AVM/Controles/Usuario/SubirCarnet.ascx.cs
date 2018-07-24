@@ -36,8 +36,10 @@ namespace AVM.Controles.Usuario
                     embed += "If you are unable to view file, you can download from <a href = \"{0}\">here</a>";
                     embed += " or download <a target = \"_blank\" href = \"http://get.adobe.com/reader/\">Adobe PDF Reader</a> to view the file.";
                     embed += "</object>";
-                    PDFCarnet.Text = string.Format(embed, ResolveUrl("~/Archivos/Carnet/" + objLoggerinf.alu_NumControl + ".pdf"));
 
+
+                    PDFCarnet.Text = string.Format(embed, ResolveUrl("~/Archivos/Carnet/" + objLoggerinf.alu_NumControl + ".pdf"));
+                   
                 }
                 catch (Exception)
                 {
@@ -89,8 +91,10 @@ namespace AVM.Controles.Usuario
                 {
 
                     string A = "";
+                   
                 }
-                 
+
+                Response.Redirect(Request.RawUrl);
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script >   $('#PanelNotificacion').removeClass('ocultar').addClass('mostrar'); </script>");
 
             }
@@ -98,6 +102,7 @@ namespace AVM.Controles.Usuario
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script > $('#PanelAviso').removeClass('ocultar').addClass('mostrar'); </script>");
 
+                Response.Redirect(Request.RawUrl);
             }
         
 

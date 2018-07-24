@@ -32,14 +32,36 @@
                         <asp:Panel ID="PanelInforMedico" runat="server" Visible="false">
                             <ul>
                                 <li>Tenga cuidado al realizar la consulta, llene con información correcta los campos.</li>
-                             
+                                <li>Se debe de llenar sección por sección</li>
+
                             </ul>
+                            <div class="alert alert-info" role="alert">
+                                Notas
+                                <ul>
+                                    <li>Se deben de llenar todos los campos.</li>
+                                    <li>En la sección de <strong>Datos físicos</strong> solo son datos númericos</li>
+                                    <li>Se puede impirmir antes de guardar la consultas.</li>
+                                </ul>
+                            </div>
                         </asp:Panel>
                         <asp:Panel ID="PanelInfoDental" runat="server" Visible="false">
                             <ul>
                        
                                 <li>En la sección de <strong>Odontograma</strong> lo encontrara datos del usuario.</li>
                             </ul>
+                              <ul>
+                                <li>Tenga cuidado al realizar la consulta, llene con información correcta los campos.</li>
+                                <li>Se debe de llenar sección por sección</li>
+
+                            </ul>
+                            <div class="alert alert-info" role="alert">
+                                Notas
+                                <ul>
+                                    <li>Se deben de llenar todos los campos.</li>
+                                    <li>En la sección de <strong>Datos físicos</strong> solo son datos númericos</li>
+                                    <li>Se puede impirmir antes de guardar la consultas.</li>
+                                </ul>
+                            </div>
                         </asp:Panel>
                         <asp:Panel ID="PanelInfoPsico" runat="server" Visible="false">
                             <ul>

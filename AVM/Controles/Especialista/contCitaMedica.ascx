@@ -106,13 +106,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
+                <div class="col-12 col-md-4"></div>
+                <div class="col-12 col-md-4">
                     <asp:LinkButton ID="LinkButtonImpirmir1" runat="server" CssClass="btn btn-success btn-lg btn-block" ValidationGroup="cita" OnClick="ButtonGenerarCita_Click">  <span class="oi oi-check"></span> Realizar</asp:LinkButton>
 
                 </div>
-                <div class="col-4">
-                    <asp:LinkButton ID="HyperLinkMedico" runat="server" CssClass="btn btn-info btn-lg btn-lock" OnClick="HyperLinkMedico_Click"> 
+                <div class="col-12 col-md-4">
+                    <asp:LinkButton ID="HyperLinkMedico" runat="server" CssClass="btn btn-info btn-lg btn-block" OnClick="HyperLinkMedico_Click"> 
                 <span class="oi oi-print"></span> Imprimir
                     </asp:LinkButton>
 

@@ -21,12 +21,7 @@
                             <li>Ingrese alguna matrícula y de seleccione el tipo de historial que desea.</li>
                             <li>En el panel lateral podrá ver los diferentes tipos de historiales que hay.</li>
                             <li>Para descargar o imprimir, se debe de dar clic en <strong><span class="oi oi-print"></span>Imprimir</strong></li>
-                            <li>
-
-                                <div class="alert alert-info" role="alert">
-                                    Nota:
-                                </div>
-                            </li>
+                           
                         </ol>
                         <br />
                     </div>
@@ -47,12 +42,12 @@
                                 <asp:ListItem Text="Médico" Value="1"></asp:ListItem>
                                 <asp:ListItem Text="Dental" Value="2"></asp:ListItem>
                                 <asp:ListItem Text="Psicológico" Value="3"></asp:ListItem>
-                       
+
                             </asp:DropDownList>
                         </div>
                         <div class="col-4  col-md-4">
                             <br />
-                            <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" />
+                            <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" CssClass="btn btn-success btn-lg btn-block" OnClick="DropDownListTipo_SelectedIndexChanged" />
                         </div>
                     </div>
                 </div>
@@ -98,7 +93,17 @@
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="card-body">
-                        <h4 class="card-title">Datos del Médico</h4>
+
+                        <div class="row">
+                            <div class="col-12 col-md-4"></div>
+                            <div class="col-12 col-md-4"></div>
+                            <div class="col-12 col-md-4">
+                                <asp:LinkButton ID="HyperLinkDental" runat="server" CssClass="btn btn-outline-info btn-lg btn-lock" OnClick="Button1_Click"> 
+                        <span class="oi oi-print"></span> Imprimir
+                                </asp:LinkButton>
+                            </div>
+                        </div>
+                        <h4 class="card-title">Datos de Consulta</h4>
                         <div class="form-row">
                             <div class="form-group col-md-3">
                                 <label for="labelNombreMedico"><strong>Nombre:</strong></label>
@@ -113,9 +118,7 @@
                                 <asp:Label ID="LabelEspecialidad" runat="server" Text="" Font-Size="Medium"></asp:Label>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Datos del Usuario</h5>
+
                         <div class="form-row">
                             <div class="form-group col-md-3">
                                 <label for="labelNombreMedico"><strong>Nombre:</strong></label>
@@ -128,9 +131,7 @@
                             <div class="form-group col-md-3">
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Datos de Cita</h5>
+
                         <div class="form-row">
                             <div class="col-3">
                                 <label for="LabelFecha"><strong>Fecha:</strong></label>
@@ -140,73 +141,83 @@
                                 <label for="LabelFecha"><strong>Hora:</strong></label>
                                 <asp:Label ID="labelHora" runat="server" Text="hora" Font-Size="Medium"></asp:Label>
                             </div>
+                            <%--</div>--%>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Interrogatorio al paciente</h4>
-                        <asp:TextBox ID="ResumenAntecedente" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Datos Físicos</h4>
-                        <div class="form-row">
-                            <div class="col-md-2">
-                                <label for="LabelFecha"><strong>Talla:</strong></label>
-                                <asp:TextBox ID="Talla" runat="server" ReadOnly="True" Font-Size="Medium" ForeColor="Black" CssClass="form-control"></asp:TextBox>
-                            </div>
-                            <div class="col-md-2">
-                                <label for="LabelFecha"><strong>Peso:</strong></label>
-                                <asp:TextBox ID="Peso" runat="server" ReadOnly="True" Font-Size="Medium" ForeColor="Black" CssClass="form-control"></asp:TextBox>
-                            </div>
-                            <div class="col-md-2">
-                                <label for="LabelFecha"><strong>Temperatura:</strong></label>
-                                <asp:TextBox ID="Temperatura" runat="server" ReadOnly="True" Font-Size="Medium" ForeColor="Black" CssClass="form-control"></asp:TextBox>
-                            </div>
-                            <div class="col-md-2">
-                                <label for="LabelFecha"><strong>Presion:</strong></label>
-                                <asp:TextBox ID="Presion" runat="server" ReadOnly="True" Font-Size="Medium" ForeColor="Black" CssClass="form-control"></asp:TextBox>
 
-                            </div>
-                            <div class="col-md-2">
-                                <label for="LabelFecha"><strong>Ritmo cardiaco:</strong></label>
-                                <asp:TextBox ID="Ritmocaridaco" runat="server" ReadOnly="True" Font-Size="Medium" ForeColor="Black" CssClass="form-control"></asp:TextBox>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Interrogatorio al paciente</h4>
+                            <asp:TextBox ID="ResumenAntecedente" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Datos Físicos</h4>
+                            <div class="form-row">
+                                <div class="col-md-2">
+                                    <label for="LabelFecha"><strong>Talla:</strong></label>
+                                    <asp:TextBox ID="Talla" runat="server" ReadOnly="True" Font-Size="Medium" ForeColor="Black" CssClass="form-control"></asp:TextBox>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="LabelFecha"><strong>Peso:</strong></label>
+                                    <asp:TextBox ID="Peso" runat="server" ReadOnly="True" Font-Size="Medium" ForeColor="Black" CssClass="form-control"></asp:TextBox>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="LabelFecha"><strong>Temperatura:</strong></label>
+                                    <asp:TextBox ID="Temperatura" runat="server" ReadOnly="True" Font-Size="Medium" ForeColor="Black" CssClass="form-control"></asp:TextBox>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="LabelFecha"><strong>Presion:</strong></label>
+                                    <asp:TextBox ID="Presion" runat="server" ReadOnly="True" Font-Size="Medium" ForeColor="Black" CssClass="form-control"></asp:TextBox>
+
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="LabelFecha"><strong>Ritmo cardiaco:</strong></label>
+                                    <asp:TextBox ID="Ritmocaridaco" runat="server" ReadOnly="True" Font-Size="Medium" ForeColor="Black" CssClass="form-control"></asp:TextBox>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Resumen Exploración Física</h4>
-                        <div>
-                            <asp:TextBox ID="ResumenExploracion" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
+                        <div class="card-body">
+                            <h4 class="card-title">Resumen Exploración Física</h4>
+                            <div>
+                                <asp:TextBox ID="ResumenExploracion" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Diagnóstico</h5>
-                        <asp:TextBox ID="TextBoxDiagnostico" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
+                        <div class="card-body">
+                            <h5 class="card-title">Diagnóstico</h5>
+                            <asp:TextBox ID="TextBoxDiagnostico" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
+
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Plan de Tratamiento</h5>
+                            <asp:TextBox ID="PlanTratamiento" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Días de reposo</h5>
+                            <div class="form-row">
+                                <div class="col-4">
+                                    <asp:TextBox ID="Diasreposo" runat="server" ReadOnly="True" CssClass="form-control"></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                        <asp:Label ID="LabelIdCita" runat="server" Text="Id:" Font-Size="Medium" Visible="false"></asp:Label>
+
+                        <br />
 
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Plan de Tratamiento</h5>
-                        <asp:TextBox ID="PlanTratamiento" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Días de reposo</h5>
-                        <div class="form-row">
-                            <div class="col-4">
-                                <asp:TextBox ID="Diasreposo" runat="server" ReadOnly="True" CssClass="form-control"></asp:TextBox>
-                            </div>
-                        </div>
-                    </div>
-                    <asp:Label ID="LabelIdCita" runat="server" Text="Id:" Font-Size="Medium" Visible="false"></asp:Label>
-                    <div> 
-                        <asp:LinkButton ID="HyperLinkDental" runat="server" CssClass="btn btn-outline-info btn-lg btn-lock" OnClick="Button1_Click"> 
-                        <span class="oi oi-print"></span> Imprimir
-                        </asp:LinkButton>
-                    </div><br />
-
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
                     <div class="card-body">
-                        <h4 class="card-title">Datos del Psicólogo</h4>
+                          <div class="row">
+                            <div class="col-12 col-md-4"></div>
+                            <div class="col-12 col-md-4"></div>
+                            <div class="col-12 col-md-4">
+                                <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-outline-info btn-lg btn-lock" OnClick="Button1_Click"> 
+                        <span class="oi oi-print"></span> Imprimir
+                                </asp:LinkButton>
+                            </div>
+                              </div>
+
+                        <h4 class="card-title">Datos del Consulta</h4>
                         <div class="form-row">
                             <div class="form-group col-md-3">
                                 <label for="NombrePsicologo"><strong>Nombre:</strong></label>
@@ -221,10 +232,7 @@
                                 <asp:Label ID="EspeciliadadPsicologo" runat="server" Text="" Font-Size="Medium"></asp:Label>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Datos del Usuario</h5>
-                        <div class="form-row">
+                           <div class="form-row">
                             <div class="form-group col-md-3">
                                 <label for="usuarioPsico"><strong>Nombre:</strong></label>
                                 <asp:Label ID="usuarioPsico" runat="server" Text="" Font-Size="Medium"></asp:Label>
@@ -236,10 +244,7 @@
                             <div class="form-group col-md-3">
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Datos de Cita</h5>
-                        <div class="form-row">
+                         <div class="form-row">
                             <div class="col-3">
                                 <label for="fechaPsico"><strong>Fecha:</strong></label>
                                 <asp:Label ID="fechaPsico" runat="server" Text="Fecha"></asp:Label>
@@ -250,7 +255,12 @@
                             </div>
                         </div>
                     </div>
-                          <div class="card-body">
+                
+                    <div class="card-body">
+                        <h5 class="card-title">Datos de Cita</h5>
+                       
+                    </div>
+                    <div class="card-body">
                         <h4 class="card-title">Resumen Exploración Física</h4>
                         <div>
                             <asp:TextBox ID="exploPisco" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
@@ -266,21 +276,16 @@
                         <h5 class="card-title">Plan de Tratamiento</h5>
                         <asp:TextBox ID="tratamientoPsico" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" ReadOnly="true"></asp:TextBox>
                     </div>
-                    <div> 
-                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-outline-info btn-lg btn-lock" OnClick="Button1_Click"> 
-                        <span class="oi oi-print"></span> Imprimir
-                        </asp:LinkButton>
-                    </div><br />
+                  
                 </div>
             </div>
         </div>
-    </div>
-    <script>
-        (function () {
+        <script>
+            (function () {
 
 
-        })();
+            })();
 
-    </script>
+        </script>
 </asp:Content>
 

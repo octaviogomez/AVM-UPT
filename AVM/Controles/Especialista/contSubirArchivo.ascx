@@ -10,10 +10,17 @@
     <div class="col-4">
         <asp:HyperLink ID="HyperLinkVistaCompleta" runat="server" Target="_blank" CssClass="badge badge-pill badge-info">Vista con el navegador</asp:HyperLink>
     </div>
-
 </div>
+<br />
+<div class="row">
 
-
+    <div class="col-12 col-md-6">
+        <asp:FileUpload ID="FileUpload1" runat="server" CssClass="" />
+    </div>
+    <div class="col-12 col-md-6">
+        <asp:Button ID="btnUpload" runat="server" Text="Subir" CssClass="btn btn-success btn-lg btn-block" OnClick="btnUpload_Click" disabled="disabled" />
+    </div>
+</div>
 <div class="row align-items-center">
     <div class="col-12  ">
 
@@ -25,36 +32,11 @@
 
 
     </div>
-    <div class="col-12">
-        <asp:FileUpload ID="FileUpload1" runat="server" CssClass="" />
-        <br />
-        <br />
-        <asp:Button ID="btnUpload" runat="server" Text="Subir" CssClass="btn btn-success btn-lg btn-block" OnClick="btnUpload_Click" disabled="disabled" />
-        <br />
-        <div id="PanelAviso" class="ocultar">
-            <div class="alert alert-warning" role="alert">
-                <h4 class="alert-heading">Error!</h4>
-                <p>Al parecer hay un problema con tu archivo, verificalo.</p>
-                <hr>
-                <p class="mb-0">Consulta las indicaciones.</p>
-            </div>
-        </div>
-        <br />
-        <div id="PanelNotificacion" class="ocultar">
-            <div class="alert alert-success" role="alert">
-                Carga exitosa
-            </div>
-        </div>
-    </div>
+
 
 
 </div>
-
-
-
-
-
-
+<br />
 <script>
     (function () {
 

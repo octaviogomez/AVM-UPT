@@ -10,15 +10,15 @@
 namespace AVM.Paginas.Admin {
     
     
-    public partial class InfoUsuario {
+    public partial class ModificarUsuario {
         
         /// <summary>
-        /// contInfoUsuario control.
+        /// contModificar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AVM.Controles.Admin.contInfoUsuario contInfoUsuario;
+        protected global::AVM.Controles.Admin.contModificar contModificar;
     }
 }

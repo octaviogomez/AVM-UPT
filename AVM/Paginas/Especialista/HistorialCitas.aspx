@@ -106,7 +106,7 @@
                         <h4 class="card-title">Datos de Consulta</h4>
                         <div class="form-row">
                             <div class="form-group col-md-3">
-                                <label for="labelNombreMedico"><strong>Nombre:</strong></label>
+                                <label for="labelNombreMedico"><strong>Médico:</strong></label>
                                 <asp:Label ID="labelNombreMedico" runat="server" Text="" Font-Size="Medium"></asp:Label>
                             </div>
                             <div class="form-group col-md-3">
@@ -121,7 +121,7 @@
 
                         <div class="form-row">
                             <div class="form-group col-md-3">
-                                <label for="labelNombreMedico"><strong>Nombre:</strong></label>
+                                <label for="labelNombreMedico"><strong>Usuario:</strong></label>
                                 <asp:Label ID="LabelNombreAlumno" runat="server" Text="" Font-Size="Medium"></asp:Label>
                             </div>
                             <div class="form-group col-md-3">

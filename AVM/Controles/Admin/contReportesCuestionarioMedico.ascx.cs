@@ -144,12 +144,12 @@ namespace AVM.Controles.Admin
         {
             get
             {
-                throw new NotImplementedException();
+                return null;
             }
 
             set
             {
-                throw new NotImplementedException();
+              
             }
         }
 
@@ -157,17 +157,17 @@ namespace AVM.Controles.Admin
         {
             get
             {
-                throw new NotImplementedException();
+                return null;
             }
 
             set
             {
-                throw new NotImplementedException();
+               
             }
         }
         public void Mensaje(string mensaje, int tipo)
         {
-            throw new NotImplementedException();
+         
         }
         #endregion
     }

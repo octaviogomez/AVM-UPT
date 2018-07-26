@@ -4,19 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    
+
     <title>Administrador</title>
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     <link href="../Content/app.css" rel="stylesheet" />
     <link href="../Iconos/icon/font/css/open-iconic-bootstrap.css" rel="stylesheet" />
-    
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
     <script src="../../Scripts/jquery-3.3.1.min.js"></script>
     <script src="../../Scripts/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
     <script src="../../Scripts/bootstrap.min.js"></script>
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 
 </head>
@@ -27,7 +27,7 @@
     <header id="header-container" class="fondoColor">
         <div class="container">
             <div>
-                <h5> </h5>
+                <h5></h5>
             </div>
         </div>
 
@@ -44,30 +44,38 @@
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-             
+
             </button>
             <%-- contenido del menu --%>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../../../Paginas/Admin/Default.aspx"><span class="oi oi-home"></span>  Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../../../Paginas/Admin/Default.aspx"><span class="oi oi-home"></span>Inicio<span class="sr-only">(current)</span></a>
                     </li>
-                     <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reportes
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="../../../Paginas/Admin/ReporteCuestionarioMedico.aspx">Médico</a>
                             <a class="dropdown-item" href="../../../Paginas/Admin/ReporteCuestionarioDental.aspx">Dental</a>
-                            <a class="dropdown-item" href="../../../Paginas/Admin/ReporteCuestionarioPsicologico.aspx">Psicológico</a>               
+                            <a class="dropdown-item" href="../../../Paginas/Admin/ReporteCuestionarioPsicologico.aspx">Psicológico</a>
                         </div>
                     </li>
-                     <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link " href="../../../Paginas/Admin/Estadisticas.aspx">Estadísticas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="../../../Paginas/Admin/CargarExcel.aspx">Cargar Excel</a>
                     </li>
-
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Personal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="AdminUsuarios.aspx">Consulta</a>
+                            <a class="dropdown-item" href="NuevoUsuario.aspx">Alta</a>
+                            <a class="dropdown-item" href="../../../Paginas/Especialista/HistorialCitas.aspx">Modificaión</a>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../../../">Salir</a>
                     </li>

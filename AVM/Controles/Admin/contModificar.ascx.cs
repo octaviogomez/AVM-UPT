@@ -12,9 +12,10 @@ using System.Data;
 
 namespace AVM.Controles.Admin
 {
-    public partial class contInfoUsuario : System.Web.UI.UserControl,IEspecialista
+    public partial class contModificar : System.Web.UI.UserControl,IEspecialista
     {
-  
+
+
         WEspecialista vistEspecialista;
         CEspecialista miEspecialista;
         CEspecialista objLoggerinfEspecialista;
@@ -27,7 +28,10 @@ namespace AVM.Controles.Admin
             if ((objLoggerinfEspecialista != null && objLoggerinfEspecialista.Rol == 3))
             {
                 miEspecialista = new CEspecialista();
-                vistEspecialista.ConfiguracionEmpleados(UsuarioLogeadoEspecialista, 6);
+                if (!IsPostBack)
+                {
+                    vistEspecialista.ConfiguracionEmpleados(UsuarioLogeadoEspecialista, 6);
+                }
             }
             else
             {
@@ -40,7 +44,7 @@ namespace AVM.Controles.Admin
         {
             set
             {
-               
+
             }
         }
 
@@ -60,14 +64,15 @@ namespace AVM.Controles.Admin
                 }
                 return objaux;
             }
-            set {
+            set
+            {
                 if (value != null)
                 {
-                   
+
                     try
                     {
                         Cedula1.Text = value.Cedula.ToString().Trim();
-                        NumeroControl1.Text = value.Numero_Control.ToString().Trim();
+                       NumeroControl1.Text = value.Numero_Control.ToString().Trim();
                         Clave1.Text = value.Contrasena.ToString().Trim();
                         Nombre1.Text = value.Nombre.ToString().Trim();
                         Apellido1.Text = value.Apellido.ToString().Trim();
@@ -77,7 +82,7 @@ namespace AVM.Controles.Admin
                         Correo1.Text = value.Correo.ToString();
                         Telefono1.Text = value.Telefono.ToString();
 
-                        DropDownListEspecilaidadesCambio.SelectedValue = value.fk_Especialidad;
+                        DropDownListEspecilaidadesCambio.SelectedValue = value.fk_Especialidad.ToString();
 
                     }
                     catch (Exception)
@@ -88,15 +93,52 @@ namespace AVM.Controles.Admin
                 }
             }
         }
-      
+        public CEspecialista objDatos
+        {
+            get
+            {
+                CEspecialista objaux = new CEspecialista();
+                try
+                {
+                    objaux.Cedula = Cedula1.Text;
+                    objaux.Numero_Control = NumeroControl1.Text;
+
+
+                    objaux.Contrasena = Clave1.Text;
+                    objaux.Nombre = Nombre1.Text;
+                    objaux.Apellido = Apellido1.Text;
+
+                    objaux.Genero = DropDownListGenero.SelectedValue;
+                    objaux.Direccion = Direccion1.Text;
+                    objaux.Correo = Correo1.Text;
+                    objaux.Telefono = Telefono1.Text;
+
+                    objaux.fk_Especialidad = DropDownListEspecilaidadesCambio.SelectedValue;
+                }
+                catch (Exception)
+                {
+                    objaux.Numero_Control = "0";
+                }
+                return objaux;
+            }
+            set
+            {
+                if (value != null)
+                {
+
+
+                }
+            }
+        }
         public void Mensaje(string Mensaje, int tipo)
         {
-           
+
         }
 
         protected void LinkButtonModificar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ModificarUsuario.aspx?id=" + UsuarioLogeadoEspecialista.Numero_Control, true);//
+            vistEspecialista.ConfiguracionEmpleados(objDatos, 4);
+            Response.Redirect("AdminUsuarios", true);//
         }
     }
 }

@@ -1740,7 +1740,6 @@ namespace AVM.Controles.Usuario
             cadenaFinal += "Fecha: " + fecha;//Tenemos que sacar la fecha
             cadenaFinal += "<br><br>";
             cadenaFinal += "El alumno: " + objLoggerinf.alu_Nombre + " " + objLoggerinf.alu_ApePaterno + " " + objLoggerinf.alu_ApeMaterno + ", con la matícula: " + objLoggerinf.alu_NumControl + ", ha llenado correctamente los cuestionarios.";
-            cadenaFinal += "<br><br><br><br>";
             cadenaFinal += "Folio :" + folio;
             string nom = "AcuseDeCuestionario" + objLoggerinf.alu_NumControl;
             imprimirPDF(cadenaFinal, nom);
@@ -1761,6 +1760,9 @@ namespace AVM.Controles.Usuario
 
 
                 cadenaFinal += "<h4> © Universidad Politécnica de Tulancingo.  Calle Ingenierías # 100. Col. Huapalcalco, Tulancingo, Hidalgo, México. C.P. 43629, Teléfono: 01(775) 75 5 82 02, Fax: 01(775) 75 5 83 21 </h5>";
+               cadenaFinal += "<br><br>";
+                string path2 = Server.MapPath("../../Imagenes/universidad/MarcadeAgua.png");
+                cadenaFinal += "<center><img src='" + path2 + "' Height='500' Width='560' /></center>";
 
                 //Assign Html content in a string to write in PDF 
                 string strContent = cadenaFinal;

@@ -13,6 +13,15 @@ namespace AVM.Paginas.Admin {
     public partial class CargarExcel {
         
         /// <summary>
+        /// HyperLinkVistaCompleta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkVistaCompleta;
+        
+        /// <summary>
         /// contCargarDatosAlumnos control.
         /// </summary>
         /// <remarks>

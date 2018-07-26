@@ -73,7 +73,6 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="AdminUsuarios.aspx">Consulta</a>
                             <a class="dropdown-item" href="NuevoUsuario.aspx">Alta</a>
-                            <a class="dropdown-item" href="../../../Paginas/Especialista/HistorialCitas.aspx">Modificaión</a>
                         </div>
                     </li>
                     <li class="nav-item">

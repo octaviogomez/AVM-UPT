@@ -22,15 +22,6 @@ namespace AVM.Controles.Admin {
         protected global::System.Web.UI.WebControls.DropDownList DropDownListEspecialista;
         
         /// <summary>
-        /// VerReporte control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button VerReporte;
-        
-        /// <summary>
         /// DropDownListExportar control.
         /// </summary>
         /// <remarks>
@@ -56,6 +47,15 @@ namespace AVM.Controles.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFechaFin;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
         /// ScriptManager1 control.

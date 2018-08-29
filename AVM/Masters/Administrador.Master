@@ -16,7 +16,6 @@
     <script src="../../Scripts/jquery-3.3.1.min.js"></script>
     <script src="../../Scripts/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
     <script src="../../Scripts/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 
 </head>
@@ -54,7 +53,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reportes
-                        </a>
+                        </a>    
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="../../../Paginas/Admin/ReporteCuestionarioMedico.aspx">Médico</a>
                             <a class="dropdown-item" href="../../../Paginas/Admin/ReporteCuestionarioDental.aspx">Dental</a>

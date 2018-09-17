@@ -57,7 +57,7 @@ namespace AVM.Controles.Usuario
             if (!string.IsNullOrWhiteSpace(DropDownListEspecialista.Text) && !string.IsNullOrEmpty(TextBoxFecha.Text) && !string.IsNullOrWhiteSpace(DropDownListHorario.Text))
             {
                 //SetCorreo
-                WConsultaVista.ObtenerCorreoEspecialista(16, DropDownListEspecialista.SelectedValue);
+              //  WConsultaVista.ObtenerCorreoEspecialista(16, DropDownListEspecialista.SelectedValue);
 
                 WConsultaVista.Reguistrar(NewConsulta, objLoggerinf);//Se realiza el reguistro de la consulta
 
@@ -211,7 +211,7 @@ namespace AVM.Controles.Usuario
             if (listaDatos != null)
             {
                 if(listaDatos.Count<1)
-                       PanelAvisoHorarios.Visible = !false;
+                       PanelAvisoHorarios.Visible = true;
 
                 foreach (CConsulta item in listaDatos)
                 {
@@ -235,10 +235,18 @@ namespace AVM.Controles.Usuario
         {
             if (!string.IsNullOrWhiteSpace(DropDownListEspecialista.Text) && !string.IsNullOrEmpty(TextBoxFecha.Text))
             {
-               fecha = TextBoxFecha.Text;
-                DropDownListHorario.Items.Clear();
-                LlenadoComboHorario(DropDownListHorario, 3, TextBoxFecha.Text, DropDownListEspecialista.SelectedValue.Trim());
-                TextBoxFecha.Text = fecha;
+                try
+                {
+                    fecha = TextBoxFecha.Text;
+                    DropDownListHorario.Items.Clear();
+                    LlenadoComboHorario(DropDownListHorario, 3, TextBoxFecha.Text.Trim(), DropDownListEspecialista.SelectedValue.Trim());
+                    TextBoxFecha.Text = fecha;
+                }
+                catch (Exception)
+                {
+
+                    fecha = "";
+                }
             }
             else
             {

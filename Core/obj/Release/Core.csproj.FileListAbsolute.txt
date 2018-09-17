@@ -1,0 +1,7 @@
+C:\Users\Administrador\Desktop\AVM-UPT\Core\bin\Release\Core.dll
+C:\Users\Administrador\Desktop\AVM-UPT\Core\bin\Release\Core.pdb
+C:\Users\Administrador\Desktop\AVM-UPT\Core\bin\Release\itextsharp.dll
+C:\Users\Administrador\Desktop\AVM-UPT\Core\bin\Release\itextsharp.xml
+C:\Users\Administrador\Desktop\AVM-UPT\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\AVM-UPT\Core\obj\Release\Core.dll
+C:\Users\Administrador\Desktop\AVM-UPT\Core\obj\Release\Core.pdb

@@ -3162,8 +3162,7 @@
     <Content Include="Controles\Admin\Datos\dsReporte.xss">
       <DependentUpon>dsReporte.xsd</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\avmupt - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\avmupt - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\AVM.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Paginas\Admin\AdminUsuarios.aspx" />
     <Content Include="Paginas\Admin\CargarExcel.aspx" />

@@ -1,0 +1,63 @@
+﻿body {
+    background-color: #e2e2e2;
+}
+.colorBlanco {
+    background-color: white;
+}
+.fondoColor {
+    background-color:#00618d;
+    color:white;
+}
+
+.colorBase {
+     background-color:#E9E6E6;
+}
+
+.letraBlanca{
+    color:white;
+}
+
+.footer {
+  
+}
+
+.ocultar {
+    visibility:hidden;
+}
+.mostrar {
+    visibility:visible;
+}
+.w50 {
+    
+width:70%;
+}
+
+
+.linkAyuda {
+color:black;
+font-weight:bold;
+}
+
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}
+
+.colorAmarrillo {
+
+color:red;
+font-weight:bold;
+}

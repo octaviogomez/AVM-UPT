@@ -10,24 +10,15 @@
 namespace AVM.Paginas.Admin {
     
     
-    public partial class CargarExcel {
+    public partial class ModificarUsuario {
         
         /// <summary>
-        /// HyperLinkVistaCompleta control.
+        /// contModificar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLinkVistaCompleta;
-        
-        /// <summary>
-        /// contCargarDatosAlumnos control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AVM.Controles.Admin.contCargarDatosAlumnos contCargarDatosAlumnos;
+        protected global::AVM.Controles.Admin.contModificar contModificar;
     }
 }

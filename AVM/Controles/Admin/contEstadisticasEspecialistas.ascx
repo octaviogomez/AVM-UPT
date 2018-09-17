@@ -12,13 +12,11 @@
                     </asp:DropDownList>
                 </div>
                 <div class="col-md-2 mb-5">
-                    <strong>
-                        <label for="DropDownListEspecialista">2. Ver reporte:</label></strong>
-                    <asp:Button ID="VerReporte" runat="server" Text="Ver" OnClick="verReporte_Click" CssClass="btn btn-info" Visible="true"  />
+                    
                 </div>
                 <div class="col-md-5 mb-2">
                     <strong>
-                        <label for="DropDownListEspecialista">3. Exportar a:</label>
+                        <label for="DropDownListEspecialista">2. Exportar a:</label>
 
                     </strong>
                     <asp:DropDownList ID="DropDownListExportar" runat="server" CssClass="form-control" required="Se necesita seleccionar reporte" OnSelectedIndexChanged="DropDownClickExportar" AutoPostBack="true"></asp:DropDownList>
@@ -27,7 +25,7 @@
     <div class="form-row">
                 <div class="col-md-5 mb-5">
                     <strong>
-                        <label for="DropDownListReporte">4. Fecha Inicio</label></strong>
+                        <label for="DropDownListReporte">3. Fecha Inicio</label></strong>
                     <asp:TextBox ID="txtFechaInicio" runat="server" CssClass="glyphicon-calendar" placeholder="Fecha Inicio" type="date"></asp:TextBox>
                 <br />
                 </div>
@@ -35,11 +33,18 @@
                 </div>
                 <div class="col-md-5 mb-5">
                     <strong>
-                        <label for="DropDownListEspecialista">5. Fecha Fin:</label></strong>
+                        <label for="DropDownListEspecialista">4. Fecha Fin:</label></strong>
                     <asp:TextBox ID="txtFechaFin" runat="server" CssClass="glyphicon-calendar" placeholder="Fecha Fin" type="date"></asp:TextBox>
                 <br />
                 </div>
             </div>
+    <div class="form-row">
+        <div class="col-md-5 mb-5">
+                    <strong>
+                        <label for="DropDownListEspecialista">5. Ver reporte:</label></strong>
+                    <asp:Button ID="Button1" runat="server" Text="Ver" OnClick="verReporte_Click" CssClass="btn btn-info" Visible="true"  />
+                </div>
+    </div>
               
                 <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>

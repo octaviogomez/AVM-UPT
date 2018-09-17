@@ -33,6 +33,7 @@
                                     </li>
                                     <li>
                                         El formato del archivo tiene que coincidir con el que fue proporcionado.
+                                        <asp:HyperLink ID="HyperLinkVistaCompleta" runat="server" NavigateUrl="~/Archivos/Plantillas/MatriculaAlumnos.xlsx" Target="_blank" CssClass="badge badge-pill badge-info">Plantilla</asp:HyperLink>
                                     </li>
                                 </ul>
                             </div>

@@ -111,7 +111,7 @@ namespace Core.Presenter
         public void ConfiguracionEmpleados(CEspecialista objEspecialista, int OpcionProcedimiento)//Objeto con datos de especialista , opcion que indica que metodo de cuestionario se seleccionara 
         {
             DataSet dtsDatos = new DataSet();
-           
+            CEspecialista obj = new CEspecialista();
             bool BolRegistro = false;
             if (ExisteConexion())
             {
@@ -119,11 +119,11 @@ namespace Core.Presenter
               
                 switch (OpcionProcedimiento)
                 {
-                    case 2: BolRegistro = objEspecialista.listarEmpleados(OpcionProcedimiento, ref dtsDatos, objEspecialista); break;//listado
-                    case 3: BolRegistro = objEspecialista.ConfigurarEmpleado(OpcionProcedimiento, objEspecialista); break;//registro
-                    case 4: BolRegistro = objEspecialista.ConfigurarEmpleado(OpcionProcedimiento, objEspecialista); break;//Modificacion
-                    case 5: BolRegistro = objEspecialista.ConfigurarEmpleado(OpcionProcedimiento, objEspecialista); break;//Baja
-                    case 6: BolRegistro = objEspecialista.listarEmpleados(OpcionProcedimiento, ref dtsDatos, objEspecialista); break;//Consulta especifica de empleado
+                    case 2: BolRegistro = obj.listarEmpleados(OpcionProcedimiento, ref dtsDatos, objEspecialista); break;//listado
+                    case 3: BolRegistro = obj.ConfigurarEmpleado(OpcionProcedimiento, objEspecialista); break;//registro
+                    case 4: BolRegistro = obj.ConfigurarEmpleado(OpcionProcedimiento, objEspecialista); break;//Modificacion
+                    case 5: BolRegistro = obj.ConfigurarEmpleado(OpcionProcedimiento, objEspecialista); break;//Baja
+                    case 6: BolRegistro = obj.listarEmpleados(OpcionProcedimiento, ref dtsDatos, objEspecialista); break;//Consulta especifica de empleado
 
 
                     default: BolRegistro = false; break;
@@ -132,25 +132,33 @@ namespace Core.Presenter
                 {
                     ViewEspecialista.Mensaje(" registrado", 1);
 
-                    if (OpcionProcedimiento == 4)
-                        ViewEspecialista.Empleados = dtsDatos;
+                   
                     if (OpcionProcedimiento == 6) {
                         CEspecialista objAuxEspecialista = new CEspecialista();
                         if (dtsDatos!=null)
                         {
-                            objAuxEspecialista.Activo= dtsDatos.Tables[0].Rows[0][0].ToString();
-                            objAuxEspecialista.Cedula = dtsDatos.Tables[0].Rows[0][1].ToString();
-                            objAuxEspecialista.Numero_Control = dtsDatos.Tables[0].Rows[0][2].ToString();
-                            objAuxEspecialista.Contrasena = dtsDatos.Tables[0].Rows[0][3].ToString();
-                            objAuxEspecialista.Nombre = dtsDatos.Tables[0].Rows[0][4].ToString();
-                            objAuxEspecialista.Apellido = dtsDatos.Tables[0].Rows[0][5].ToString();
-                            objAuxEspecialista.FechaNacimiento = dtsDatos.Tables[0].Rows[0][6].ToString();
-                            objAuxEspecialista.Genero = dtsDatos.Tables[0].Rows[0][7].ToString();
-                            objAuxEspecialista.Direccion = dtsDatos.Tables[0].Rows[0][8].ToString();
-                            objAuxEspecialista.Correo = dtsDatos.Tables[0].Rows[0][9].ToString();
-                            objAuxEspecialista.Telefono = dtsDatos.Tables[0].Rows[0][10].ToString();
-                            objAuxEspecialista.fk_Especialidad = dtsDatos.Tables[0].Rows[0][11].ToString();
-                            objAuxEspecialista.Rol = Convert.ToInt32(dtsDatos.Tables[0].Rows[0][12].ToString());
+                            try
+                            {
+                                objAuxEspecialista.Activo = dtsDatos.Tables[0].Rows[0][0].ToString();
+                                objAuxEspecialista.Cedula = dtsDatos.Tables[0].Rows[0][1].ToString();
+                                objAuxEspecialista.Numero_Control = dtsDatos.Tables[0].Rows[0][2].ToString();
+                                objAuxEspecialista.Contrasena = dtsDatos.Tables[0].Rows[0][3].ToString();
+                                objAuxEspecialista.Nombre = dtsDatos.Tables[0].Rows[0][4].ToString();
+                                objAuxEspecialista.Apellido = dtsDatos.Tables[0].Rows[0][5].ToString();
+                                objAuxEspecialista.FechaNacimiento = dtsDatos.Tables[0].Rows[0][6].ToString();
+                                objAuxEspecialista.Genero = dtsDatos.Tables[0].Rows[0][7].ToString();
+                                objAuxEspecialista.Direccion = dtsDatos.Tables[0].Rows[0][8].ToString();
+                                objAuxEspecialista.Correo = dtsDatos.Tables[0].Rows[0][9].ToString();
+                                objAuxEspecialista.Telefono = dtsDatos.Tables[0].Rows[0][10].ToString();
+                                objAuxEspecialista.fk_Especialidad = dtsDatos.Tables[0].Rows[0][11].ToString();
+                                objAuxEspecialista.Rol = Convert.ToInt32(dtsDatos.Tables[0].Rows[0][12].ToString());
+                            }
+                            catch (Exception)
+                            {
+
+                                objAuxEspecialista = null;
+                            }
+                           
                         }
                         ViewEspecialista.UsuarioLogeadoEspecialista = objAuxEspecialista;
                     }

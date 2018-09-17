@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="contListadoUsuarios.ascx.cs" Inherits="AVM.Controles.Admin.contListadoUsuarios" %>
+﻿6<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="contListadoUsuarios.ascx.cs" Inherits="AVM.Controles.Admin.contListadoUsuarios" %>
 <div class="container colorBlanco">
     <div class="card">
         <div class="card-body">

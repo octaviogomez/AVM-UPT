@@ -149,6 +149,7 @@
     <Content Include="Controles\Admin\contEstadisticasEspecialistas.ascx" />
     <Content Include="Controles\Admin\contInfoUsuario.ascx" />
     <Content Include="Controles\Admin\contListadoUsuarios.ascx" />
+    <Content Include="Controles\Admin\contModificar.ascx" />
     <Content Include="Controles\Admin\contReportesCuestionarioDental.ascx" />
     <Content Include="Controles\Admin\contReportesCuestionarioMedico.ascx" />
     <Content Include="Controles\Admin\contReportesCuestionarioPsicologico.ascx" />
@@ -3154,6 +3155,7 @@
     <Content Include="Controles\Admin\Datos\dsReporte.xsc">
       <DependentUpon>dsReporte.xsd</DependentUpon>
     </Content>
+    <Content Include="Archivos\Plantillas\MatriculaAlumnos.xlsx" />
     <None Include="Controles\Admin\Datos\dsReporte.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -3168,6 +3170,7 @@
     <Content Include="Paginas\Admin\CargarExcel.aspx" />
     <Content Include="Paginas\Admin\Default.aspx" />
     <Content Include="Paginas\Admin\Estadisticas.aspx" />
+    <Content Include="Paginas\Admin\ModificarUsuario.aspx" />
     <Content Include="Paginas\Admin\ReporteCuestionarioDental.aspx" />
     <Content Include="Paginas\Admin\ReporteCuestionarioMedico.aspx" />
     <Content Include="Paginas\Admin\ReporteCuestionarioPsicologico.aspx" />
@@ -3288,6 +3291,13 @@
     </Compile>
     <Compile Include="Controles\Admin\contListadoUsuarios.ascx.designer.cs">
       <DependentUpon>contListadoUsuarios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Admin\contModificar.ascx.cs">
+      <DependentUpon>contModificar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Admin\contModificar.ascx.designer.cs">
+      <DependentUpon>contModificar.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controles\Admin\contReportesCuestionarioDental.ascx.cs">
       <DependentUpon>contReportesCuestionarioDental.ascx</DependentUpon>
@@ -3548,6 +3558,13 @@
     </Compile>
     <Compile Include="Paginas\Admin\Estadisticas.aspx.designer.cs">
       <DependentUpon>Estadisticas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Admin\ModificarUsuario.aspx.cs">
+      <DependentUpon>ModificarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Admin\ModificarUsuario.aspx.designer.cs">
+      <DependentUpon>ModificarUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Admin\ReporteCuestionarioDental.aspx.cs">
       <DependentUpon>ReporteCuestionarioDental.aspx</DependentUpon>

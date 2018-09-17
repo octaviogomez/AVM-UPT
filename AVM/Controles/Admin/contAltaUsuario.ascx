@@ -10,7 +10,7 @@
             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="Nombre">Nombre</label>
-                    <asp:TextBox ID="Nombre" runat="server" placeholder="Juan Roma" CssClass="form-control"></asp:TextBox>
+                    <asp:TextBox ID="Nombre" runat="server"  CssClass="form-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="vNombre" runat="server" ControlToValidate="Nombre" ValidationGroup="alta" ErrorMessage="Compo requerido" CssClass="alert-warning" />
                 </div>
                 <div class="form-group col-md-4">
@@ -47,7 +47,7 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="Fecha">Fecha</label>
+                    <label for="Fecha">Fecha de ingreso</label>
                     <asp:TextBox ID="TextBoxFecha" runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="vTextBoxFecha" runat="server" ControlToValidate="TextBoxFecha" ValidationGroup="alta" ErrorMessage="Compo requerido" CssClass="alert-warning" />
                 </div>
